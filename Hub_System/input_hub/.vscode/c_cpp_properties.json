@@ -1,0 +1,37 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/josh/project1/install/dsr_realtime_control/include/**",
+        "/home/josh/project1/install/dsr_controller2/include/**",
+        "/home/josh/project1/install/dsr_msgs2/include/**",
+        "/home/josh/project1/install/dsr_hardware2/include/**",
+        "/home/josh/ros2_ws/install/turtlesim_msgs/include/**",
+        "/home/josh/ros2_ws/install/ros_study_msgs/include/**",
+        "/home/josh/ros2_ws/install/my_robot_interfaces/include/**",
+        "/home/josh/ros2_ws/install/hangman_interfaces/include/**",
+        "/home/josh/ros2_ws/install/gz_ros2_control/include/**",
+        "/home/josh/ros2_ws/install/dsr_realtime_control/include/**",
+        "/home/josh/ros2_ws/install/dsr_controller2/include/**",
+        "/home/josh/ros2_ws/install/dsr_msgs2/include/**",
+        "/home/josh/ros2_ws/install/dsr_hardware2/include/**",
+        "/opt/ros/humble/include/**",
+        "/home/josh/project1/src/DoosanBootcamp/dsr_common2/include/**",
+        "/home/josh/project1/src/DoosanBootcamp/dsr_controller2/include/**",
+        "/home/josh/project1/src/DoosanBootcamp/dsr_example2/dsr_realtime_control/include/**",
+        "/home/josh/project1/src/DoosanBootcamp/dsr_hardware2/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}
