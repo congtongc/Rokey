@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 7
+names: ['Banana', 'GelatinBox', 'Hammer', 'MediumClamp', 'MustardBottle', 'PowerDrill', 'TomatoSoupCan']
+
+roboflow:
+  workspace: picklerick-7yrdy
+  project: fyp-rmxcx
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/picklerick-7yrdy/fyp-rmxcx/dataset/1

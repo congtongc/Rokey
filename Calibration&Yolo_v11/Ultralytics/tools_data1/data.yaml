@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 17
+names: ['Adjustable spanner', 'Backsaw', 'Calipers', 'Cutting pliers', 'Drill', 'Gas wrench', 'Gun', 'Hammer', 'Hand', 'Handsaw', 'Needle-nose pliers', 'Pliers', 'Ratchet', 'Screwdriver', 'Tape measure', 'Utility knife', 'Wrench']
+
+roboflow:
+  workspace: reshetnev-university-7yeg6
+  project: tools-segmentation-2
+  version: 4
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/reshetnev-university-7yeg6/tools-segmentation-2/dataset/4
