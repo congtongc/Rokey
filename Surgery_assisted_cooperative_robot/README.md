@@ -113,8 +113,8 @@ $ ros2 run pick_and_place_voice detect_wound
 3. **detect_wound** 노드 실행 시
 - "카메라" → wound 인식 및 특수 작업
 
-## 학습 과정 및 세부 설명
+## 학습 과정 및 세부 설명(pdf)
 - [B-2_수술 보조 로봇 프로젝트(협동2).pdf](https://github.com/user-attachments/files/20658700/B-2_.2.pdf)
 
-## 전반적인 로봇의 동작 흐름
+## 전반적인 로봇의 동작 흐름(영상)
 - https://github.com/user-attachments/assets/f4b465a0-58d0-449a-920e-7077362054ea
