@@ -1,4 +1,4 @@
-# Hub_System
+# Hub System
 
 ### 6축 협동 로봇을 활용한 물류 창고 허브 시스템
 
