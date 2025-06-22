@@ -1,1 +1,6 @@
 Surgery_assisted_cooperative_robot/pick_and_place_voice/resource/.env
+.vscode/colcon.env
+# Python __pycache__
+__pycache__/
+# VSCode
+.vscode/
