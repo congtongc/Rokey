@@ -1,0 +1,252 @@
+[0.515s] colcon DEBUG Command line arguments: ['/usr/bin/colcon', 'list', '-p', '--base-paths', '/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving']
+[0.516s] colcon DEBUG Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='list', build_base='build', ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], topological_order=False, names_only=False, paths_only=True, topological_graph=False, topological_graph_dot=False, topological_graph_density=False, topological_graph_legend=False, topological_graph_dot_cluster=False, topological_graph_dot_include_skipped=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7d6a179761a0>, verb_extension=<colcon_package_information.verb.list.ListVerb object at 0x7d6a17974730>, main=<bound method ListVerb.main of <colcon_package_information.verb.list.ListVerb object at 0x7d6a17974730>>)
+[1.239s] colcon.colcon_core.package_discovery Level 1 discover_packages(colcon_meta) check parameters
+[1.239s] colcon.colcon_core.package_discovery Level 1 discover_packages(recursive) check parameters
+[1.239s] colcon.colcon_core.package_discovery Level 1 discover_packages(ignore) check parameters
+[1.239s] colcon.colcon_core.package_discovery Level 1 discover_packages(path) check parameters
+[1.239s] colcon.colcon_core.package_discovery Level 1 discover_packages(recursive) discover
+[1.240s] colcon.colcon_core.package_discovery INFO Crawling recursively for packages in '/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving'
+[1.240s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving) by extensions ['ignore', 'ignore_ament_install']
+[1.240s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving) by extension 'ignore'
+[1.240s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving) by extension 'ignore_ament_install'
+[1.240s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving) by extensions ['colcon_pkg']
+[1.240s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving) by extension 'colcon_pkg'
+[1.240s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving) by extensions ['colcon_meta']
+[1.240s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving) by extension 'colcon_meta'
+[1.241s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving) by extensions ['ros']
+[1.241s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving) by extension 'ros'
+[1.274s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving) by extensions ['cmake', 'python']
+[1.275s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving) by extension 'cmake'
+[1.275s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving) by extension 'python'
+[1.275s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving) by extensions ['python_setup_py']
+[1.275s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving) by extension 'python_setup_py'
+[1.275s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/log) by extensions ['ignore', 'ignore_ament_install']
+[1.276s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/log) by extension 'ignore'
+[1.276s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/log) ignored
+[1.276s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src) by extensions ['ignore', 'ignore_ament_install']
+[1.276s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src) by extension 'ignore'
+[1.277s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src) by extension 'ignore_ament_install'
+[1.277s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src) by extensions ['colcon_pkg']
+[1.277s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src) by extension 'colcon_pkg'
+[1.277s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src) by extensions ['colcon_meta']
+[1.277s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src) by extension 'colcon_meta'
+[1.277s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src) by extensions ['ros']
+[1.277s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src) by extension 'ros'
+[1.277s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src) by extensions ['cmake', 'python']
+[1.278s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src) by extension 'cmake'
+[1.278s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src) by extension 'python'
+[1.278s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src) by extensions ['python_setup_py']
+[1.278s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src) by extension 'python_setup_py'
+[1.278s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/aruco_msgs) by extensions ['ignore', 'ignore_ament_install']
+[1.278s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/aruco_msgs) by extension 'ignore'
+[1.278s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/aruco_msgs) by extension 'ignore_ament_install'
+[1.279s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/aruco_msgs) by extensions ['colcon_pkg']
+[1.279s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/aruco_msgs) by extension 'colcon_pkg'
+[1.279s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/aruco_msgs) by extensions ['colcon_meta']
+[1.279s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/aruco_msgs) by extension 'colcon_meta'
+[1.279s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/aruco_msgs) by extensions ['ros']
+[1.279s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/aruco_msgs) by extension 'ros'
+[1.286s] colcon.colcon_core.package_identification DEBUG Package '/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/aruco_msgs' with type 'ros.ament_cmake' and name 'aruco_msgs'
+[1.287s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/aruco_yolo) by extensions ['ignore', 'ignore_ament_install']
+[1.287s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/aruco_yolo) by extension 'ignore'
+[1.287s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/aruco_yolo) by extension 'ignore_ament_install'
+[1.287s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/aruco_yolo) by extensions ['colcon_pkg']
+[1.288s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/aruco_yolo) by extension 'colcon_pkg'
+[1.288s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/aruco_yolo) by extensions ['colcon_meta']
+[1.288s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/aruco_yolo) by extension 'colcon_meta'
+[1.288s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/aruco_yolo) by extensions ['ros']
+[1.288s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/aruco_yolo) by extension 'ros'
+[1.292s] colcon.colcon_core.package_identification DEBUG Package '/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/aruco_yolo' with type 'ros.ament_python' and name 'aruco_yolo'
+[1.293s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/ld08_driver) by extensions ['ignore', 'ignore_ament_install']
+[1.293s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/ld08_driver) by extension 'ignore'
+[1.293s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/ld08_driver) by extension 'ignore_ament_install'
+[1.293s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/ld08_driver) by extensions ['colcon_pkg']
+[1.293s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/ld08_driver) by extension 'colcon_pkg'
+[1.293s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/ld08_driver) by extensions ['colcon_meta']
+[1.293s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/ld08_driver) by extension 'colcon_meta'
+[1.294s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/ld08_driver) by extensions ['ros']
+[1.294s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/ld08_driver) by extension 'ros'
+[1.295s] colcon.colcon_core.package_identification DEBUG Package '/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/ld08_driver' with type 'ros.ament_cmake' and name 'ld08_driver'
+[1.296s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_autorace_camera) by extensions ['ignore', 'ignore_ament_install']
+[1.296s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_autorace_camera) by extension 'ignore'
+[1.296s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_autorace_camera) by extension 'ignore_ament_install'
+[1.296s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_autorace_camera) by extensions ['colcon_pkg']
+[1.296s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_autorace_camera) by extension 'colcon_pkg'
+[1.296s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_autorace_camera) by extensions ['colcon_meta']
+[1.297s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_autorace_camera) by extension 'colcon_meta'
+[1.297s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_autorace_camera) by extensions ['ros']
+[1.297s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_autorace_camera) by extension 'ros'
+[1.299s] colcon.colcon_core.package_identification DEBUG Package '/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_autorace_camera' with type 'ros.ament_python' and name 'turtlebot3_autorace_camera'
+[1.299s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_autorace_detect) by extensions ['ignore', 'ignore_ament_install']
+[1.299s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_autorace_detect) by extension 'ignore'
+[1.299s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_autorace_detect) by extension 'ignore_ament_install'
+[1.299s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_autorace_detect) by extensions ['colcon_pkg']
+[1.299s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_autorace_detect) by extension 'colcon_pkg'
+[1.300s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_autorace_detect) by extensions ['colcon_meta']
+[1.300s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_autorace_detect) by extension 'colcon_meta'
+[1.300s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_autorace_detect) by extensions ['ros']
+[1.300s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_autorace_detect) by extension 'ros'
+[1.302s] colcon.colcon_core.package_identification DEBUG Package '/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_autorace_detect' with type 'ros.ament_python' and name 'turtlebot3_autorace_detect'
+[1.302s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_autorace_driving) by extensions ['ignore', 'ignore_ament_install']
+[1.302s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_autorace_driving) by extension 'ignore'
+[1.302s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_autorace_driving) by extension 'ignore_ament_install'
+[1.303s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_autorace_driving) by extensions ['colcon_pkg']
+[1.303s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_autorace_driving) by extension 'colcon_pkg'
+[1.303s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_autorace_driving) by extensions ['colcon_meta']
+[1.303s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_autorace_driving) by extension 'colcon_meta'
+[1.303s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_autorace_driving) by extensions ['ros']
+[1.303s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_autorace_driving) by extension 'ros'
+[1.305s] colcon.colcon_core.package_identification DEBUG Package '/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_autorace_driving' with type 'ros.ament_python' and name 'turtlebot3_autorace_driving'
+[1.305s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_autorace_tracking) by extensions ['ignore', 'ignore_ament_install']
+[1.306s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_autorace_tracking) by extension 'ignore'
+[1.306s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_autorace_tracking) by extension 'ignore_ament_install'
+[1.306s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_autorace_tracking) by extensions ['colcon_pkg']
+[1.306s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_autorace_tracking) by extension 'colcon_pkg'
+[1.306s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_autorace_tracking) by extensions ['colcon_meta']
+[1.306s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_autorace_tracking) by extension 'colcon_meta'
+[1.306s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_autorace_tracking) by extensions ['ros']
+[1.306s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_autorace_tracking) by extension 'ros'
+[1.308s] colcon.colcon_core.package_identification DEBUG Package '/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_autorace_tracking' with type 'ros.ament_python' and name 'turtlebot3_autorace_tracking'
+[1.309s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_manipulation) by extensions ['ignore', 'ignore_ament_install']
+[1.309s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_manipulation) by extension 'ignore'
+[1.309s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_manipulation) by extension 'ignore_ament_install'
+[1.309s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_manipulation) by extensions ['colcon_pkg']
+[1.309s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_manipulation) by extension 'colcon_pkg'
+[1.309s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_manipulation) by extensions ['colcon_meta']
+[1.309s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_manipulation) by extension 'colcon_meta'
+[1.310s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_manipulation) by extensions ['ros']
+[1.310s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_manipulation) by extension 'ros'
+[1.310s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_manipulation) by extensions ['cmake', 'python']
+[1.310s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_manipulation) by extension 'cmake'
+[1.310s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_manipulation) by extension 'python'
+[1.310s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_manipulation) by extensions ['python_setup_py']
+[1.310s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_manipulation) by extension 'python_setup_py'
+[1.310s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_manipulation/turtlebot3_manipulation) by extensions ['ignore', 'ignore_ament_install']
+[1.311s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_manipulation/turtlebot3_manipulation) by extension 'ignore'
+[1.311s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_manipulation/turtlebot3_manipulation) by extension 'ignore_ament_install'
+[1.311s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_manipulation/turtlebot3_manipulation) by extensions ['colcon_pkg']
+[1.311s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_manipulation/turtlebot3_manipulation) by extension 'colcon_pkg'
+[1.311s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_manipulation/turtlebot3_manipulation) by extensions ['colcon_meta']
+[1.311s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_manipulation/turtlebot3_manipulation) by extension 'colcon_meta'
+[1.311s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_manipulation/turtlebot3_manipulation) by extensions ['ros']
+[1.311s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_manipulation/turtlebot3_manipulation) by extension 'ros'
+[1.313s] colcon.colcon_core.package_identification DEBUG Package '/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_manipulation/turtlebot3_manipulation' with type 'ros.ament_cmake' and name 'turtlebot3_manipulation'
+[1.314s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_manipulation/turtlebot3_manipulation_bringup) by extensions ['ignore', 'ignore_ament_install']
+[1.314s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_manipulation/turtlebot3_manipulation_bringup) by extension 'ignore'
+[1.314s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_manipulation/turtlebot3_manipulation_bringup) by extension 'ignore_ament_install'
+[1.314s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_manipulation/turtlebot3_manipulation_bringup) by extensions ['colcon_pkg']
+[1.314s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_manipulation/turtlebot3_manipulation_bringup) by extension 'colcon_pkg'
+[1.314s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_manipulation/turtlebot3_manipulation_bringup) by extensions ['colcon_meta']
+[1.314s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_manipulation/turtlebot3_manipulation_bringup) by extension 'colcon_meta'
+[1.315s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_manipulation/turtlebot3_manipulation_bringup) by extensions ['ros']
+[1.315s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_manipulation/turtlebot3_manipulation_bringup) by extension 'ros'
+[1.316s] colcon.colcon_core.package_identification DEBUG Package '/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_manipulation/turtlebot3_manipulation_bringup' with type 'ros.ament_cmake' and name 'turtlebot3_manipulation_bringup'
+[1.316s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_manipulation/turtlebot3_manipulation_description) by extensions ['ignore', 'ignore_ament_install']
+[1.317s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_manipulation/turtlebot3_manipulation_description) by extension 'ignore'
+[1.317s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_manipulation/turtlebot3_manipulation_description) by extension 'ignore_ament_install'
+[1.317s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_manipulation/turtlebot3_manipulation_description) by extensions ['colcon_pkg']
+[1.317s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_manipulation/turtlebot3_manipulation_description) by extension 'colcon_pkg'
+[1.317s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_manipulation/turtlebot3_manipulation_description) by extensions ['colcon_meta']
+[1.317s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_manipulation/turtlebot3_manipulation_description) by extension 'colcon_meta'
+[1.317s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_manipulation/turtlebot3_manipulation_description) by extensions ['ros']
+[1.317s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_manipulation/turtlebot3_manipulation_description) by extension 'ros'
+[1.319s] colcon.colcon_core.package_identification DEBUG Package '/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_manipulation/turtlebot3_manipulation_description' with type 'ros.ament_cmake' and name 'turtlebot3_manipulation_description'
+[1.319s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_manipulation/turtlebot3_manipulation_hardware) by extensions ['ignore', 'ignore_ament_install']
+[1.319s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_manipulation/turtlebot3_manipulation_hardware) by extension 'ignore'
+[1.319s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_manipulation/turtlebot3_manipulation_hardware) by extension 'ignore_ament_install'
+[1.320s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_manipulation/turtlebot3_manipulation_hardware) by extensions ['colcon_pkg']
+[1.320s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_manipulation/turtlebot3_manipulation_hardware) by extension 'colcon_pkg'
+[1.320s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_manipulation/turtlebot3_manipulation_hardware) by extensions ['colcon_meta']
+[1.320s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_manipulation/turtlebot3_manipulation_hardware) by extension 'colcon_meta'
+[1.320s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_manipulation/turtlebot3_manipulation_hardware) by extensions ['ros']
+[1.320s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_manipulation/turtlebot3_manipulation_hardware) by extension 'ros'
+[1.322s] colcon.colcon_core.package_identification DEBUG Package '/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_manipulation/turtlebot3_manipulation_hardware' with type 'ros.ament_cmake' and name 'turtlebot3_manipulation_hardware'
+[1.323s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_manipulation/turtlebot3_manipulation_moveit_config) by extensions ['ignore', 'ignore_ament_install']
+[1.323s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_manipulation/turtlebot3_manipulation_moveit_config) by extension 'ignore'
+[1.323s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_manipulation/turtlebot3_manipulation_moveit_config) by extension 'ignore_ament_install'
+[1.323s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_manipulation/turtlebot3_manipulation_moveit_config) by extensions ['colcon_pkg']
+[1.323s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_manipulation/turtlebot3_manipulation_moveit_config) by extension 'colcon_pkg'
+[1.323s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_manipulation/turtlebot3_manipulation_moveit_config) by extensions ['colcon_meta']
+[1.323s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_manipulation/turtlebot3_manipulation_moveit_config) by extension 'colcon_meta'
+[1.323s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_manipulation/turtlebot3_manipulation_moveit_config) by extensions ['ros']
+[1.323s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_manipulation/turtlebot3_manipulation_moveit_config) by extension 'ros'
+[1.325s] colcon.colcon_core.package_identification DEBUG Package '/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_manipulation/turtlebot3_manipulation_moveit_config' with type 'ros.ament_cmake' and name 'turtlebot3_manipulation_moveit_config'
+[1.325s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_manipulation/turtlebot3_manipulation_teleop) by extensions ['ignore', 'ignore_ament_install']
+[1.326s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_manipulation/turtlebot3_manipulation_teleop) by extension 'ignore'
+[1.326s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_manipulation/turtlebot3_manipulation_teleop) by extension 'ignore_ament_install'
+[1.326s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_manipulation/turtlebot3_manipulation_teleop) by extensions ['colcon_pkg']
+[1.326s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_manipulation/turtlebot3_manipulation_teleop) by extension 'colcon_pkg'
+[1.326s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_manipulation/turtlebot3_manipulation_teleop) by extensions ['colcon_meta']
+[1.326s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_manipulation/turtlebot3_manipulation_teleop) by extension 'colcon_meta'
+[1.326s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_manipulation/turtlebot3_manipulation_teleop) by extensions ['ros']
+[1.326s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_manipulation/turtlebot3_manipulation_teleop) by extension 'ros'
+[1.329s] colcon.colcon_core.package_identification DEBUG Package '/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_manipulation/turtlebot3_manipulation_teleop' with type 'ros.ament_cmake' and name 'turtlebot3_manipulation_teleop'
+[1.330s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_msgs) by extensions ['ignore', 'ignore_ament_install']
+[1.330s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_msgs) by extension 'ignore'
+[1.330s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_msgs) by extension 'ignore_ament_install'
+[1.330s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_msgs) by extensions ['colcon_pkg']
+[1.330s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_msgs) by extension 'colcon_pkg'
+[1.330s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_msgs) by extensions ['colcon_meta']
+[1.330s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_msgs) by extension 'colcon_meta'
+[1.331s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_msgs) by extensions ['ros']
+[1.331s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_msgs) by extension 'ros'
+[1.333s] colcon.colcon_core.package_identification DEBUG Package '/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_msgs' with type 'ros.ament_cmake' and name 'turtlebot3_msgs'
+[1.333s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_teleop) by extensions ['ignore', 'ignore_ament_install']
+[1.333s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_teleop) by extension 'ignore'
+[1.334s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_teleop) by extension 'ignore_ament_install'
+[1.334s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_teleop) by extensions ['colcon_pkg']
+[1.334s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_teleop) by extension 'colcon_pkg'
+[1.334s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_teleop) by extensions ['colcon_meta']
+[1.334s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_teleop) by extension 'colcon_meta'
+[1.334s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_teleop) by extensions ['ros']
+[1.334s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_teleop) by extension 'ros'
+[1.336s] colcon.colcon_core.package_identification DEBUG Package '/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot3_teleop' with type 'ros.ament_python' and name 'turtlebot3_teleop'
+[1.336s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot_cosmo_interface) by extensions ['ignore', 'ignore_ament_install']
+[1.336s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot_cosmo_interface) by extension 'ignore'
+[1.336s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot_cosmo_interface) by extension 'ignore_ament_install'
+[1.336s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot_cosmo_interface) by extensions ['colcon_pkg']
+[1.336s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot_cosmo_interface) by extension 'colcon_pkg'
+[1.336s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot_cosmo_interface) by extensions ['colcon_meta']
+[1.336s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot_cosmo_interface) by extension 'colcon_meta'
+[1.337s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot_cosmo_interface) by extensions ['ros']
+[1.337s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot_cosmo_interface) by extension 'ros'
+[1.337s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot_cosmo_interface) by extensions ['cmake', 'python']
+[1.337s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot_cosmo_interface) by extension 'cmake'
+[1.337s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot_cosmo_interface) by extension 'python'
+[1.337s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot_cosmo_interface) by extensions ['python_setup_py']
+[1.337s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot_cosmo_interface) by extension 'python_setup_py'
+[1.337s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot_cosmo_interface/turtlebot_cosmo_interface) by extensions ['ignore', 'ignore_ament_install']
+[1.337s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot_cosmo_interface/turtlebot_cosmo_interface) by extension 'ignore'
+[1.338s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot_cosmo_interface/turtlebot_cosmo_interface) by extension 'ignore_ament_install'
+[1.338s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot_cosmo_interface/turtlebot_cosmo_interface) by extensions ['colcon_pkg']
+[1.338s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot_cosmo_interface/turtlebot_cosmo_interface) by extension 'colcon_pkg'
+[1.338s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot_cosmo_interface/turtlebot_cosmo_interface) by extensions ['colcon_meta']
+[1.338s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot_cosmo_interface/turtlebot_cosmo_interface) by extension 'colcon_meta'
+[1.338s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot_cosmo_interface/turtlebot_cosmo_interface) by extensions ['ros']
+[1.338s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot_cosmo_interface/turtlebot_cosmo_interface) by extension 'ros'
+[1.340s] colcon.colcon_core.package_identification DEBUG Package '/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot_cosmo_interface/turtlebot_cosmo_interface' with type 'ros.ament_cmake' and name 'turtlebot_cosmo_interface'
+[1.340s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot_moveit) by extensions ['ignore', 'ignore_ament_install']
+[1.340s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot_moveit) by extension 'ignore'
+[1.341s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot_moveit) by extension 'ignore_ament_install'
+[1.341s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot_moveit) by extensions ['colcon_pkg']
+[1.341s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot_moveit) by extension 'colcon_pkg'
+[1.341s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot_moveit) by extensions ['colcon_meta']
+[1.341s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot_moveit) by extension 'colcon_meta'
+[1.341s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot_moveit) by extensions ['ros']
+[1.341s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot_moveit) by extension 'ros'
+[1.342s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot_moveit) by extensions ['cmake', 'python']
+[1.342s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot_moveit) by extension 'cmake'
+[1.342s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot_moveit) by extension 'python'
+[1.342s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot_moveit) by extensions ['python_setup_py']
+[1.342s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot_moveit) by extension 'python_setup_py'
+[1.342s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot_moveit/turtlebot_moveit) by extensions ['ignore', 'ignore_ament_install']
+[1.343s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot_moveit/turtlebot_moveit) by extension 'ignore'
+[1.343s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot_moveit/turtlebot_moveit) by extension 'ignore_ament_install'
+[1.343s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot_moveit/turtlebot_moveit) by extensions ['colcon_pkg']
+[1.343s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot_moveit/turtlebot_moveit) by extension 'colcon_pkg'
+[1.343s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot_moveit/turtlebot_moveit) by extensions ['colcon_meta']
+[1.343s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot_moveit/turtlebot_moveit) by extension 'colcon_meta'
+[1.343s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot_moveit/turtlebot_moveit) by extensions ['ros']
+[1.343s] colcon.colcon_core.package_identification Level 1 _identify(/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot_moveit/turtlebot_moveit) by extension 'ros'
+[1.346s] colcon.colcon_core.package_identification DEBUG Package '/home/hyeongyeon/rokey_project/Rokey/Lane_tracking_auto_driving/src/turtlebot_moveit/turtlebot_moveit' with type 'ros.ament_cmake' and name 'turtlebot_moveit'
+[1.346s] colcon.colcon_core.package_discovery Level 1 discover_packages(recursive) using defaults

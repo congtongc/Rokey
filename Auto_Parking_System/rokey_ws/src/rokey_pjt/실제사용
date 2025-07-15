@@ -1,0 +1,13 @@
+실제로 사용하는거
+노션 https://rainy-cream-352.notion.site/_-1fb450ef7c598037ba7fe0880210baa2
+roboflow dataset https://app.roboflow.com/rokeyproject-4
+
+주차공간(yolo + depth) -> 320_v8n.pt , train , yolo_detect
+TF -> detect_ps_front
+번호판(yolo+ocr) -> best_320.pt, yolo_train.ipynb ,detect_car_info2
+gui ->user_gui.zip
+입차 -> sc_follow_waypoints2_1
+출차 -> sc_follow_waypoints
+
+
+
