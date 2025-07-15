@@ -454,7 +454,9 @@ Auto_Parking_System/
 
 ## 시연 영상
 
-
-
+https://github.com/user-attachments/assets/dfe98948-bdc4-467c-b10e-18c7f8d68f58
 
 ## 설명 자료
+
+[Auto_Parking_Sys.pdf](https://github.com/user-attachments/files/21227569/Auto_Parking_Sys.pdf)
+
