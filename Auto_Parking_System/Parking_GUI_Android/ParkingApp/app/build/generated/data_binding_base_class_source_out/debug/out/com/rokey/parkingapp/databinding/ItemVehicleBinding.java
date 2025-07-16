@@ -4,6 +4,7 @@ package com.rokey.parkingapp.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -20,6 +21,9 @@ public final class ItemVehicleBinding implements ViewBinding {
   private final MaterialCardView rootView;
 
   @NonNull
+  public final ImageView ivCarTypeIcon;
+
+  @NonNull
   public final TextView tvCarType;
 
   @NonNull
@@ -31,10 +35,11 @@ public final class ItemVehicleBinding implements ViewBinding {
   @NonNull
   public final TextView tvLocation;
 
-  private ItemVehicleBinding(@NonNull MaterialCardView rootView, @NonNull TextView tvCarType,
-      @NonNull TextView tvEntryTime, @NonNull TextView tvLicensePlate,
+  private ItemVehicleBinding(@NonNull MaterialCardView rootView, @NonNull ImageView ivCarTypeIcon,
+      @NonNull TextView tvCarType, @NonNull TextView tvEntryTime, @NonNull TextView tvLicensePlate,
       @NonNull TextView tvLocation) {
     this.rootView = rootView;
+    this.ivCarTypeIcon = ivCarTypeIcon;
     this.tvCarType = tvCarType;
     this.tvEntryTime = tvEntryTime;
     this.tvLicensePlate = tvLicensePlate;
@@ -68,6 +73,12 @@ public final class ItemVehicleBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.ivCarTypeIcon;
+      ImageView ivCarTypeIcon = ViewBindings.findChildViewById(rootView, id);
+      if (ivCarTypeIcon == null) {
+        break missingId;
+      }
+
       id = R.id.tvCarType;
       TextView tvCarType = ViewBindings.findChildViewById(rootView, id);
       if (tvCarType == null) {
@@ -92,8 +103,8 @@ public final class ItemVehicleBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ItemVehicleBinding((MaterialCardView) rootView, tvCarType, tvEntryTime,
-          tvLicensePlate, tvLocation);
+      return new ItemVehicleBinding((MaterialCardView) rootView, ivCarTypeIcon, tvCarType,
+          tvEntryTime, tvLicensePlate, tvLocation);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

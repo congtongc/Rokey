@@ -6,15 +6,17 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.webkit.WebView;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.appcompat.widget.SearchView;
+import androidx.cardview.widget.CardView;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
-import com.google.android.material.card.MaterialCardView;
+import com.google.android.material.textfield.TextInputEditText;
+import com.google.android.material.textfield.TextInputLayout;
 import com.rokey.parkingapp.R;
 import java.lang.NullPointerException;
 import java.lang.Override;
@@ -28,16 +30,19 @@ public final class FragmentExitBinding implements ViewBinding {
   public final Button btnExit;
 
   @NonNull
-  public final Button btnRefresh;
+  public final CardView cardSelectedVehicle;
 
   @NonNull
-  public final MaterialCardView cardSelectedVehicle;
+  public final TextInputEditText etSearch;
 
   @NonNull
-  public final SearchView etSearch;
+  public final ImageView ivCarTypeIcon;
 
   @NonNull
   public final RecyclerView rvParkedVehicles;
+
+  @NonNull
+  public final TextInputLayout tilSearch;
 
   @NonNull
   public final TextView tvCarType;
@@ -55,16 +60,18 @@ public final class FragmentExitBinding implements ViewBinding {
   public final WebView webViewCamera;
 
   private FragmentExitBinding(@NonNull ConstraintLayout rootView, @NonNull Button btnExit,
-      @NonNull Button btnRefresh, @NonNull MaterialCardView cardSelectedVehicle,
-      @NonNull SearchView etSearch, @NonNull RecyclerView rvParkedVehicles,
-      @NonNull TextView tvCarType, @NonNull TextView tvEntryTime, @NonNull TextView tvLicensePlate,
-      @NonNull TextView tvLocation, @NonNull WebView webViewCamera) {
+      @NonNull CardView cardSelectedVehicle, @NonNull TextInputEditText etSearch,
+      @NonNull ImageView ivCarTypeIcon, @NonNull RecyclerView rvParkedVehicles,
+      @NonNull TextInputLayout tilSearch, @NonNull TextView tvCarType,
+      @NonNull TextView tvEntryTime, @NonNull TextView tvLicensePlate, @NonNull TextView tvLocation,
+      @NonNull WebView webViewCamera) {
     this.rootView = rootView;
     this.btnExit = btnExit;
-    this.btnRefresh = btnRefresh;
     this.cardSelectedVehicle = cardSelectedVehicle;
     this.etSearch = etSearch;
+    this.ivCarTypeIcon = ivCarTypeIcon;
     this.rvParkedVehicles = rvParkedVehicles;
+    this.tilSearch = tilSearch;
     this.tvCarType = tvCarType;
     this.tvEntryTime = tvEntryTime;
     this.tvLicensePlate = tvLicensePlate;
@@ -105,27 +112,33 @@ public final class FragmentExitBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.btnRefresh;
-      Button btnRefresh = ViewBindings.findChildViewById(rootView, id);
-      if (btnRefresh == null) {
-        break missingId;
-      }
-
       id = R.id.cardSelectedVehicle;
-      MaterialCardView cardSelectedVehicle = ViewBindings.findChildViewById(rootView, id);
+      CardView cardSelectedVehicle = ViewBindings.findChildViewById(rootView, id);
       if (cardSelectedVehicle == null) {
         break missingId;
       }
 
       id = R.id.etSearch;
-      SearchView etSearch = ViewBindings.findChildViewById(rootView, id);
+      TextInputEditText etSearch = ViewBindings.findChildViewById(rootView, id);
       if (etSearch == null) {
+        break missingId;
+      }
+
+      id = R.id.ivCarTypeIcon;
+      ImageView ivCarTypeIcon = ViewBindings.findChildViewById(rootView, id);
+      if (ivCarTypeIcon == null) {
         break missingId;
       }
 
       id = R.id.rvParkedVehicles;
       RecyclerView rvParkedVehicles = ViewBindings.findChildViewById(rootView, id);
       if (rvParkedVehicles == null) {
+        break missingId;
+      }
+
+      id = R.id.tilSearch;
+      TextInputLayout tilSearch = ViewBindings.findChildViewById(rootView, id);
+      if (tilSearch == null) {
         break missingId;
       }
 
@@ -159,9 +172,9 @@ public final class FragmentExitBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentExitBinding((ConstraintLayout) rootView, btnExit, btnRefresh,
-          cardSelectedVehicle, etSearch, rvParkedVehicles, tvCarType, tvEntryTime, tvLicensePlate,
-          tvLocation, webViewCamera);
+      return new FragmentExitBinding((ConstraintLayout) rootView, btnExit, cardSelectedVehicle,
+          etSearch, ivCarTypeIcon, rvParkedVehicles, tilSearch, tvCarType, tvEntryTime,
+          tvLicensePlate, tvLocation, webViewCamera);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

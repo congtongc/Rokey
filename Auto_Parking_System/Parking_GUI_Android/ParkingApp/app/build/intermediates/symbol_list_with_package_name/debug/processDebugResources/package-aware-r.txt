@@ -3050,6 +3050,9 @@ drawable ic_call_answer_video_low
 drawable ic_call_decline
 drawable ic_call_decline_low
 drawable ic_camera_placeholder
+drawable ic_car_disabled
+drawable ic_car_ev
+drawable ic_car_normal
 drawable ic_clear_black_24
 drawable ic_clock_black_24dp
 drawable ic_keyboard_black_24dp
@@ -3237,8 +3240,8 @@ id bounceBoth
 id bounceEnd
 id bounceStart
 id btnExit
+id btnManualInput
 id btnPark
-id btnRefresh
 id btnRetry
 id buttonPanel
 id cache_measures
@@ -3326,6 +3329,7 @@ id endToStart
 id enterAlways
 id enterAlwaysCollapsed
 id errorView
+id etLicensePlate
 id etSearch
 id etServerAddress
 id exitUntilCollapsed
@@ -3382,11 +3386,11 @@ id inward
 id is_pooling_container_tag
 id italic
 id item_touch_helper_previous_elevation
+id ivCarTypeIcon
 id jumpToEnd
 id jumpToStart
 id labeled
 id layout
-id layoutRecognitionResult
 id left
 id leftToRight
 id legacy
@@ -3530,9 +3534,13 @@ id progress_circular
 id progress_horizontal
 id radio
 id ratio
+id rbDisabled
+id rbEv
+id rbNormal
 id rectangles
 id report_drawn
 id reverseSawtooth
+id rgCarType
 id right
 id rightToLeft
 id right_icon
@@ -3641,6 +3649,7 @@ id textinput_helper_text
 id textinput_placeholder
 id textinput_prefix_text
 id textinput_suffix_text
+id tilSearch
 id time
 id title
 id titleDividerNoCustom
@@ -3837,6 +3846,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout dialog_manual_input
 layout dialog_server_config
 layout fragment_exit
 layout fragment_home

@@ -43,18 +43,23 @@ class ExitViewModel : ViewModel() {
     fun loadParkedVehicles() {
         viewModelScope.launch {
             try {
+                Log.d(TAG, "주차된 차량 목록 로딩 시작")
                 when (val response = apiClient.getParkingStatus()) {
                     is ApiResponse.Success -> {
+                        Log.d(TAG, "주차장 상태 조회 성공: ${response.data}")
                         response.data.parkedVehicles?.let {
+                            Log.d(TAG, "주차된 차량 목록: $it")
                             _parkedVehicles.value = it
                             _errorMessage.value = null
                         }
                     }
                     is ApiResponse.Error -> {
+                        Log.e(TAG, "주차장 상태 조회 실패: ${response.message}")
                         _errorMessage.value = response.message
                     }
                 }
             } catch (e: Exception) {
+                Log.e(TAG, "주차된 차량 목록 로드 실패", e)
                 _errorMessage.value = "주차 차량 목록 로드 실패: ${e.message}"
             }
         }
@@ -72,22 +77,10 @@ class ExitViewModel : ViewModel() {
                     try {
                         val response = apiClient.getCameraFrame()
                         _cameraStream.value = response
-                        _errorMessage.value = null
                         delay(100) // 100ms 딜레이로 프레임 레이트 조절
                     } catch (e: Exception) {
-                        val errorMsg = when (e) {
-                            is java.net.UnknownHostException -> "서버에 연결할 수 없습니다"
-                            is java.net.ConnectException -> "서버 연결이 거부되었습니다"
-                            is java.net.SocketTimeoutException -> "서버 응답 시간이 초과되었습니다"
-                            else -> when {
-                                e.message?.contains("404") == true -> "카메라 스트림을 찾을 수 없습니다. 카메라가 연결되어 있는지 확인해주세요."
-                                else -> "카메라 스트림 오류: ${e.message}"
-                            }
-                        }
-                        _errorMessage.value = errorMsg
-                        _isStreaming.value = false
+                        // 카메라 스트림 에러는 무시
                         delay(3000) // 에러 발생 시 3초 대기 후 재시도
-                        _isStreaming.value = true
                     }
                 }
             } finally {
@@ -135,6 +128,39 @@ class ExitViewModel : ViewModel() {
         }
     }
 
+    fun searchVehicles(query: String) {
+        if (query.length != 4) {
+            _matchingVehicles.value = emptyList()
+            return
+        }
+
+        Log.d(TAG, "차량 검색 시작 - 검색어: $query")
+        val currentList = _parkedVehicles.value ?: return
+        Log.d(TAG, "현재 주차된 차량 목록: $currentList")
+        
+        val filteredList = currentList.filter { vehicle ->
+            vehicle.license_plate.endsWith(query)
+        }
+        Log.d(TAG, "검색 결과: $filteredList")
+        
+        _matchingVehicles.value = filteredList
+        when {
+            filteredList.isEmpty() -> {
+                _errorMessage.value = "일치하는 차량이 없습니다."
+            }
+            filteredList.size == 1 -> {
+                showSingleVehicleConfirmation(filteredList.first())
+            }
+            else -> {
+                _errorMessage.value = null
+            }
+        }
+    }
+
+    private fun showSingleVehicleConfirmation(vehicle: ParkedVehicle) {
+        _selectedVehicle.value = vehicle
+    }
+
     fun exitVehicle(vehicle: ParkedVehicle) {
         viewModelScope.launch {
             try {
@@ -145,6 +171,7 @@ class ExitViewModel : ViewModel() {
                     is ApiResponse.Success -> {
                         _exitResult.value = response.data
                         _selectedVehicle.value = null
+                        _matchingVehicles.value = emptyList()
                         loadParkedVehicles() // 목록 갱신
                         _errorMessage.value = null
                     }
@@ -156,21 +183,6 @@ class ExitViewModel : ViewModel() {
                 _errorMessage.value = "출차 처리 실패: ${e.message}"
             }
         }
-    }
-
-    fun searchVehicles(query: String) {
-        val currentList = _parkedVehicles.value ?: return
-        if (query.isBlank()) {
-            loadParkedVehicles()
-            return
-        }
-        
-        val filteredList = currentList.filter { vehicle ->
-            vehicle.license_plate.contains(query, ignoreCase = true) ||
-            vehicle.car_type.contains(query, ignoreCase = true) ||
-            vehicle.location.contains(query, ignoreCase = true)
-        }
-        _parkedVehicles.value = filteredList
     }
 
     override fun onCleared() {

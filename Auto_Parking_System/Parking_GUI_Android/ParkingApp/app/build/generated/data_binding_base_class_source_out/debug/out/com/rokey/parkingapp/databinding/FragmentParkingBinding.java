@@ -6,7 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.webkit.WebView;
 import android.widget.Button;
-import android.widget.LinearLayout;
+import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -24,13 +24,16 @@ public final class FragmentParkingBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
+  public final Button btnManualInput;
+
+  @NonNull
   public final Button btnPark;
 
   @NonNull
   public final MaterialCardView cardInfo;
 
   @NonNull
-  public final LinearLayout layoutRecognitionResult;
+  public final ImageView ivCarTypeIcon;
 
   @NonNull
   public final TextView tvCarType;
@@ -50,14 +53,15 @@ public final class FragmentParkingBinding implements ViewBinding {
   @NonNull
   public final WebView webViewCamera;
 
-  private FragmentParkingBinding(@NonNull ConstraintLayout rootView, @NonNull Button btnPark,
-      @NonNull MaterialCardView cardInfo, @NonNull LinearLayout layoutRecognitionResult,
+  private FragmentParkingBinding(@NonNull ConstraintLayout rootView, @NonNull Button btnManualInput,
+      @NonNull Button btnPark, @NonNull MaterialCardView cardInfo, @NonNull ImageView ivCarTypeIcon,
       @NonNull TextView tvCarType, @NonNull TextView tvError, @NonNull TextView tvLicensePlate,
       @NonNull TextView tvLocation, @NonNull TextView tvTitle, @NonNull WebView webViewCamera) {
     this.rootView = rootView;
+    this.btnManualInput = btnManualInput;
     this.btnPark = btnPark;
     this.cardInfo = cardInfo;
-    this.layoutRecognitionResult = layoutRecognitionResult;
+    this.ivCarTypeIcon = ivCarTypeIcon;
     this.tvCarType = tvCarType;
     this.tvError = tvError;
     this.tvLicensePlate = tvLicensePlate;
@@ -93,6 +97,12 @@ public final class FragmentParkingBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.btnManualInput;
+      Button btnManualInput = ViewBindings.findChildViewById(rootView, id);
+      if (btnManualInput == null) {
+        break missingId;
+      }
+
       id = R.id.btnPark;
       Button btnPark = ViewBindings.findChildViewById(rootView, id);
       if (btnPark == null) {
@@ -105,9 +115,9 @@ public final class FragmentParkingBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.layoutRecognitionResult;
-      LinearLayout layoutRecognitionResult = ViewBindings.findChildViewById(rootView, id);
-      if (layoutRecognitionResult == null) {
+      id = R.id.ivCarTypeIcon;
+      ImageView ivCarTypeIcon = ViewBindings.findChildViewById(rootView, id);
+      if (ivCarTypeIcon == null) {
         break missingId;
       }
 
@@ -147,8 +157,8 @@ public final class FragmentParkingBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentParkingBinding((ConstraintLayout) rootView, btnPark, cardInfo,
-          layoutRecognitionResult, tvCarType, tvError, tvLicensePlate, tvLocation, tvTitle,
+      return new FragmentParkingBinding((ConstraintLayout) rootView, btnManualInput, btnPark,
+          cardInfo, ivCarTypeIcon, tvCarType, tvError, tvLicensePlate, tvLocation, tvTitle,
           webViewCamera);
     }
     String missingId = rootView.getResources().getResourceName(id);

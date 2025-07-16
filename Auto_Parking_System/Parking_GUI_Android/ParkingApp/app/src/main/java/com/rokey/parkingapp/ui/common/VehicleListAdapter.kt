@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.rokey.parkingapp.databinding.ItemVehicleBinding
 import com.rokey.parkingapp.network.ParkedVehicle
+import com.rokey.parkingapp.R
 
 class VehicleListAdapter(
     private val onItemClick: (ParkedVehicle) -> Unit
@@ -42,7 +43,18 @@ class VehicleListAdapter(
         fun bind(vehicle: ParkedVehicle) {
             with(binding) {
                 tvLicensePlate.text = vehicle.license_plate
-                tvCarType.text = vehicle.car_type
+                
+                // 차량 타입 설정
+                val (displayText, iconRes) = when(vehicle.car_type.lowercase()) {
+                    "normal" -> "일반 차량" to R.drawable.ic_car_normal
+                    "ev" -> "전기 차량" to R.drawable.ic_car_ev
+                    "disabled" -> "장애인 차량" to R.drawable.ic_car_disabled
+                    else -> "일반 차량" to R.drawable.ic_car_normal
+                }
+                
+                tvCarType.text = displayText
+                ivCarTypeIcon.setImageResource(iconRes)
+                
                 tvLocation.text = vehicle.location
                 tvEntryTime.text = vehicle.time
             }

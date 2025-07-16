@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android">
-    <data>
-        <!-- ViewModel, 변수 등 선언 가능 -->
-    </data>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -11,6 +9,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="16dp">
+
             <TextView
                 android:id="@+id/tv_parking_title"
                 android:layout_width="wrap_content"
@@ -20,37 +19,107 @@
                 android:textStyle="bold"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginBottom="24dp"/>
-            <EditText
-                android:id="@+id/textLicensePlate"
+
+            <!-- OCR 결과 표시 영역 -->
+            <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="차량번호 입력"
-                android:layout_marginBottom="8dp"/>
-            <EditText
-                android:id="@+id/textCarType"
+                android:layout_marginBottom="16dp"
+                app:cardElevation="2dp"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="차량 번호 인식"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="8dp"/>
+
+                    <TextView
+                        android:id="@+id/textLicensePlate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:layout_marginBottom="8dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/tvCarType"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textSize="16sp"
+                            android:visibility="visible"/>
+
+                        <ImageView
+                            android:id="@+id/ivCarTypeIcon"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_marginStart="8dp"
+                            android:visibility="visible"
+                            android:contentDescription="차량 타입 아이콘"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- 수동 입력 버튼 -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnManualType"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="차량타입 입력"
-                android:layout_marginBottom="8dp"/>
-            <EditText
-                android:id="@+id/textParkingLocation"
+                android:text="수동 입력"
+                android:layout_marginBottom="16dp"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"/>
+
+            <!-- 주차 위치 입력 -->
+            <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="주차 위치 입력"
-                android:layout_marginBottom="8dp"/>
+                android:hint="주차 위치"
+                android:layout_marginBottom="16dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/textParkingLocation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- 카메라 스트림 -->
             <ImageView
                 android:id="@+id/imageCamera"
                 android:layout_width="match_parent"
                 android:layout_height="180dp"
-                android:src="@mipmap/ic_launcher"
                 android:scaleType="centerCrop"
                 android:layout_marginBottom="8dp"/>
-            <Button
+
+            <TextView
+                android:id="@+id/tvCameraError"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/holo_red_dark"
+                android:gravity="center"
+                android:visibility="gone"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- 주차 버튼 -->
+            <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnPark"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="입차 처리"
-                android:layout_marginBottom="16dp"/>
+                android:text="입차 처리"/>
+
         </LinearLayout>
     </ScrollView>
 </layout> 

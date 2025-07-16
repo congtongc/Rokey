@@ -247,6 +247,21 @@ class ApiClient private constructor(context: Context) {
         }
     }
 
+    suspend fun getStream(): ApiResponse<String> {
+        return try {
+            val response = apiService.getCameraStream()
+            if (response.isSuccessful) {
+                response.body()?.data?.let { 
+                    ApiResponse.Success("data:image/jpeg;base64," + android.util.Base64.encodeToString(it, android.util.Base64.DEFAULT))
+                } ?: ApiResponse.Error("카메라 프레임이 없습니다")
+            } else {
+                ApiResponse.Error("서버 오류: ${response.code()}")
+            }
+        } catch (e: Exception) {
+            ApiResponse.Error(e.message ?: "알 수 없는 오류")
+        }
+    }
+
     suspend fun getCameraFrame(): String {
         return try {
             val response = apiService.getCameraStream()

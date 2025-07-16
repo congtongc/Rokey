@@ -24,6 +24,10 @@
         "source": "/home/hyeongyeon/.gradle/daemon/8.12/com.rokey.parkingapp-main-60:/mipmap-xhdpi/ic_launcher_round.png"
     },
     {
+        "merged": "/home/hyeongyeon/.gradle/daemon/8.12/com.rokey.parkingapp-debug-58:/drawable_ic_car_normal.xml.flat",
+        "source": "/home/hyeongyeon/.gradle/daemon/8.12/com.rokey.parkingapp-main-60:/drawable/ic_car_normal.xml"
+    },
+    {
         "merged": "/home/hyeongyeon/.gradle/daemon/8.12/com.rokey.parkingapp-debug-58:/layout_fragment_home.xml.flat",
         "source": "/home/hyeongyeon/.gradle/daemon/8.12/com.rokey.parkingapp-main-60:/layout/fragment_home.xml"
     },
@@ -36,20 +40,24 @@
         "source": "/home/hyeongyeon/.gradle/daemon/8.12/com.rokey.parkingapp-main-60:/mipmap-xxxhdpi/ic_launcher.png"
     },
     {
-        "merged": "/home/hyeongyeon/.gradle/daemon/8.12/com.rokey.parkingapp-debug-58:/mipmap-xxhdpi_ic_launcher_round.png.flat",
-        "source": "/home/hyeongyeon/.gradle/daemon/8.12/com.rokey.parkingapp-main-60:/mipmap-xxhdpi/ic_launcher_round.png"
+        "merged": "/home/hyeongyeon/.gradle/daemon/8.12/com.rokey.parkingapp-debug-58:/drawable_bg_edittext_round.xml.flat",
+        "source": "/home/hyeongyeon/.gradle/daemon/8.12/com.rokey.parkingapp-main-60:/drawable/bg_edittext_round.xml"
     },
     {
         "merged": "/home/hyeongyeon/.gradle/daemon/8.12/com.rokey.parkingapp-debug-58:/layout_activity_main.xml.flat",
         "source": "/home/hyeongyeon/.gradle/daemon/8.12/com.rokey.parkingapp-main-60:/layout/activity_main.xml"
     },
     {
-        "merged": "/home/hyeongyeon/.gradle/daemon/8.12/com.rokey.parkingapp-debug-58:/drawable_bg_edittext_round.xml.flat",
-        "source": "/home/hyeongyeon/.gradle/daemon/8.12/com.rokey.parkingapp-main-60:/drawable/bg_edittext_round.xml"
+        "merged": "/home/hyeongyeon/.gradle/daemon/8.12/com.rokey.parkingapp-debug-58:/mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "/home/hyeongyeon/.gradle/daemon/8.12/com.rokey.parkingapp-main-60:/mipmap-xxhdpi/ic_launcher_round.png"
     },
     {
         "merged": "/home/hyeongyeon/.gradle/daemon/8.12/com.rokey.parkingapp-debug-58:/layout_item_parked_vehicle.xml.flat",
         "source": "/home/hyeongyeon/.gradle/daemon/8.12/com.rokey.parkingapp-main-60:/layout/item_parked_vehicle.xml"
+    },
+    {
+        "merged": "com.rokey.parkingapp-debug-58:/layout_fragment_exit.xml.flat",
+        "source": "com.rokey.parkingapp-main-60:/layout/fragment_exit.xml"
     },
     {
         "merged": "/home/hyeongyeon/.gradle/daemon/8.12/com.rokey.parkingapp-debug-58:/navigation_mobile_navigation.xml.flat",
@@ -60,6 +68,14 @@
         "source": "/home/hyeongyeon/.gradle/daemon/8.12/com.rokey.parkingapp-main-60:/mipmap-mdpi/ic_launcher.png"
     },
     {
+        "merged": "/home/hyeongyeon/.gradle/daemon/8.12/com.rokey.parkingapp-debug-58:/drawable_ic_car_ev.xml.flat",
+        "source": "/home/hyeongyeon/.gradle/daemon/8.12/com.rokey.parkingapp-main-60:/drawable/ic_car_ev.xml"
+    },
+    {
+        "merged": "/home/hyeongyeon/.gradle/daemon/8.12/com.rokey.parkingapp-debug-58:/drawable_ic_car_disabled.xml.flat",
+        "source": "/home/hyeongyeon/.gradle/daemon/8.12/com.rokey.parkingapp-main-60:/drawable/ic_car_disabled.xml"
+    },
+    {
         "merged": "/home/hyeongyeon/.gradle/daemon/8.12/com.rokey.parkingapp-debug-58:/mipmap-xxxhdpi_ic_launcher_round.png.flat",
         "source": "/home/hyeongyeon/.gradle/daemon/8.12/com.rokey.parkingapp-main-60:/mipmap-xxxhdpi/ic_launcher_round.png"
     },
@@ -68,12 +84,12 @@
         "source": "/home/hyeongyeon/.gradle/daemon/8.12/com.rokey.parkingapp-main-60:/xml/backup_rules.xml"
     },
     {
-        "merged": "com.rokey.parkingapp-debug-58:/xml_network_security_config.xml.flat",
-        "source": "com.rokey.parkingapp-main-60:/xml/network_security_config.xml"
-    },
-    {
         "merged": "/home/hyeongyeon/.gradle/daemon/8.12/com.rokey.parkingapp-debug-58:/xml_data_extraction_rules.xml.flat",
         "source": "/home/hyeongyeon/.gradle/daemon/8.12/com.rokey.parkingapp-main-60:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "/home/hyeongyeon/.gradle/daemon/8.12/com.rokey.parkingapp-debug-58:/layout_dialog_manual_input.xml.flat",
+        "source": "/home/hyeongyeon/.gradle/daemon/8.12/com.rokey.parkingapp-main-60:/layout/dialog_manual_input.xml"
     },
     {
         "merged": "/home/hyeongyeon/.gradle/daemon/8.12/com.rokey.parkingapp-debug-58:/layout_fragment_exit.xml.flat",
@@ -82,6 +98,10 @@
     {
         "merged": "/home/hyeongyeon/.gradle/daemon/8.12/com.rokey.parkingapp-debug-58:/drawable_ic_camera_placeholder.xml.flat",
         "source": "/home/hyeongyeon/.gradle/daemon/8.12/com.rokey.parkingapp-main-60:/drawable/ic_camera_placeholder.xml"
+    },
+    {
+        "merged": "com.rokey.parkingapp-debug-58:/layout_item_vehicle.xml.flat",
+        "source": "com.rokey.parkingapp-main-60:/layout/item_vehicle.xml"
     },
     {
         "merged": "/home/hyeongyeon/.gradle/daemon/8.12/com.rokey.parkingapp-debug-58:/mipmap-mdpi_ic_launcher_round.png.flat",
