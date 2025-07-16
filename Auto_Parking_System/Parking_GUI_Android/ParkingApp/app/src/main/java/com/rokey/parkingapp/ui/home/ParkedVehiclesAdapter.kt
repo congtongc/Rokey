@@ -30,21 +30,21 @@ class ParkedVehiclesAdapter : ListAdapter<ParkedVehicle, ParkedVehiclesAdapter.V
         private val textTime: TextView = itemView.findViewById(R.id.textTime)
 
         fun bind(vehicle: ParkedVehicle) {
-            textLicensePlate.text = vehicle.licensePlate
-            textCarType.text = when (vehicle.carType) {
+            textLicensePlate.text = vehicle.license_plate
+            textCarType.text = when (vehicle.car_type) {
                 "normal" -> "일반 차량"
                 "ev" -> "전기 차량"
                 "disabled" -> "장애인 차량"
                 else -> "일반 차량"
             }
             textLocation.text = "위치: ${vehicle.location}"
-            textTime.text = "입차 시간: ${vehicle.entryTime}"
+            textTime.text = "입차 시간: ${vehicle.time}"
         }
     }
 
     private class DiffCallback : DiffUtil.ItemCallback<ParkedVehicle>() {
         override fun areItemsTheSame(oldItem: ParkedVehicle, newItem: ParkedVehicle): Boolean {
-            return oldItem.licensePlate == newItem.licensePlate
+            return oldItem.license_plate == newItem.license_plate
         }
 
         override fun areContentsTheSame(oldItem: ParkedVehicle, newItem: ParkedVehicle): Boolean {

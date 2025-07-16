@@ -36,7 +36,7 @@
 
                         <!-- 전체 주차면 -->
                         <LinearLayout
-                            android:layout_width="match_parent"
+            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal"
                             android:layout_marginBottom="8dp">
@@ -64,7 +64,7 @@
                                 android:text="2면"
                                 android:gravity="center"/>
 
-                            <TextView
+        <TextView
                                 android:id="@+id/tvTotalDisabled"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
@@ -75,8 +75,8 @@
 
                         <!-- 사용 중인 주차면 -->
                         <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
                             android:orientation="horizontal"
                             android:layout_marginBottom="8dp">
 
@@ -103,7 +103,7 @@
                                 android:text="0면"
                                 android:gravity="center"/>
 
-                            <TextView
+        <TextView
                                 android:id="@+id/tvOccupiedDisabled"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
@@ -114,8 +114,8 @@
 
                         <!-- 사용 가능한 주차면 -->
                         <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
                             android:orientation="horizontal"
                             android:layout_marginBottom="8dp">
 
@@ -142,7 +142,7 @@
                                 android:text="2면"
                                 android:gravity="center"/>
 
-                            <TextView
+        <TextView
                                 android:id="@+id/tvAvailableDisabled"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
@@ -153,8 +153,8 @@
 
                         <!-- 차량 타입 레이블 -->
                         <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
                             android:orientation="horizontal">
 
                             <Space
@@ -177,7 +177,7 @@
                                 android:gravity="center"
                                 android:textStyle="bold"/>
 
-                            <TextView
+        <TextView
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
@@ -196,16 +196,16 @@
                             <ProgressBar
                                 android:id="@+id/pbTotal"
                                 style="?android:attr/progressBarStyleHorizontal"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginBottom="4dp"/>
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"/>
 
                             <ProgressBar
                                 android:id="@+id/pbAvailable"
                                 style="?android:attr/progressBarStyleHorizontal"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginBottom="4dp"/>
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"/>
 
                             <ProgressBar
                                 android:id="@+id/pbOccupied"
@@ -249,10 +249,10 @@
                 </com.google.android.material.card.MaterialCardView>
 
                 <!-- OCR 결과 -->
-                <TextView
+        <TextView
                     android:id="@+id/tvOcrResult"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
                     android:layout_marginBottom="16dp"
                     android:text="번호판 인식 대기 중..."
                     android:textAlignment="center"/>
@@ -260,22 +260,22 @@
                 <!-- 주차된 차량 목록 -->
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/rvParkedVehicles"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
                     android:layout_marginTop="16dp" />
 
                 <!-- 에러 표시 -->
                 <LinearLayout
                     android:id="@+id/errorView"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
                     android:orientation="vertical"
                     android:visibility="gone">
 
-                    <TextView
+        <TextView
                         android:id="@+id/tvError"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
                         android:layout_marginTop="16dp"
                         android:gravity="center"
                         android:textColor="@android:color/holo_red_dark" />
@@ -296,7 +296,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:visibility="gone"/>
-            </LinearLayout>
+    </LinearLayout>
         </androidx.core.widget.NestedScrollView>
     </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 

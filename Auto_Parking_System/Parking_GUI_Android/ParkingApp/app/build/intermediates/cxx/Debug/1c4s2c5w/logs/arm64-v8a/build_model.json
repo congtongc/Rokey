@@ -8,9 +8,9 @@
     "triple": "aarch64-linux-android",
     "llvmTriple": "aarch64-none-linux-android"
   },
-  "cxxBuildFolder": "/home/hyeongyeon/android_project/ParkingApp/app/.cxx/Debug/1c4s2c5w/arm64-v8a",
-  "soFolder": "/home/hyeongyeon/android_project/ParkingApp/app/build/intermediates/cxx/Debug/1c4s2c5w/obj/arm64-v8a",
-  "soRepublishFolder": "/home/hyeongyeon/android_project/ParkingApp/app/build/intermediates/cmake/debug/obj/arm64-v8a",
+  "cxxBuildFolder": "/home/hyeongyeon/rokey_project/Rokey/Auto_Parking_System/Parking_GUI_Android/ParkingApp/app/.cxx/Debug/1c4s2c5w/arm64-v8a",
+  "soFolder": "/home/hyeongyeon/rokey_project/Rokey/Auto_Parking_System/Parking_GUI_Android/ParkingApp/app/build/intermediates/cxx/Debug/1c4s2c5w/obj/arm64-v8a",
+  "soRepublishFolder": "/home/hyeongyeon/rokey_project/Rokey/Auto_Parking_System/Parking_GUI_Android/ParkingApp/app/build/intermediates/cmake/debug/obj/arm64-v8a",
   "abiPlatformVersion": 24,
   "cmake": {
     "effectiveConfiguration": {
@@ -33,13 +33,13 @@
     "implicitBuildTargetSet": [],
     "cmakeSettingsConfiguration": "android-gradle-plugin-predetermined-name",
     "module": {
-      "cxxFolder": "/home/hyeongyeon/android_project/ParkingApp/app/.cxx",
-      "intermediatesBaseFolder": "/home/hyeongyeon/android_project/ParkingApp/app/build/intermediates",
-      "intermediatesFolder": "/home/hyeongyeon/android_project/ParkingApp/app/build/intermediates/cxx",
+      "cxxFolder": "/home/hyeongyeon/rokey_project/Rokey/Auto_Parking_System/Parking_GUI_Android/ParkingApp/app/.cxx",
+      "intermediatesBaseFolder": "/home/hyeongyeon/rokey_project/Rokey/Auto_Parking_System/Parking_GUI_Android/ParkingApp/app/build/intermediates",
+      "intermediatesFolder": "/home/hyeongyeon/rokey_project/Rokey/Auto_Parking_System/Parking_GUI_Android/ParkingApp/app/build/intermediates/cxx",
       "gradleModulePathName": ":app",
-      "moduleRootFolder": "/home/hyeongyeon/android_project/ParkingApp/app",
-      "moduleBuildFile": "/home/hyeongyeon/android_project/ParkingApp/app/build.gradle",
-      "makeFile": "/home/hyeongyeon/android_project/ParkingApp/app/src/main/cpp/CMakeLists.txt",
+      "moduleRootFolder": "/home/hyeongyeon/rokey_project/Rokey/Auto_Parking_System/Parking_GUI_Android/ParkingApp/app",
+      "moduleBuildFile": "/home/hyeongyeon/rokey_project/Rokey/Auto_Parking_System/Parking_GUI_Android/ParkingApp/app/build.gradle",
+      "makeFile": "/home/hyeongyeon/rokey_project/Rokey/Auto_Parking_System/Parking_GUI_Android/ParkingApp/app/src/main/cpp/CMakeLists.txt",
       "buildSystem": "CMAKE",
       "ndkFolder": "/home/hyeongyeon/Android/Sdk/ndk/27.0.12077973",
       "ndkFolderBeforeSymLinking": "/home/hyeongyeon/Android/Sdk/ndk/27.0.12077973",
@@ -150,7 +150,7 @@
         "SYSTEM": {}
       },
       "project": {
-        "rootBuildGradleFolder": "/home/hyeongyeon/android_project/ParkingApp",
+        "rootBuildGradleFolder": "/home/hyeongyeon/rokey_project/Rokey/Auto_Parking_System/Parking_GUI_Android/ParkingApp",
         "sdkFolder": "/home/hyeongyeon/Android/Sdk",
         "isBuildOnlyTargetAbiEnabled": true,
         "ideBuildTargetAbi": "arm64-v8a,armeabi-v7a,armeabi",
@@ -170,12 +170,12 @@
   "buildSettings": {
     "environmentVariables": []
   },
-  "prefabFolder": "/home/hyeongyeon/android_project/ParkingApp/app/.cxx/Debug/1c4s2c5w/prefab/arm64-v8a",
+  "prefabFolder": "/home/hyeongyeon/rokey_project/Rokey/Auto_Parking_System/Parking_GUI_Android/ParkingApp/app/.cxx/Debug/1c4s2c5w/prefab/arm64-v8a",
   "isActiveAbi": true,
   "fullConfigurationHash": "1c4s2c5w4w225u363c73103w726e3n1a46956241o4k314f2m3xy3f4c2h165s",
   "fullConfigurationHashKey": "# Values used to calculate the hash in this folder name.\n# Should not depend on the absolute path of the project itself.\n#   - AGP: 8.10.1.\n#   - $NDK is the path to NDK 27.0.12077973.\n#   - $PROJECT is the path to the parent folder of the root Gradle build file.\n#   - $ABI is the ABI to be built with. The specific value doesn\u0027t contribute to the value of the hash.\n#   - $HASH is the hash value computed from this text.\n#   - $CMAKE is the path to CMake 3.22.1.\n#   - $NINJA is the path to Ninja.\n-H$PROJECT/app/src/main/cpp\n-DCMAKE_SYSTEM_NAME\u003dAndroid\n-DCMAKE_EXPORT_COMPILE_COMMANDS\u003dON\n-DCMAKE_SYSTEM_VERSION\u003d24\n-DANDROID_PLATFORM\u003dandroid-24\n-DANDROID_ABI\u003d$ABI\n-DCMAKE_ANDROID_ARCH_ABI\u003d$ABI\n-DANDROID_NDK\u003d$NDK\n-DCMAKE_ANDROID_NDK\u003d$NDK\n-DCMAKE_TOOLCHAIN_FILE\u003d$NDK/build/cmake/android.toolchain.cmake\n-DCMAKE_MAKE_PROGRAM\u003d$NINJA\n-DCMAKE_CXX_FLAGS\u003d-std\u003dc++11\n-DCMAKE_LIBRARY_OUTPUT_DIRECTORY\u003d$PROJECT/app/build/intermediates/cxx/Debug/$HASH/obj/$ABI\n-DCMAKE_RUNTIME_OUTPUT_DIRECTORY\u003d$PROJECT/app/build/intermediates/cxx/Debug/$HASH/obj/$ABI\n-DCMAKE_BUILD_TYPE\u003dDebug\n-B$PROJECT/app/.cxx/Debug/$HASH/$ABI\n-GNinja",
   "configurationArguments": [
-    "-H/home/hyeongyeon/android_project/ParkingApp/app/src/main/cpp",
+    "-H/home/hyeongyeon/rokey_project/Rokey/Auto_Parking_System/Parking_GUI_Android/ParkingApp/app/src/main/cpp",
     "-DCMAKE_SYSTEM_NAME\u003dAndroid",
     "-DCMAKE_EXPORT_COMPILE_COMMANDS\u003dON",
     "-DCMAKE_SYSTEM_VERSION\u003d24",
@@ -187,11 +187,11 @@
     "-DCMAKE_TOOLCHAIN_FILE\u003d/home/hyeongyeon/Android/Sdk/ndk/27.0.12077973/build/cmake/android.toolchain.cmake",
     "-DCMAKE_MAKE_PROGRAM\u003d/usr/bin/ninja",
     "-DCMAKE_CXX_FLAGS\u003d-std\u003dc++11",
-    "-DCMAKE_LIBRARY_OUTPUT_DIRECTORY\u003d/home/hyeongyeon/android_project/ParkingApp/app/build/intermediates/cxx/Debug/1c4s2c5w/obj/arm64-v8a",
-    "-DCMAKE_RUNTIME_OUTPUT_DIRECTORY\u003d/home/hyeongyeon/android_project/ParkingApp/app/build/intermediates/cxx/Debug/1c4s2c5w/obj/arm64-v8a",
+    "-DCMAKE_LIBRARY_OUTPUT_DIRECTORY\u003d/home/hyeongyeon/rokey_project/Rokey/Auto_Parking_System/Parking_GUI_Android/ParkingApp/app/build/intermediates/cxx/Debug/1c4s2c5w/obj/arm64-v8a",
+    "-DCMAKE_RUNTIME_OUTPUT_DIRECTORY\u003d/home/hyeongyeon/rokey_project/Rokey/Auto_Parking_System/Parking_GUI_Android/ParkingApp/app/build/intermediates/cxx/Debug/1c4s2c5w/obj/arm64-v8a",
     "-DCMAKE_BUILD_TYPE\u003dDebug",
-    "-B/home/hyeongyeon/android_project/ParkingApp/app/.cxx/Debug/1c4s2c5w/arm64-v8a",
+    "-B/home/hyeongyeon/rokey_project/Rokey/Auto_Parking_System/Parking_GUI_Android/ParkingApp/app/.cxx/Debug/1c4s2c5w/arm64-v8a",
     "-GNinja"
   ],
-  "intermediatesParentFolder": "/home/hyeongyeon/android_project/ParkingApp/app/build/intermediates/cxx/Debug/1c4s2c5w"
+  "intermediatesParentFolder": "/home/hyeongyeon/rokey_project/Rokey/Auto_Parking_System/Parking_GUI_Android/ParkingApp/app/build/intermediates/cxx/Debug/1c4s2c5w"
 }

@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/hyeongyeon/android_project/ParkingApp/app/src/main/AndroidManifest.xml:2:1-35:12
-INJECTED from /home/hyeongyeon/android_project/ParkingApp/app/src/main/AndroidManifest.xml:2:1-35:12
-INJECTED from /home/hyeongyeon/android_project/ParkingApp/app/src/main/AndroidManifest.xml:2:1-35:12
-INJECTED from /home/hyeongyeon/android_project/ParkingApp/app/src/main/AndroidManifest.xml:2:1-35:12
+ADDED from /home/hyeongyeon/rokey_project/Rokey/Auto_Parking_System/Parking_GUI_Android/ParkingApp/app/src/main/AndroidManifest.xml:2:1-37:12
+INJECTED from /home/hyeongyeon/rokey_project/Rokey/Auto_Parking_System/Parking_GUI_Android/ParkingApp/app/src/main/AndroidManifest.xml:2:1-37:12
+INJECTED from /home/hyeongyeon/rokey_project/Rokey/Auto_Parking_System/Parking_GUI_Android/ParkingApp/app/src/main/AndroidManifest.xml:2:1-37:12
+INJECTED from /home/hyeongyeon/rokey_project/Rokey/Auto_Parking_System/Parking_GUI_Android/ParkingApp/app/src/main/AndroidManifest.xml:2:1-37:12
 MERGED from [androidx.databinding:databinding-adapters:8.10.1] /home/hyeongyeon/.gradle/caches/8.12/transforms/74ce4b0f9f235351c2eb2245dfb3398e/transformed/databinding-adapters-8.10.1/AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.databinding:databinding-ktx:8.10.1] /home/hyeongyeon/.gradle/caches/8.12/transforms/fb926ce4eba412366d92de9e3faaf654/transformed/jetified-databinding-ktx-8.10.1/AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.databinding:databinding-runtime:8.10.1] /home/hyeongyeon/.gradle/caches/8.12/transforms/95300e35559b33d535ebeee45be4d13c/transformed/databinding-runtime-8.10.1/AndroidManifest.xml:2:1-7:12
@@ -77,44 +77,48 @@ MERGED from [androidx.documentfile:documentfile:1.0.0] /home/hyeongyeon/.gradle/
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/076be9bb4b1af368174f40bed7571ef8/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/e68c8e15b23766a8b3963e625e611cd8/transformed/print-1.0.0/AndroidManifest.xml:17:1-22:12
 	package
-		INJECTED from /home/hyeongyeon/android_project/ParkingApp/app/src/main/AndroidManifest.xml
+		INJECTED from /home/hyeongyeon/rokey_project/Rokey/Auto_Parking_System/Parking_GUI_Android/ParkingApp/app/src/main/AndroidManifest.xml
 	android:versionName
-		INJECTED from /home/hyeongyeon/android_project/ParkingApp/app/src/main/AndroidManifest.xml
+		INJECTED from /home/hyeongyeon/rokey_project/Rokey/Auto_Parking_System/Parking_GUI_Android/ParkingApp/app/src/main/AndroidManifest.xml
 	xmlns:tools
-		ADDED from /home/hyeongyeon/android_project/ParkingApp/app/src/main/AndroidManifest.xml:3:5-51
+		ADDED from /home/hyeongyeon/rokey_project/Rokey/Auto_Parking_System/Parking_GUI_Android/ParkingApp/app/src/main/AndroidManifest.xml:3:5-51
 	android:versionCode
-		INJECTED from /home/hyeongyeon/android_project/ParkingApp/app/src/main/AndroidManifest.xml
+		INJECTED from /home/hyeongyeon/rokey_project/Rokey/Auto_Parking_System/Parking_GUI_Android/ParkingApp/app/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from /home/hyeongyeon/android_project/ParkingApp/app/src/main/AndroidManifest.xml:2:11-69
+		ADDED from /home/hyeongyeon/rokey_project/Rokey/Auto_Parking_System/Parking_GUI_Android/ParkingApp/app/src/main/AndroidManifest.xml:2:11-69
 uses-permission#android.permission.INTERNET
-ADDED from /home/hyeongyeon/android_project/ParkingApp/app/src/main/AndroidManifest.xml:5:5-67
+ADDED from /home/hyeongyeon/rokey_project/Rokey/Auto_Parking_System/Parking_GUI_Android/ParkingApp/app/src/main/AndroidManifest.xml:5:5-67
 	android:name
-		ADDED from /home/hyeongyeon/android_project/ParkingApp/app/src/main/AndroidManifest.xml:5:22-64
+		ADDED from /home/hyeongyeon/rokey_project/Rokey/Auto_Parking_System/Parking_GUI_Android/ParkingApp/app/src/main/AndroidManifest.xml:5:22-64
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from /home/hyeongyeon/android_project/ParkingApp/app/src/main/AndroidManifest.xml:6:5-79
+ADDED from /home/hyeongyeon/rokey_project/Rokey/Auto_Parking_System/Parking_GUI_Android/ParkingApp/app/src/main/AndroidManifest.xml:6:5-79
 	android:name
-		ADDED from /home/hyeongyeon/android_project/ParkingApp/app/src/main/AndroidManifest.xml:6:22-76
+		ADDED from /home/hyeongyeon/rokey_project/Rokey/Auto_Parking_System/Parking_GUI_Android/ParkingApp/app/src/main/AndroidManifest.xml:6:22-76
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from /home/hyeongyeon/rokey_project/Rokey/Auto_Parking_System/Parking_GUI_Android/ParkingApp/app/src/main/AndroidManifest.xml:7:5-76
+	android:name
+		ADDED from /home/hyeongyeon/rokey_project/Rokey/Auto_Parking_System/Parking_GUI_Android/ParkingApp/app/src/main/AndroidManifest.xml:7:22-73
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from /home/hyeongyeon/android_project/ParkingApp/app/src/main/AndroidManifest.xml:7:5-79
+ADDED from /home/hyeongyeon/rokey_project/Rokey/Auto_Parking_System/Parking_GUI_Android/ParkingApp/app/src/main/AndroidManifest.xml:8:5-79
 	android:name
-		ADDED from /home/hyeongyeon/android_project/ParkingApp/app/src/main/AndroidManifest.xml:7:22-76
+		ADDED from /home/hyeongyeon/rokey_project/Rokey/Auto_Parking_System/Parking_GUI_Android/ParkingApp/app/src/main/AndroidManifest.xml:8:22-76
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from /home/hyeongyeon/android_project/ParkingApp/app/src/main/AndroidManifest.xml:8:5-81
+ADDED from /home/hyeongyeon/rokey_project/Rokey/Auto_Parking_System/Parking_GUI_Android/ParkingApp/app/src/main/AndroidManifest.xml:9:5-81
 	android:name
-		ADDED from /home/hyeongyeon/android_project/ParkingApp/app/src/main/AndroidManifest.xml:8:22-78
+		ADDED from /home/hyeongyeon/rokey_project/Rokey/Auto_Parking_System/Parking_GUI_Android/ParkingApp/app/src/main/AndroidManifest.xml:9:22-78
 uses-permission#android.permission.CAMERA
-ADDED from /home/hyeongyeon/android_project/ParkingApp/app/src/main/AndroidManifest.xml:9:5-65
+ADDED from /home/hyeongyeon/rokey_project/Rokey/Auto_Parking_System/Parking_GUI_Android/ParkingApp/app/src/main/AndroidManifest.xml:10:5-65
 	android:name
-		ADDED from /home/hyeongyeon/android_project/ParkingApp/app/src/main/AndroidManifest.xml:9:22-62
+		ADDED from /home/hyeongyeon/rokey_project/Rokey/Auto_Parking_System/Parking_GUI_Android/ParkingApp/app/src/main/AndroidManifest.xml:10:22-62
 uses-feature#android.hardware.camera
-ADDED from /home/hyeongyeon/android_project/ParkingApp/app/src/main/AndroidManifest.xml:10:5-84
+ADDED from /home/hyeongyeon/rokey_project/Rokey/Auto_Parking_System/Parking_GUI_Android/ParkingApp/app/src/main/AndroidManifest.xml:11:5-84
 	android:required
-		ADDED from /home/hyeongyeon/android_project/ParkingApp/app/src/main/AndroidManifest.xml:10:58-81
+		ADDED from /home/hyeongyeon/rokey_project/Rokey/Auto_Parking_System/Parking_GUI_Android/ParkingApp/app/src/main/AndroidManifest.xml:11:58-81
 	android:name
-		ADDED from /home/hyeongyeon/android_project/ParkingApp/app/src/main/AndroidManifest.xml:10:19-57
+		ADDED from /home/hyeongyeon/rokey_project/Rokey/Auto_Parking_System/Parking_GUI_Android/ParkingApp/app/src/main/AndroidManifest.xml:11:19-57
 application
-ADDED from /home/hyeongyeon/android_project/ParkingApp/app/src/main/AndroidManifest.xml:12:5-33:19
-INJECTED from /home/hyeongyeon/android_project/ParkingApp/app/src/main/AndroidManifest.xml:12:5-33:19
+ADDED from /home/hyeongyeon/rokey_project/Rokey/Auto_Parking_System/Parking_GUI_Android/ParkingApp/app/src/main/AndroidManifest.xml:13:5-35:19
+INJECTED from /home/hyeongyeon/rokey_project/Rokey/Auto_Parking_System/Parking_GUI_Android/ParkingApp/app/src/main/AndroidManifest.xml:13:5-35:19
 MERGED from [com.google.android.material:material:1.11.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/87a8e99ea3951e8b4a0093c7466dc5c9/transformed/material-1.11.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.11.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/87a8e99ea3951e8b4a0093c7466dc5c9/transformed/material-1.11.0/AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /home/hyeongyeon/.gradle/caches/8.12/transforms/b3883f050f0959a5f443d56b95df20c7/transformed/constraintlayout-2.1.4/AndroidManifest.xml:9:5-20
@@ -138,51 +142,53 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] /home/hyeongyeon/.gradle/ca
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/hyeongyeon/.gradle/caches/8.12/transforms/44e10e864de79027a534b4c8ae266df1/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/hyeongyeon/.gradle/caches/8.12/transforms/44e10e864de79027a534b4c8ae266df1/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
 	android:extractNativeLibs
-		INJECTED from /home/hyeongyeon/android_project/ParkingApp/app/src/main/AndroidManifest.xml
+		INJECTED from /home/hyeongyeon/rokey_project/Rokey/Auto_Parking_System/Parking_GUI_Android/ParkingApp/app/src/main/AndroidManifest.xml
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.12.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/2da142ca173a6f42519860e39d9ea4f9/transformed/core-1.12.0/AndroidManifest.xml:28:18-86
 	android:supportsRtl
-		ADDED from /home/hyeongyeon/android_project/ParkingApp/app/src/main/AndroidManifest.xml:19:9-35
+		ADDED from /home/hyeongyeon/rokey_project/Rokey/Auto_Parking_System/Parking_GUI_Android/ParkingApp/app/src/main/AndroidManifest.xml:20:9-35
 	android:label
-		ADDED from /home/hyeongyeon/android_project/ParkingApp/app/src/main/AndroidManifest.xml:17:9-41
+		ADDED from /home/hyeongyeon/rokey_project/Rokey/Auto_Parking_System/Parking_GUI_Android/ParkingApp/app/src/main/AndroidManifest.xml:18:9-41
 	android:fullBackupContent
-		ADDED from /home/hyeongyeon/android_project/ParkingApp/app/src/main/AndroidManifest.xml:15:9-54
+		ADDED from /home/hyeongyeon/rokey_project/Rokey/Auto_Parking_System/Parking_GUI_Android/ParkingApp/app/src/main/AndroidManifest.xml:16:9-54
 	android:roundIcon
-		ADDED from /home/hyeongyeon/android_project/ParkingApp/app/src/main/AndroidManifest.xml:18:9-54
+		ADDED from /home/hyeongyeon/rokey_project/Rokey/Auto_Parking_System/Parking_GUI_Android/ParkingApp/app/src/main/AndroidManifest.xml:19:9-54
 	tools:targetApi
-		ADDED from /home/hyeongyeon/android_project/ParkingApp/app/src/main/AndroidManifest.xml:22:9-29
+		ADDED from /home/hyeongyeon/rokey_project/Rokey/Auto_Parking_System/Parking_GUI_Android/ParkingApp/app/src/main/AndroidManifest.xml:24:9-29
 	android:icon
-		ADDED from /home/hyeongyeon/android_project/ParkingApp/app/src/main/AndroidManifest.xml:16:9-43
+		ADDED from /home/hyeongyeon/rokey_project/Rokey/Auto_Parking_System/Parking_GUI_Android/ParkingApp/app/src/main/AndroidManifest.xml:17:9-43
 	android:allowBackup
-		ADDED from /home/hyeongyeon/android_project/ParkingApp/app/src/main/AndroidManifest.xml:13:9-35
+		ADDED from /home/hyeongyeon/rokey_project/Rokey/Auto_Parking_System/Parking_GUI_Android/ParkingApp/app/src/main/AndroidManifest.xml:14:9-35
 	android:theme
-		ADDED from /home/hyeongyeon/android_project/ParkingApp/app/src/main/AndroidManifest.xml:20:9-40
+		ADDED from /home/hyeongyeon/rokey_project/Rokey/Auto_Parking_System/Parking_GUI_Android/ParkingApp/app/src/main/AndroidManifest.xml:21:9-40
+	android:networkSecurityConfig
+		ADDED from /home/hyeongyeon/rokey_project/Rokey/Auto_Parking_System/Parking_GUI_Android/ParkingApp/app/src/main/AndroidManifest.xml:22:9-69
 	android:dataExtractionRules
-		ADDED from /home/hyeongyeon/android_project/ParkingApp/app/src/main/AndroidManifest.xml:14:9-65
+		ADDED from /home/hyeongyeon/rokey_project/Rokey/Auto_Parking_System/Parking_GUI_Android/ParkingApp/app/src/main/AndroidManifest.xml:15:9-65
 	android:usesCleartextTraffic
-		ADDED from /home/hyeongyeon/android_project/ParkingApp/app/src/main/AndroidManifest.xml:21:9-44
+		ADDED from /home/hyeongyeon/rokey_project/Rokey/Auto_Parking_System/Parking_GUI_Android/ParkingApp/app/src/main/AndroidManifest.xml:23:9-44
 activity#com.rokey.parkingapp.MainActivity
-ADDED from /home/hyeongyeon/android_project/ParkingApp/app/src/main/AndroidManifest.xml:23:9-32:20
+ADDED from /home/hyeongyeon/rokey_project/Rokey/Auto_Parking_System/Parking_GUI_Android/ParkingApp/app/src/main/AndroidManifest.xml:25:9-34:20
 	android:exported
-		ADDED from /home/hyeongyeon/android_project/ParkingApp/app/src/main/AndroidManifest.xml:25:13-36
+		ADDED from /home/hyeongyeon/rokey_project/Rokey/Auto_Parking_System/Parking_GUI_Android/ParkingApp/app/src/main/AndroidManifest.xml:27:13-36
 	android:theme
-		ADDED from /home/hyeongyeon/android_project/ParkingApp/app/src/main/AndroidManifest.xml:26:13-44
+		ADDED from /home/hyeongyeon/rokey_project/Rokey/Auto_Parking_System/Parking_GUI_Android/ParkingApp/app/src/main/AndroidManifest.xml:28:13-44
 	android:name
-		ADDED from /home/hyeongyeon/android_project/ParkingApp/app/src/main/AndroidManifest.xml:24:13-41
+		ADDED from /home/hyeongyeon/rokey_project/Rokey/Auto_Parking_System/Parking_GUI_Android/ParkingApp/app/src/main/AndroidManifest.xml:26:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /home/hyeongyeon/android_project/ParkingApp/app/src/main/AndroidManifest.xml:27:13-31:29
+ADDED from /home/hyeongyeon/rokey_project/Rokey/Auto_Parking_System/Parking_GUI_Android/ParkingApp/app/src/main/AndroidManifest.xml:29:13-33:29
 action#android.intent.action.MAIN
-ADDED from /home/hyeongyeon/android_project/ParkingApp/app/src/main/AndroidManifest.xml:28:17-69
+ADDED from /home/hyeongyeon/rokey_project/Rokey/Auto_Parking_System/Parking_GUI_Android/ParkingApp/app/src/main/AndroidManifest.xml:30:17-69
 	android:name
-		ADDED from /home/hyeongyeon/android_project/ParkingApp/app/src/main/AndroidManifest.xml:28:25-66
+		ADDED from /home/hyeongyeon/rokey_project/Rokey/Auto_Parking_System/Parking_GUI_Android/ParkingApp/app/src/main/AndroidManifest.xml:30:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /home/hyeongyeon/android_project/ParkingApp/app/src/main/AndroidManifest.xml:30:17-77
+ADDED from /home/hyeongyeon/rokey_project/Rokey/Auto_Parking_System/Parking_GUI_Android/ParkingApp/app/src/main/AndroidManifest.xml:32:17-77
 	android:name
-		ADDED from /home/hyeongyeon/android_project/ParkingApp/app/src/main/AndroidManifest.xml:30:27-74
+		ADDED from /home/hyeongyeon/rokey_project/Rokey/Auto_Parking_System/Parking_GUI_Android/ParkingApp/app/src/main/AndroidManifest.xml:32:27-74
 uses-sdk
-INJECTED from /home/hyeongyeon/android_project/ParkingApp/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /home/hyeongyeon/android_project/ParkingApp/app/src/main/AndroidManifest.xml
-INJECTED from /home/hyeongyeon/android_project/ParkingApp/app/src/main/AndroidManifest.xml
+INJECTED from /home/hyeongyeon/rokey_project/Rokey/Auto_Parking_System/Parking_GUI_Android/ParkingApp/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/hyeongyeon/rokey_project/Rokey/Auto_Parking_System/Parking_GUI_Android/ParkingApp/app/src/main/AndroidManifest.xml
+INJECTED from /home/hyeongyeon/rokey_project/Rokey/Auto_Parking_System/Parking_GUI_Android/ParkingApp/app/src/main/AndroidManifest.xml
 MERGED from [androidx.databinding:databinding-adapters:8.10.1] /home/hyeongyeon/.gradle/caches/8.12/transforms/74ce4b0f9f235351c2eb2245dfb3398e/transformed/databinding-adapters-8.10.1/AndroidManifest.xml:5:5-44
 MERGED from [androidx.databinding:databinding-adapters:8.10.1] /home/hyeongyeon/.gradle/caches/8.12/transforms/74ce4b0f9f235351c2eb2245dfb3398e/transformed/databinding-adapters-8.10.1/AndroidManifest.xml:5:5-44
 MERGED from [androidx.databinding:databinding-ktx:8.10.1] /home/hyeongyeon/.gradle/caches/8.12/transforms/fb926ce4eba412366d92de9e3faaf654/transformed/jetified-databinding-ktx-8.10.1/AndroidManifest.xml:5:5-44
@@ -328,9 +334,9 @@ MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/h
 MERGED from [androidx.print:print:1.0.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/e68c8e15b23766a8b3963e625e611cd8/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.print:print:1.0.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/e68c8e15b23766a8b3963e625e611cd8/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
 	android:targetSdkVersion
-		INJECTED from /home/hyeongyeon/android_project/ParkingApp/app/src/main/AndroidManifest.xml
+		INJECTED from /home/hyeongyeon/rokey_project/Rokey/Auto_Parking_System/Parking_GUI_Android/ParkingApp/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /home/hyeongyeon/android_project/ParkingApp/app/src/main/AndroidManifest.xml
+		INJECTED from /home/hyeongyeon/rokey_project/Rokey/Auto_Parking_System/Parking_GUI_Android/ParkingApp/app/src/main/AndroidManifest.xml
 service#androidx.camera.core.impl.MetadataHolderService
 ADDED from [androidx.camera:camera-camera2:1.3.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/323ff58bdb5c81167b1b9c1e51633359/transformed/jetified-camera-camera2-1.3.0/AndroidManifest.xml:24:9-33:19
 MERGED from [androidx.camera:camera-core:1.3.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/864816993d98481251c5c31088d5059e/transformed/jetified-camera-core-1.3.0/AndroidManifest.xml:29:9-33:78

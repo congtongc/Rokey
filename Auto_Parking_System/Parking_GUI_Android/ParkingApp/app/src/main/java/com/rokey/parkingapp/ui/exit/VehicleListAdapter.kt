@@ -31,8 +31,8 @@ class VehicleListAdapter(
     ) : RecyclerView.ViewHolder(binding.root) {
 
         fun bind(vehicle: ParkedVehicle) {
-            binding.tvLicensePlate.text = vehicle.licensePlate
-            binding.tvCarType.text = vehicle.carType
+            binding.tvLicensePlate.text = vehicle.license_plate
+            binding.tvCarType.text = vehicle.car_type
             binding.tvLocation.text = vehicle.location
             binding.root.setOnClickListener { onItemClick(vehicle) }
         }
@@ -40,7 +40,7 @@ class VehicleListAdapter(
 
     private class DiffCallback : DiffUtil.ItemCallback<ParkedVehicle>() {
         override fun areItemsTheSame(oldItem: ParkedVehicle, newItem: ParkedVehicle): Boolean {
-            return oldItem.licensePlate == newItem.licensePlate
+            return oldItem.license_plate == newItem.license_plate
         }
 
         override fun areContentsTheSame(oldItem: ParkedVehicle, newItem: ParkedVehicle): Boolean {

@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
     android:padding="16dp">
 
-    <TextView
+        <TextView
         android:id="@+id/tvTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
         android:text="차량 번호 인식"
         android:textSize="20sp"
-        android:textStyle="bold"
+            android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -26,7 +26,7 @@
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/cardInfo"
-        android:layout_width="match_parent"
+            android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         app:cardCornerRadius="8dp"
@@ -54,7 +54,7 @@
 
                 <TextView
                     android:id="@+id/tvCarType"
-                    android:layout_width="match_parent"
+            android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:text="차량 타입: -"
@@ -62,7 +62,7 @@
 
                 <TextView
                     android:id="@+id/tvLocation"
-                    android:layout_width="match_parent"
+            android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:text="할당된 주차 위치: -"
@@ -73,9 +73,9 @@
         </LinearLayout>
     </com.google.android.material.card.MaterialCardView>
 
-    <Button
-        android:id="@+id/btnPark"
-        android:layout_width="match_parent"
+        <Button
+            android:id="@+id/btnPark"
+            android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:enabled="false"
@@ -86,7 +86,7 @@
         android:id="@+id/tvError"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+            android:layout_marginTop="8dp"
         android:textColor="@android:color/holo_red_dark"
         android:visibility="gone"
         app:layout_constraintTop_toBottomOf="@id/btnPark" />

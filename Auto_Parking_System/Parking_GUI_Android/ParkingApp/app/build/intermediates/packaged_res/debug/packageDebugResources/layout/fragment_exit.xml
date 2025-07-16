@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
     android:padding="16dp">
 
     <androidx.appcompat.widget.SearchView
@@ -17,8 +17,8 @@
 
     <Button
         android:id="@+id/btnRefresh"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
         android:text="새로고침"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -32,7 +32,7 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvParkedVehicles"
-        android:layout_width="match_parent"
+            android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginTop="16dp"
         android:layout_marginBottom="16dp"
@@ -41,7 +41,7 @@
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/cardSelectedVehicle"
-        android:layout_width="match_parent"
+            android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:visibility="gone"
         app:cardCornerRadius="8dp"
@@ -67,26 +67,26 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp" />
 
-            <TextView
+        <TextView
                 android:id="@+id/tvLocation"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
                 android:layout_marginTop="4dp" />
 
-            <TextView
+        <TextView
                 android:id="@+id/tvEntryTime"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
                 android:layout_marginTop="4dp" />
 
         </LinearLayout>
 
     </com.google.android.material.card.MaterialCardView>
 
-    <Button
-        android:id="@+id/btnExit"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        <Button
+            android:id="@+id/btnExit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
         android:enabled="false"
         android:text="출차"
         app:layout_constraintBottom_toBottomOf="parent" />

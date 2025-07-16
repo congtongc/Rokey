@@ -52,10 +52,10 @@ com.rokey.parkingapp-jetified-viewpager2-1.1.0-beta02-50 /home/hyeongyeon/.gradl
 com.rokey.parkingapp-jetified-lifecycle-service-2.7.0-51 /home/hyeongyeon/.gradle/caches/8.12/transforms/ef52305cf714b54c5123fb5f8ef3da45/transformed/jetified-lifecycle-service-2.7.0/res
 com.rokey.parkingapp-jetified-activity-ktx-1.8.0-52 /home/hyeongyeon/.gradle/caches/8.12/transforms/f2cde9857187901e9c27d4848a0bbdb1/transformed/jetified-activity-ktx-1.8.0/res
 com.rokey.parkingapp-navigation-ui-2.7.7-53 /home/hyeongyeon/.gradle/caches/8.12/transforms/fb32dbbcb7da120e29c0c29878d350b6/transformed/navigation-ui-2.7.7/res
-com.rokey.parkingapp-pngs-54 /home/hyeongyeon/android_project/ParkingApp/app/build/generated/res/pngs/debug
-com.rokey.parkingapp-resValues-55 /home/hyeongyeon/android_project/ParkingApp/app/build/generated/res/resValues/debug
-com.rokey.parkingapp-packageDebugResources-56 /home/hyeongyeon/android_project/ParkingApp/app/build/intermediates/incremental/debug/packageDebugResources/merged.dir
-com.rokey.parkingapp-packageDebugResources-57 /home/hyeongyeon/android_project/ParkingApp/app/build/intermediates/incremental/debug/packageDebugResources/stripped.dir
-com.rokey.parkingapp-debug-58 /home/hyeongyeon/android_project/ParkingApp/app/build/intermediates/merged_res/debug/mergeDebugResources
-com.rokey.parkingapp-debug-59 /home/hyeongyeon/android_project/ParkingApp/app/src/debug/res
-com.rokey.parkingapp-main-60 /home/hyeongyeon/android_project/ParkingApp/app/src/main/res
+com.rokey.parkingapp-pngs-54 /home/hyeongyeon/rokey_project/Rokey/Auto_Parking_System/Parking_GUI_Android/ParkingApp/app/build/generated/res/pngs/debug
+com.rokey.parkingapp-resValues-55 /home/hyeongyeon/rokey_project/Rokey/Auto_Parking_System/Parking_GUI_Android/ParkingApp/app/build/generated/res/resValues/debug
+com.rokey.parkingapp-packageDebugResources-56 /home/hyeongyeon/rokey_project/Rokey/Auto_Parking_System/Parking_GUI_Android/ParkingApp/app/build/intermediates/incremental/debug/packageDebugResources/merged.dir
+com.rokey.parkingapp-packageDebugResources-57 /home/hyeongyeon/rokey_project/Rokey/Auto_Parking_System/Parking_GUI_Android/ParkingApp/app/build/intermediates/incremental/debug/packageDebugResources/stripped.dir
+com.rokey.parkingapp-debug-58 /home/hyeongyeon/rokey_project/Rokey/Auto_Parking_System/Parking_GUI_Android/ParkingApp/app/build/intermediates/merged_res/debug/mergeDebugResources
+com.rokey.parkingapp-debug-59 /home/hyeongyeon/rokey_project/Rokey/Auto_Parking_System/Parking_GUI_Android/ParkingApp/app/src/debug/res
+com.rokey.parkingapp-main-60 /home/hyeongyeon/rokey_project/Rokey/Auto_Parking_System/Parking_GUI_Android/ParkingApp/app/src/main/res

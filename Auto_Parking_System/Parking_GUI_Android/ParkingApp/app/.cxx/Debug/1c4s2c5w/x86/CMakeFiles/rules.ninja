@@ -42,7 +42,7 @@ rule CUSTOM_COMMAND
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = /usr/bin/cmake --regenerate-during-build -S/home/hyeongyeon/android_project/ParkingApp/app/src/main/cpp -B/home/hyeongyeon/android_project/ParkingApp/app/.cxx/Debug/1c4s2c5w/x86
+  command = /usr/bin/cmake --regenerate-during-build -S/home/hyeongyeon/rokey_project/Rokey/Auto_Parking_System/Parking_GUI_Android/ParkingApp/app/src/main/cpp -B/home/hyeongyeon/rokey_project/Rokey/Auto_Parking_System/Parking_GUI_Android/ParkingApp/app/.cxx/Debug/1c4s2c5w/x86
   description = Re-running CMake...
   generator = 1
 

@@ -1,9 +1,3 @@
 # ninja log v5
-0	481	1751599539076637363	CMakeFiles/penguin.dir/penguin/penguin.cpp.o	44867e2c61c2bc60
-482	497	1751599539094637106	/home/hyeongyeon/android_project/ParkingApp/app/build/intermediates/cxx/Debug/1c4s2c5w/obj/arm64-v8a/libpenguin.so	d3ab1e33372b3573
-0	3	0	clean	a31eedcededa8236
-3	457	1751611082834509216	CMakeFiles/penguin.dir/penguin/penguin.cpp.o	44867e2c61c2bc60
-457	580	1751611082960510464	/home/hyeongyeon/android_project/ParkingApp/app/build/intermediates/cxx/Debug/1c4s2c5w/obj/arm64-v8a/libpenguin.so	d3ab1e33372b3573
-0	3	0	clean	a31eedcededa8236
-2	490	1751614551837765269	CMakeFiles/penguin.dir/penguin/penguin.cpp.o	44867e2c61c2bc60
-490	509	1751614551860765469	/home/hyeongyeon/android_project/ParkingApp/app/build/intermediates/cxx/Debug/1c4s2c5w/obj/arm64-v8a/libpenguin.so	d3ab1e33372b3573
+0	667	1752668639401073146	CMakeFiles/penguin.dir/penguin/penguin.cpp.o	8d01bac7684c3972
+668	686	1752668639423070947	/home/hyeongyeon/rokey_project/Rokey/Auto_Parking_System/Parking_GUI_Android/ParkingApp/app/build/intermediates/cxx/Debug/1c4s2c5w/obj/arm64-v8a/libpenguin.so	990f3e027be9bc24

@@ -16,8 +16,8 @@ import com.google.gson.Gson
 class ParkingViewModel : ViewModel() {
     private val TAG = "ParkingViewModel"
 
-    private val _cameraStream = MutableLiveData<CameraStreamResponse>()
-    val cameraStream: LiveData<CameraStreamResponse> = _cameraStream
+    private val _cameraStream = MutableLiveData<String>()
+    val cameraStream: LiveData<String> = _cameraStream
     
     private val _ocrResult = MutableLiveData<OcrResult>()
     val ocrResult: LiveData<OcrResult> = _ocrResult
@@ -52,7 +52,7 @@ class ParkingViewModel : ViewModel() {
             try {
                 while (isActive) {
                     try {
-                        val response = apiClient.startCameraStream()
+                        val response = apiClient.getCameraFrame()
                         _cameraStream.postValue(response)
                         _errorMessage.postValue(null)
                         delay(100) // 100ms 딜레이로 프레임 레이트 조절
@@ -85,7 +85,7 @@ class ParkingViewModel : ViewModel() {
             val ocrResult = gson.fromJson(jsonResult, OcrResult::class.java)
             _ocrResult.postValue(ocrResult)
             if (ocrResult.confidence > 80.0) {
-                assignParkingLocation(ocrResult.licensePlate, ocrResult.carType)
+                assignParkingLocation(ocrResult.car_plate, ocrResult.type)
             }
         } catch (e: Exception) {
             _errorMessage.postValue("OCR 결과 처리 실패: ${e.message}")
@@ -95,21 +95,23 @@ class ParkingViewModel : ViewModel() {
     private fun assignParkingLocation(licensePlate: String, carType: String) {
         viewModelScope.launch {
             try {
-                val status = apiClient.getParkingStatus()
-                if (status.success) {
-                    val locations = parkingLocations[carType] ?: parkingLocations["normal"] ?: listOf()
-                    val occupiedLocations = status.parkedVehicles.map { it.location }
-                    
-                    val availableLocation = locations.firstOrNull { !occupiedLocations.contains(it) }
-                    
-                    if (availableLocation != null) {
-                        _parkingLocation.postValue(availableLocation)
-                        _errorMessage.postValue(null)
-                    } else {
-                        _errorMessage.postValue("해당 차량 타입의 주차 공간이 없습니다")
+                when (val status = apiClient.getParkingStatus()) {
+                    is ApiResponse.Success -> {
+                        val locations = parkingLocations[carType] ?: parkingLocations["normal"] ?: listOf()
+                        val occupiedLocations = status.data.parkedVehicles?.map { it.location } ?: listOf()
+                        
+                        val availableLocation = locations.firstOrNull { !occupiedLocations.contains(it) }
+                        
+                        if (availableLocation != null) {
+                            _parkingLocation.postValue(availableLocation)
+                            _errorMessage.postValue(null)
+                        } else {
+                            _errorMessage.postValue("해당 차량 타입의 주차 공간이 없습니다")
+                        }
                     }
-                } else {
-                    _errorMessage.postValue(status.message)
+                    is ApiResponse.Error -> {
+                        _errorMessage.postValue(status.message)
+                    }
                 }
             } catch (e: Exception) {
                 _errorMessage.postValue("주차 위치 할당 실패: ${e.message}")
@@ -124,18 +126,19 @@ class ParkingViewModel : ViewModel() {
         viewModelScope.launch {
             try {
                 val request = ParkingRequest(
-                    licensePlate = currentOcr.licensePlate,
-                    carType = currentOcr.carType,
-                    location = location
+                    license_plate = currentOcr.car_plate,
+                    car_type = currentOcr.type
                 )
-                val response = apiClient.parkVehicle(request)
-                if (response.success) {
-                    _errorMessage.postValue("주차가 완료되었습니다")
-                    // 주차 완료 후 상태 초기화
-                    _ocrResult.postValue(null)
-                    _parkingLocation.postValue(null)
-                } else {
-                    _errorMessage.postValue("주차 실패: ${response.message}")
+                when (val response = apiClient.parkVehicle(request)) {
+                    is ApiResponse.Success -> {
+                        _errorMessage.postValue("주차가 완료되었습니다")
+                        // 주차 완료 후 상태 초기화
+                        _ocrResult.postValue(null)
+                        _parkingLocation.postValue(null)
+                    }
+                    is ApiResponse.Error -> {
+                        _errorMessage.postValue("주차 실패: ${response.message}")
+                    }
                 }
             } catch (e: Exception) {
                 _errorMessage.postValue("주차 처리 실패: ${e.message}")

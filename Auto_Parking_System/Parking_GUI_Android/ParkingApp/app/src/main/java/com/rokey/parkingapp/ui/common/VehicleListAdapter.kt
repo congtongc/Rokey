@@ -41,10 +41,10 @@ class VehicleListAdapter(
 
         fun bind(vehicle: ParkedVehicle) {
             with(binding) {
-                tvLicensePlate.text = vehicle.licensePlate
-                tvCarType.text = vehicle.carType
+                tvLicensePlate.text = vehicle.license_plate
+                tvCarType.text = vehicle.car_type
                 tvLocation.text = vehicle.location
-                tvEntryTime.text = vehicle.entryTime
+                tvEntryTime.text = vehicle.time
             }
         }
     }
@@ -52,7 +52,7 @@ class VehicleListAdapter(
 
 class VehicleDiffCallback : DiffUtil.ItemCallback<ParkedVehicle>() {
     override fun areItemsTheSame(oldItem: ParkedVehicle, newItem: ParkedVehicle): Boolean {
-        return oldItem.licensePlate == newItem.licensePlate
+        return oldItem.license_plate == newItem.license_plate
     }
 
     override fun areContentsTheSame(oldItem: ParkedVehicle, newItem: ParkedVehicle): Boolean {

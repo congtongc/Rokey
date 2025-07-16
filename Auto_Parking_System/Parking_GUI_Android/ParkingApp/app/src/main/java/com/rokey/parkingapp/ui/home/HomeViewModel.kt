@@ -65,10 +65,8 @@ class HomeViewModel : ViewModel() {
         )
         _parkedVehicles.value = emptyList()
         _latestOcr.value = OcrResult(
-            licensePlate = "",
-            carType = "normal",
-            confidence = 0.0,
-            timestamp = System.currentTimeMillis().toString()
+            car_plate = "",
+            type = "normal"
         )
     }
     
@@ -78,37 +76,45 @@ class HomeViewModel : ViewModel() {
                 _isLoading.value = true
                 _errorMessage.value = null
                 
-                val response = apiClient.getParkingStatus()
-                if (response.success) {
-                    _parkedVehicles.value = response.parkedVehicles
-                    
-                    // 주차된 차량 타입별로 카운트
-                    val occupiedCount = mutableMapOf(
-                        "normal" to 0,
-                        "ev" to 0,
-                        "disabled" to 0
-                    )
-                    
-                    response.parkedVehicles.forEach { vehicle ->
-                        occupiedCount[vehicle.carType] = (occupiedCount[vehicle.carType] ?: 0) + 1
+                when (val response = apiClient.getParkingStatus()) {
+                    is ApiResponse.Success -> {
+                        response.data.parkedVehicles?.let { vehicles ->
+                            _parkedVehicles.value = vehicles
+                            
+                            // 주차된 차량 타입별로 카운트
+                            val occupiedCount = mutableMapOf(
+                                "normal" to 0,
+                                "ev" to 0,
+                                "disabled" to 0
+                            )
+                            
+                            vehicles.forEach { vehicle ->
+                                occupiedCount[vehicle.car_type] = (occupiedCount[vehicle.car_type] ?: 0) + 1
+                            }
+                            
+                            // 통계 업데이트
+                            _statistics.value = mapOf(
+                                "total" to mapOf(
+                                    "normal" to 2,
+                                    "ev" to 2,
+                                    "disabled" to 2
+                                ),
+                                "occupied" to occupiedCount,
+                                "available" to mapOf(
+                                    "normal" to (2 - (occupiedCount["normal"] ?: 0)),
+                                    "ev" to (2 - (occupiedCount["ev"] ?: 0)),
+                                    "disabled" to (2 - (occupiedCount["disabled"] ?: 0))
+                                )
+                            )
+                        }
+                        
+                        response.data.latest_ocr?.let { ocr ->
+                            _latestOcr.value = ocr
+                        }
                     }
-                    
-                    // 통계 업데이트
-                    _statistics.value = mapOf(
-                        "total" to mapOf(
-                            "normal" to 2,
-                            "ev" to 2,
-                            "disabled" to 2
-                        ),
-                        "occupied" to occupiedCount,
-                        "available" to mapOf(
-                            "normal" to (2 - (occupiedCount["normal"] ?: 0)),
-                            "ev" to (2 - (occupiedCount["ev"] ?: 0)),
-                            "disabled" to (2 - (occupiedCount["disabled"] ?: 0))
-                        )
-                    )
-                } else {
-                    _errorMessage.value = response.message
+                    is ApiResponse.Error -> {
+                        _errorMessage.value = response.message
+                    }
                 }
             } catch (e: IOException) {
                 _errorMessage.value = "네트워크 오류: ${e.message}"
@@ -132,17 +138,6 @@ class HomeViewModel : ViewModel() {
     
     fun retryConnection() {
         loadParkingStatus()
-    }
-    
-    fun processLatestOcr() {
-        viewModelScope.launch {
-            try {
-                val result = apiClient.processOcr("")
-                _latestOcr.value = result
-            } catch (e: Exception) {
-                Log.e(TAG, "OCR 처리 실패", e)
-            }
-        }
     }
     
     fun getStatistics(): Map<String, Map<String, Int>> {

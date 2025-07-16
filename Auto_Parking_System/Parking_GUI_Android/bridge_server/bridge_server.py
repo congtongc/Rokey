@@ -42,7 +42,7 @@ app = FastAPI(title="Parking System Bridge Server")
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
-    allow_credentials=True,
+    allow_credentials=False,  # credentials가 필요없으므로 False로 설정
     allow_methods=["*"],
     allow_headers=["*"],
 )
@@ -56,6 +56,14 @@ db_manager = DBManager()
 camera_sub = '/robot3/oakd/rgb/image_raw'
 ocr_sub = '/carplate/ocr_result'
 location_pub = '/parking/location'
+
+# 서버 상태 추적을 위한 전역 변수 추가
+server_status = {
+    "start_time": datetime.now().isoformat(),
+    "connected_clients": 0,
+    "last_camera_frame": None,
+    "last_ocr_result": None
+}
 
 # 이벤트 루프 관리를 위한 전역 변수 추가
 main_event_loop = None
@@ -205,35 +213,29 @@ async def websocket_endpoint(websocket: WebSocket):
 # REST API 엔드포인트
 @app.get("/")
 async def root():
-    return {"message": "주차 시스템 브릿지 서버가 실행 중입니다."}
+    """루트 엔드포인트"""
+    return {
+        "status": "ok",
+        "message": "주차 시스템 브릿지 서버가 실행 중입니다.",
+        "server_time": datetime.now().isoformat(),
+        "uptime": str(datetime.now() - datetime.fromisoformat(server_status["start_time"]))
+    }
 
 @app.get("/status")
 async def get_status():
-    print("=== [DEBUG] /status 엔드포인트 진입 ===")
-    logger.info("=== [DEBUG] /status 엔드포인트 진입 ===")
+    """상태 확인 엔드포인트"""
     try:
+        # 서버 상태 업데이트
+        server_status["connected_clients"] = len(connected_websockets)
+        server_status["last_camera_frame"] = datetime.now().isoformat() if latest_camera_frame is not None else None
+        server_status["last_ocr_result"] = latest_ocr_result
+
         # DB 연결 상태 확인
-        print("[DEBUG] DB 연결 상태 확인 중...")
-        logger.info("[DEBUG] DB 연결 상태 확인 중...")
-        
-        # 주차 통계 가져오기
-        print("[DEBUG] get_parking_statistics 호출 전")
-        logger.info("[DEBUG] get_parking_statistics 호출 전")
         parking_stats = db_manager.get_parking_statistics()
-        print(f"[DEBUG] /status parking_stats: {parking_stats}")
-        logger.info(f"[DEBUG] /status parking_stats: {parking_stats}")
-        
-        # 주차된 차량 정보 가져오기
-        print("[DEBUG] fetch_current_parked_vehicles 호출 전")
-        logger.info("[DEBUG] fetch_current_parked_vehicles 호출 전")
         parked_vehicles = []
         parked_df = db_manager.fetch_current_parked_vehicles()
-        print(f"[DEBUG] /status parked_df:\n{parked_df}")
-        logger.info(f"[DEBUG] /status parked_df:\n{parked_df}")
         
         if not parked_df.empty:
-            print("[DEBUG] parked_df가 비어있지 않음, 차량 정보 변환 중")
-            logger.info("[DEBUG] parked_df가 비어있지 않음, 차량 정보 변환 중")
             for _, row in parked_df.iterrows():
                 vehicle = {
                     "license_plate": row['license_plate'],
@@ -242,33 +244,25 @@ async def get_status():
                     "time": str(row['time'])
                 }
                 parked_vehicles.append(vehicle)
-        else:
-            print("[DEBUG] parked_df가 비어있음, 빈 배열 반환")
-            logger.info("[DEBUG] parked_df가 비어있음, 빈 배열 반환")
-            
-        print(f"[DEBUG] /status parked_vehicles: {parked_vehicles}")
-        logger.info(f"[DEBUG] /status parked_vehicles: {parked_vehicles}")
         
-        if parked_df is None or parked_df.empty:
-            print("[DEBUG] parked_df is empty, statistics should be 2/0/2")
-            logger.info("[DEBUG] parked_df is empty, statistics should be 2/0/2")
-            
-        # 응답 데이터 생성
-        response_data = {
+        return {
             "status": "ok",
+            "server_status": server_status,
             "timestamp": datetime.now().isoformat(),
             "statistics": parking_stats,
             "parkedVehicles": parked_vehicles,
             "latest_ocr": latest_ocr_result
         }
-        
-        print(f"[DEBUG] /status 응답 데이터: {response_data}")
-        logger.info(f"[DEBUG] /status 응답 데이터: {response_data}")
-        return response_data
     except Exception as e:
-        print(f"[ERROR] /status: {e}")
-        logger.error(f"[ERROR] /status: {e}")
-        raise HTTPException(status_code=500, detail=f"서버 오류: {str(e)}")
+        logger.error(f"상태 확인 중 오류 발생: {e}")
+        raise HTTPException(
+            status_code=500,
+            detail={
+                "status": "error",
+                "message": str(e),
+                "timestamp": datetime.now().isoformat()
+            }
+        )
 
 @app.post("/park")
 async def park_vehicle(request: ParkingRequest):

@@ -1,7 +1,7 @@
 [
 {
-  "directory": "/home/hyeongyeon/android_project/ParkingApp/app/.cxx/Debug/1c4s2c5w/arm64-v8a",
-  "command": "/home/hyeongyeon/Android/Sdk/ndk/27.0.12077973/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=aarch64-none-linux-android24 --sysroot=/home/hyeongyeon/Android/Sdk/ndk/27.0.12077973/toolchains/llvm/prebuilt/linux-x86_64/sysroot -Dpenguin_EXPORTS -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -std=c++11 -fno-limit-debug-info  -fPIC -o CMakeFiles/penguin.dir/penguin/penguin.cpp.o -c /home/hyeongyeon/android_project/ParkingApp/app/src/main/cpp/penguin/penguin.cpp",
-  "file": "/home/hyeongyeon/android_project/ParkingApp/app/src/main/cpp/penguin/penguin.cpp"
+  "directory": "/home/hyeongyeon/rokey_project/Rokey/Auto_Parking_System/Parking_GUI_Android/ParkingApp/app/.cxx/Debug/1c4s2c5w/arm64-v8a",
+  "command": "/home/hyeongyeon/Android/Sdk/ndk/27.0.12077973/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=aarch64-none-linux-android24 --sysroot=/home/hyeongyeon/Android/Sdk/ndk/27.0.12077973/toolchains/llvm/prebuilt/linux-x86_64/sysroot -Dpenguin_EXPORTS -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -std=c++11 -fno-limit-debug-info  -fPIC -o CMakeFiles/penguin.dir/penguin/penguin.cpp.o -c /home/hyeongyeon/rokey_project/Rokey/Auto_Parking_System/Parking_GUI_Android/ParkingApp/app/src/main/cpp/penguin/penguin.cpp",
+  "file": "/home/hyeongyeon/rokey_project/Rokey/Auto_Parking_System/Parking_GUI_Android/ParkingApp/app/src/main/cpp/penguin/penguin.cpp"
 }
 ]

@@ -1,0 +1,4 @@
+/usr/bin/ninja \
+  -C \
+  /home/hyeongyeon/android_project/ParkingApp/app/.cxx/Debug/1c4s2c5w/armeabi-v7a \
+  clean

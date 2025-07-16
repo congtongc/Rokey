@@ -65,7 +65,7 @@ class ExitFragment : Fragment() {
         }
 
         viewModel.cameraStream.observe(viewLifecycleOwner) { stream ->
-            binding.webViewCamera.loadUrl(stream.url)
+            binding.webViewCamera.loadData(stream, "text/html", "UTF-8")
         }
     }
 
@@ -98,10 +98,10 @@ class ExitFragment : Fragment() {
     private fun updateSelectedVehicleUI(vehicle: ParkedVehicle?) {
         if (vehicle != null) {
             binding.cardSelectedVehicle.visibility = View.VISIBLE
-            binding.tvLicensePlate.text = vehicle.licensePlate
-            binding.tvCarType.text = vehicle.carType
+            binding.tvLicensePlate.text = vehicle.license_plate
+            binding.tvCarType.text = vehicle.car_type
             binding.tvLocation.text = vehicle.location
-            binding.tvEntryTime.text = vehicle.entryTime
+            binding.tvEntryTime.text = vehicle.time
             binding.btnExit.isEnabled = true
         } else {
             binding.cardSelectedVehicle.visibility = View.GONE

@@ -56,12 +56,12 @@ class ParkingFragment : Fragment() {
     }
 
     private fun setupObservers() {
-        viewModel.cameraStream.observe(viewLifecycleOwner) { response ->
-            response?.let {
-                binding.webViewCamera.loadUrl(it.url)
-                // URL이 업데이트될 때마다 자동으로 OCR 처리
+        viewModel.cameraStream.observe(viewLifecycleOwner) { imageData ->
+            imageData?.let {
+                binding.webViewCamera.loadData(it, "text/html", "UTF-8")
+                // 이미지 데이터가 업데이트될 때마다 자동으로 OCR 처리
                 try {
-                    val result = penguinLib.processImage(it.url)
+                    val result = penguinLib.processImage(it)
                     viewModel.processOcrResult(result)
                 } catch (e: Exception) {
                     showError("이미지 처리 실패: ${e.message}")
@@ -72,8 +72,8 @@ class ParkingFragment : Fragment() {
         viewModel.ocrResult.observe(viewLifecycleOwner) { result ->
             result?.let {
                 binding.layoutRecognitionResult.visibility = View.VISIBLE
-                binding.tvLicensePlate.text = it.licensePlate
-                binding.tvCarType.text = it.carType
+                binding.tvLicensePlate.text = it.car_plate
+                binding.tvCarType.text = it.type
                 binding.btnPark.isEnabled = true
             }
         }

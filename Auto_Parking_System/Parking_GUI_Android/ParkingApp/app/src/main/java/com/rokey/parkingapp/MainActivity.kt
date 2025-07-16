@@ -36,6 +36,7 @@ import kotlinx.coroutines.cancel
 import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
+import com.rokey.parkingapp.network.ApiResponse
 
 class MainActivity : AppCompatActivity() {
     
@@ -81,6 +82,28 @@ class MainActivity : AppCompatActivity() {
         
         // 위치 권한 체크 및 요청
         checkLocationPermission()
+
+        // NSD 초기화 및 시작
+        ApiConfig.initializeDiscovery(this)
+        ApiConfig.startDiscovery()
+        
+        // SharedPreferences 변경 감지
+        getSharedPreferences("server_prefs", Context.MODE_PRIVATE)
+            .registerOnSharedPreferenceChangeListener { prefs, key ->
+                if (key == "base_url") {
+                    val newUrl = prefs.getString(key, null)
+                    if (newUrl != null) {
+                        lifecycleScope.launch {
+                            try {
+                                ApiClient.getInstance().updateBaseUrl(newUrl)
+                                Log.d("MainActivity", "서버 URL 업데이트됨: $newUrl")
+                            } catch (e: Exception) {
+                                Log.e("MainActivity", "서버 URL 업데이트 실패", e)
+                            }
+                        }
+                    }
+                }
+            }
     }
 
     private fun setupNavigation() {
@@ -204,6 +227,8 @@ class MainActivity : AppCompatActivity() {
         isFinishing = true
         scope.cancel()
         WebSocketManager.disconnect()
+        // NSD 중지
+        ApiConfig.stopDiscovery()
     }
 
     private fun improvedAutoDetectServer() {
@@ -218,26 +243,31 @@ class MainActivity : AppCompatActivity() {
                         if (!isActive()) return@launch
                         
                         try {
-                            ApiClient.updateServerUrl(this@MainActivity, serverUrl)
-                            
-                            val response = apiClient.getParkingStatus()
-                            if (response.success) {
-                                val prefs = getSharedPreferences("server_prefs", Context.MODE_PRIVATE)
-                                prefs.edit()
-                                    .putString("base_url", serverUrl)
-                                    .putString("ws_base_url", serverUrl.replace("http", "ws"))
-                                    .apply()
-                                
-                                if (isActive()) {
-                                    withContext(Dispatchers.Main) {
-                                        Toast.makeText(
-                                            this@MainActivity, 
-                                            "서버 자동 연결 성공: $serverUrl", 
-                                            Toast.LENGTH_LONG
-                                        ).show()
+                            if (ApiClient.updateServerUrl(this@MainActivity, serverUrl)) {
+                                val response = apiClient.getParkingStatus()
+                                when (response) {
+                                    is ApiResponse.Success -> {
+                                        val prefs = getSharedPreferences("server_prefs", Context.MODE_PRIVATE)
+                                        prefs.edit()
+                                            .putString("base_url", serverUrl)
+                                            .putString("ws_base_url", serverUrl.replace("http", "ws"))
+                                            .apply()
+                                        
+                                        if (isActive()) {
+                                            withContext(Dispatchers.Main) {
+                                                Toast.makeText(
+                                                    this@MainActivity, 
+                                                    "서버 자동 연결 성공: $serverUrl", 
+                                                    Toast.LENGTH_LONG
+                                                ).show()
+                                            }
+                                        }
+                                        return@launch
+                                    }
+                                    is ApiResponse.Error -> {
+                                        Log.e(TAG, "서버 응답 오류: ${response.message}")
                                     }
                                 }
-                                return@launch
                             }
                         } catch (e: Exception) {
                             Log.e(TAG, "서버 연결 시도 실패: $serverUrl, 엔드포인트: $endpoint", e)

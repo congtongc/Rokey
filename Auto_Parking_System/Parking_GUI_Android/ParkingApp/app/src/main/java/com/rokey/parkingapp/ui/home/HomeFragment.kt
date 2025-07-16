@@ -12,7 +12,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.rokey.parkingapp.R
 import com.rokey.parkingapp.databinding.FragmentHomeBinding
 import com.rokey.parkingapp.network.ParkedVehicle
-import com.rokey.parkingapp.network.Statistics
+import com.rokey.parkingapp.network.ParkingStatistics
 import com.rokey.parkingapp.ui.common.VehicleListAdapter
 
 class HomeFragment : Fragment() {
