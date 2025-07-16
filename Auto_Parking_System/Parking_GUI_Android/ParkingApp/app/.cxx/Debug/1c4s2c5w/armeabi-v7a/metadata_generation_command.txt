@@ -1,0 +1,19 @@
+                        -H/home/hyeongyeon/android_project/ParkingApp/app/src/main/cpp
+-DCMAKE_SYSTEM_NAME=Android
+-DCMAKE_EXPORT_COMPILE_COMMANDS=ON
+-DCMAKE_SYSTEM_VERSION=24
+-DANDROID_PLATFORM=android-24
+-DANDROID_ABI=armeabi-v7a
+-DCMAKE_ANDROID_ARCH_ABI=armeabi-v7a
+-DANDROID_NDK=/home/hyeongyeon/Android/Sdk/ndk/27.0.12077973
+-DCMAKE_ANDROID_NDK=/home/hyeongyeon/Android/Sdk/ndk/27.0.12077973
+-DCMAKE_TOOLCHAIN_FILE=/home/hyeongyeon/Android/Sdk/ndk/27.0.12077973/build/cmake/android.toolchain.cmake
+-DCMAKE_MAKE_PROGRAM=/usr/bin/ninja
+-DCMAKE_CXX_FLAGS=-std=c++11
+-DCMAKE_LIBRARY_OUTPUT_DIRECTORY=/home/hyeongyeon/android_project/ParkingApp/app/build/intermediates/cxx/Debug/1c4s2c5w/obj/armeabi-v7a
+-DCMAKE_RUNTIME_OUTPUT_DIRECTORY=/home/hyeongyeon/android_project/ParkingApp/app/build/intermediates/cxx/Debug/1c4s2c5w/obj/armeabi-v7a
+-DCMAKE_BUILD_TYPE=Debug
+-B/home/hyeongyeon/android_project/ParkingApp/app/.cxx/Debug/1c4s2c5w/armeabi-v7a
+-GNinja
+                        Build command args: []
+                        Version: 2

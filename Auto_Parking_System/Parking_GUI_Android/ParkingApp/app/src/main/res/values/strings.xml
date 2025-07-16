@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">주차 관리 앱</string>
+    <string name="title_home">홈</string>
+    <string name="title_parking">주차하기</string>
+    <string name="title_exit">출차하기</string>
+    <string name="retry">재시도</string>
+    <string name="connection_error">서버 연결 오류</string>
+    <string name="server_timeout">서버 응답 시간 초과</string>
+    <string name="unknown_error">알 수 없는 오류</string>
+</resources> 

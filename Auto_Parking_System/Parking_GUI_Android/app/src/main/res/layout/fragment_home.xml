@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <!-- ViewModel, 변수 등 선언 가능 -->
+    </data>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+            <TextView
+                android:id="@+id/tv_home_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="홈 화면"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="24dp"/>
+            <Button
+                android:id="@+id/btnParking"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="입차"
+                android:layout_marginBottom="8dp"/>
+            <Button
+                android:id="@+id/btnExit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="출차"
+                android:layout_marginBottom="16dp"/>
+            <TextView
+                android:id="@+id/textTotalNormal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="일반 전체: 0"
+                android:layout_marginBottom="4dp"/>
+            <TextView
+                android:id="@+id/textTotalEv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="전기차 전체: 0"
+                android:layout_marginBottom="4dp"/>
+            <TextView
+                android:id="@+id/textTotalDisabled"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="장애인 전체: 0"
+                android:layout_marginBottom="8dp"/>
+            <TextView
+                android:id="@+id/textOccupiedNormal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="일반 점유: 0"
+                android:layout_marginBottom="4dp"/>
+            <TextView
+                android:id="@+id/textOccupiedEv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="전기차 점유: 0"
+                android:layout_marginBottom="4dp"/>
+            <TextView
+                android:id="@+id/textOccupiedDisabled"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="장애인 점유: 0"
+                android:layout_marginBottom="8dp"/>
+            <TextView
+                android:id="@+id/textAvailableNormal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="일반 잔여: 0"
+                android:layout_marginBottom="4dp"/>
+            <TextView
+                android:id="@+id/textAvailableEv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="전기차 잔여: 0"
+                android:layout_marginBottom="4dp"/>
+            <TextView
+                android:id="@+id/textAvailableDisabled"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="장애인 잔여: 0"
+                android:layout_marginBottom="8dp"/>
+        </LinearLayout>
+    </ScrollView>
+</layout> 

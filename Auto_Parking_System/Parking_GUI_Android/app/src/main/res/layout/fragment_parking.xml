@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <!-- ViewModel, 변수 등 선언 가능 -->
+    </data>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+            <TextView
+                android:id="@+id/tv_parking_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="입차 화면"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="24dp"/>
+            <EditText
+                android:id="@+id/textLicensePlate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="차량번호 입력"
+                android:layout_marginBottom="8dp"/>
+            <EditText
+                android:id="@+id/textCarType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="차량타입 입력"
+                android:layout_marginBottom="8dp"/>
+            <EditText
+                android:id="@+id/textParkingLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="주차 위치 입력"
+                android:layout_marginBottom="8dp"/>
+            <ImageView
+                android:id="@+id/imageCamera"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:src="@mipmap/ic_launcher"
+                android:scaleType="centerCrop"
+                android:layout_marginBottom="8dp"/>
+            <Button
+                android:id="@+id/btnPark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="입차 처리"
+                android:layout_marginBottom="16dp"/>
+        </LinearLayout>
+    </ScrollView>
+</layout> 

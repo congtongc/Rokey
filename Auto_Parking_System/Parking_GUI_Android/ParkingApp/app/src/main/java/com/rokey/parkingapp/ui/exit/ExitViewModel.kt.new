@@ -1,0 +1,116 @@
+package com.rokey.parkingapp.ui.exit
+
+import android.util.Log
+import androidx.lifecycle.LiveData
+import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.ViewModel
+import androidx.lifecycle.viewModelScope
+import com.rokey.parkingapp.network.*
+import kotlinx.coroutines.*
+
+class ExitViewModel : ViewModel() {
+    
+    private val TAG = "ExitViewModel"
+    
+    private val _parkedVehicles = MutableLiveData<List<ParkedVehicle>>()
+    val parkedVehicles: LiveData<List<ParkedVehicle>> = _parkedVehicles
+    
+    private val _selectedVehicle = MutableLiveData<ParkedVehicle?>()
+    val selectedVehicle: LiveData<ParkedVehicle?> = _selectedVehicle
+    
+    private val _exitResult = MutableLiveData<ExitResponse>()
+    val exitResult: LiveData<ExitResponse> = _exitResult
+    
+    private val _errorMessage = MutableLiveData<String?>()
+    val errorMessage: LiveData<String?> = _errorMessage
+    
+    private val _matchingVehicles = MutableLiveData<List<ParkedVehicle>>()
+    val matchingVehicles: LiveData<List<ParkedVehicle>> = _matchingVehicles
+    
+    private val _cameraStream = MutableLiveData<CameraStreamResponse>()
+    val cameraStream: LiveData<CameraStreamResponse> = _cameraStream
+    
+    private var cameraStreamJob: Job? = null
+    private val cameraStreamScope = CoroutineScope(Dispatchers.IO + SupervisorJob())
+    
+    private val apiClient = ApiClient.getInstance()
+    
+    fun loadParkedVehicles() {
+        viewModelScope.launch {
+            try {
+                val response = apiClient.getParkingStatus()
+                if (response.success) {
+                    _parkedVehicles.value = response.parkedVehicles
+                } else {
+                    _errorMessage.value = response.message
+                }
+            } catch (e: Exception) {
+                _errorMessage.value = "주차 차량 목록 로드 실패: ${e.message}"
+            }
+        }
+    }
+    
+    fun selectVehicle(vehicle: ParkedVehicle) {
+        _selectedVehicle.value = vehicle
+    }
+    
+    fun searchVehicles(query: String) {
+        val currentList = _parkedVehicles.value ?: return
+        if (query.isBlank()) {
+            loadParkedVehicles()
+            return
+        }
+        
+        val filteredList = currentList.filter { vehicle ->
+            vehicle.licensePlate.contains(query, ignoreCase = true) ||
+            vehicle.carType.contains(query, ignoreCase = true) ||
+            vehicle.location.contains(query, ignoreCase = true)
+        }
+        _parkedVehicles.value = filteredList
+    }
+    
+    fun processExit() {
+        val vehicle = _selectedVehicle.value ?: return
+        
+        viewModelScope.launch {
+            try {
+                val request = ExitRequest(licensePlate = vehicle.licensePlate)
+                val response = apiClient.processExit(request)
+                
+                if (response.success) {
+                    _selectedVehicle.value = null
+                    loadParkedVehicles()
+                }
+                _errorMessage.value = response.message
+            } catch (e: Exception) {
+                _errorMessage.value = "출차 처리 실패: ${e.message}"
+            }
+        }
+    }
+
+    fun startCameraStream() {
+        cameraStreamJob?.cancel()
+        cameraStreamJob = viewModelScope.launch {
+            while (isActive) {
+                try {
+                    val response = apiClient.startCameraStream()
+                    _cameraStream.value = response
+                } catch (e: Exception) {
+                    Log.e(TAG, "카메라 스트림 에러", e)
+                }
+                delay(1000) // 1초마다 갱신
+            }
+        }
+    }
+
+    fun stopCameraStream() {
+        cameraStreamJob?.cancel()
+        cameraStreamJob = null
+    }
+
+    override fun onCleared() {
+        super.onCleared()
+        stopCameraStream()
+        cameraStreamScope.cancel()
+    }
+} 

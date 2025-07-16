@@ -4,3 +4,4 @@ Surgery_assisted_cooperative_robot/pick_and_place_voice/resource/.env
 __pycache__/
 # VSCode
 .vscode/
+Auto_Parking_System/Parking_GUI_Android/bridge_server/.env

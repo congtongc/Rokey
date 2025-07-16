@@ -1,0 +1,27 @@
+{
+  "buildFiles": [
+    "/home/hyeongyeon/android_project/ParkingApp/app/src/main/cpp/CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "/usr/bin/ninja",
+      "-C",
+      "/home/hyeongyeon/android_project/ParkingApp/app/.cxx/Debug/1c4s2c5w/x86_64",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "/usr/bin/ninja",
+    "-C",
+    "/home/hyeongyeon/android_project/ParkingApp/app/.cxx/Debug/1c4s2c5w/x86_64",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {
+    "penguin::@6890427a1f51a3e7e1df": {
+      "artifactName": "penguin",
+      "abi": "x86_64",
+      "output": "/home/hyeongyeon/android_project/ParkingApp/app/build/intermediates/cxx/Debug/1c4s2c5w/obj/x86_64/libpenguin.so",
+      "runtimeFiles": []
+    }
+  }
+}

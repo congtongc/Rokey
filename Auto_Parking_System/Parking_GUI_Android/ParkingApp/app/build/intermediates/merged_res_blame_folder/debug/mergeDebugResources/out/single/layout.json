@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "com.rokey.parkingapp-mergeDebugResources-57:/layout/item_vehicle.xml",
+        "source": "com.rokey.parkingapp-main-60:/layout/item_vehicle.xml"
+    },
+    {
+        "merged": "com.rokey.parkingapp-mergeDebugResources-57:/layout/fragment_exit.xml",
+        "source": "com.rokey.parkingapp-main-60:/layout/fragment_exit.xml"
+    },
+    {
+        "merged": "com.rokey.parkingapp-mergeDebugResources-57:/layout/activity_main.xml",
+        "source": "com.rokey.parkingapp-main-60:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.rokey.parkingapp-mergeDebugResources-57:/layout/fragment_parking.xml",
+        "source": "com.rokey.parkingapp-main-60:/layout/fragment_parking.xml"
+    },
+    {
+        "merged": "com.rokey.parkingapp-mergeDebugResources-57:/layout/fragment_home.xml",
+        "source": "com.rokey.parkingapp-main-60:/layout/fragment_home.xml"
+    },
+    {
+        "merged": "com.rokey.parkingapp-mergeDebugResources-57:/layout/dialog_server_config.xml",
+        "source": "com.rokey.parkingapp-main-60:/layout/dialog_server_config.xml"
+    },
+    {
+        "merged": "com.rokey.parkingapp-mergeDebugResources-57:/layout/item_parked_vehicle.xml",
+        "source": "com.rokey.parkingapp-main-60:/layout/item_parked_vehicle.xml"
+    }
+]

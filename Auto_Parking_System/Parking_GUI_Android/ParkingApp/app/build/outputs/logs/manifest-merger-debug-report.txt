@@ -1,0 +1,455 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/hyeongyeon/android_project/ParkingApp/app/src/main/AndroidManifest.xml:2:1-35:12
+INJECTED from /home/hyeongyeon/android_project/ParkingApp/app/src/main/AndroidManifest.xml:2:1-35:12
+INJECTED from /home/hyeongyeon/android_project/ParkingApp/app/src/main/AndroidManifest.xml:2:1-35:12
+INJECTED from /home/hyeongyeon/android_project/ParkingApp/app/src/main/AndroidManifest.xml:2:1-35:12
+MERGED from [androidx.databinding:databinding-adapters:8.10.1] /home/hyeongyeon/.gradle/caches/8.12/transforms/74ce4b0f9f235351c2eb2245dfb3398e/transformed/databinding-adapters-8.10.1/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.databinding:databinding-ktx:8.10.1] /home/hyeongyeon/.gradle/caches/8.12/transforms/fb926ce4eba412366d92de9e3faaf654/transformed/jetified-databinding-ktx-8.10.1/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.databinding:databinding-runtime:8.10.1] /home/hyeongyeon/.gradle/caches/8.12/transforms/95300e35559b33d535ebeee45be4d13c/transformed/databinding-runtime-8.10.1/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.databinding:viewbinding:8.10.1] /home/hyeongyeon/.gradle/caches/8.12/transforms/36f118435ae00ad17b86f26e8898d255/transformed/jetified-viewbinding-8.10.1/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.navigation:navigation-common:2.7.7] /home/hyeongyeon/.gradle/caches/8.12/transforms/0c4835d9e44803a47a2747b0c649b226/transformed/navigation-common-2.7.7/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.navigation:navigation-common-ktx:2.7.7] /home/hyeongyeon/.gradle/caches/8.12/transforms/11d74f5e1943fce21a2613eeb6961a41/transformed/navigation-common-ktx-2.7.7/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.navigation:navigation-runtime:2.7.7] /home/hyeongyeon/.gradle/caches/8.12/transforms/6c5657b2fd2c3667e03ff1f8a72776a8/transformed/navigation-runtime-2.7.7/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.7.7] /home/hyeongyeon/.gradle/caches/8.12/transforms/27132f9916d8468c5c1cf3ededc71f32/transformed/navigation-runtime-ktx-2.7.7/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.navigation:navigation-fragment:2.7.7] /home/hyeongyeon/.gradle/caches/8.12/transforms/c2fdcd9ccb5bca7e977297eab873b05b/transformed/navigation-fragment-2.7.7/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.navigation:navigation-fragment-ktx:2.7.7] /home/hyeongyeon/.gradle/caches/8.12/transforms/36e242179fb8d273435e7088251b7af0/transformed/navigation-fragment-ktx-2.7.7/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.navigation:navigation-ui-ktx:2.7.7] /home/hyeongyeon/.gradle/caches/8.12/transforms/cf49005d27c9da8a1198f872144ed81a/transformed/navigation-ui-ktx-2.7.7/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.navigation:navigation-ui:2.7.7] /home/hyeongyeon/.gradle/caches/8.12/transforms/fb32dbbcb7da120e29c0c29878d350b6/transformed/navigation-ui-2.7.7/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.material:material:1.11.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/87a8e99ea3951e8b4a0093c7466dc5c9/transformed/material-1.11.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /home/hyeongyeon/.gradle/caches/8.12/transforms/b3883f050f0959a5f443d56b95df20c7/transformed/constraintlayout-2.1.4/AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.camera:camera-video:1.3.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/05336c8c649af9ddda092c8d2ce27ca0/transformed/jetified-camera-video-1.3.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.camera:camera-lifecycle:1.3.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/ddbe8eae05ed3d7b80468881110174ee/transformed/jetified-camera-lifecycle-1.3.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.camera:camera-camera2:1.3.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/323ff58bdb5c81167b1b9c1e51633359/transformed/jetified-camera-camera2-1.3.0/AndroidManifest.xml:17:1-36:12
+MERGED from [androidx.camera:camera-core:1.3.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/864816993d98481251c5c31088d5059e/transformed/jetified-camera-core-1.3.0/AndroidManifest.xml:17:1-36:12
+MERGED from [androidx.camera:camera-view:1.3.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/a4bf051344d7ff02abb8bfe6ab946d16/transformed/jetified-camera-view-1.3.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /home/hyeongyeon/.gradle/caches/8.12/transforms/2586ad4f5ec6d3197dc5ad5e8efe9119/transformed/jetified-appcompat-resources-1.6.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.appcompat:appcompat:1.6.1] /home/hyeongyeon/.gradle/caches/8.12/transforms/9ad24c1c03aed5aa4333a6985de92934/transformed/appcompat-1.6.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.1.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/5fbdfb95d43e3fd332be4622897db138/transformed/swiperefreshlayout-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager2:viewpager2:1.1.0-beta02] /home/hyeongyeon/.gradle/caches/8.12/transforms/eec6f76c646d4ecf730a75b8fdb89cda/transformed/jetified-viewpager2-1.1.0-beta02/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.recyclerview:recyclerview:1.3.2] /home/hyeongyeon/.gradle/caches/8.12/transforms/8208091959efa567733ef78957b504a1/transformed/recyclerview-1.3.2/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/5eba80db81f8e15edc342f54a3062ff4/transformed/jetified-emoji2-views-helper-1.2.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.emoji2:emoji2:1.2.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/02839ed9dea2bf40e49681fcbcee94d9/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:17:1-35:12
+MERGED from [com.github.bumptech.glide:glide:4.16.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/846551dae019559282f118f8733c2893/transformed/jetified-glide-4.16.0/AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.fragment:fragment-ktx:1.6.2] /home/hyeongyeon/.gradle/caches/8.12/transforms/24871c5c03a7688fe8f6d5a4d479f1ce/transformed/jetified-fragment-ktx-1.6.2/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.fragment:fragment:1.6.2] /home/hyeongyeon/.gradle/caches/8.12/transforms/de396d968cd354c769be409c90131ba9/transformed/fragment-1.6.2/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity-ktx:1.8.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/f2cde9857187901e9c27d4848a0bbdb1/transformed/jetified-activity-ktx-1.8.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.activity:activity:1.8.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/55b1210fd6ab0f4ed4e58445229f234f/transformed/jetified-activity-1.8.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /home/hyeongyeon/.gradle/caches/8.12/transforms/6d6ab8b0bafe378f07b108e53c8d6b38/transformed/drawerlayout-1.1.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/8a3a6147e906dce86504cc67ad870b91/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/c4c23e69c171b9836e439e1a71a0b89b/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/14d8c6664482bc921d62d0c999ef32c4/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/9700b287d0ae7b6d3e5f1586a78df534/transformed/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/3e3d91811d357dd8b066385650c736fc/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/ff96e7eaf05b02fc1cfbf4484044f7f6/transformed/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.2.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/20a21a3353b7a29cb540e26c640966ad/transformed/slidingpanelayout-1.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/7d408d7e926e7ee767bea51d62a481f0/transformed/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.1.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/c2d8985005a595ac70b9c7417da3ffee/transformed/customview-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.transition:transition:1.4.1] /home/hyeongyeon/.gradle/caches/8.12/transforms/38fce3d8d5053a3c4e3be34deaec4c95/transformed/transition-1.4.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.window:window:1.0.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/88b582ca367910762d73f1b88fc44144/transformed/jetified-window-1.0.0/AndroidManifest.xml:17:1-33:12
+MERGED from [androidx.core:core:1.12.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/2da142ca173a6f42519860e39d9ea4f9/transformed/core-1.12.0/AndroidManifest.xml:17:1-30:12
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/8c2ff19877e2258b93c651a15add56cd/transformed/jetified-customview-poolingcontainer-1.0.0/AndroidManifest.xml:17:1-23:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.7.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/8e09de8b6d5b9a427f1be8ac4f6cc397/transformed/jetified-lifecycle-livedata-core-ktx-2.7.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.7.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/072d3d9840510e19a4e56725de68da81/transformed/lifecycle-livedata-core-2.7.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] /home/hyeongyeon/.gradle/caches/8.12/transforms/6cc52e36a22baddeb5aed777c3b71619/transformed/jetified-savedstate-ktx-1.2.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate:1.2.1] /home/hyeongyeon/.gradle/caches/8.12/transforms/7d10e7ffd24ba2925917cab3ac64afcf/transformed/jetified-savedstate-1.2.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-service:2.7.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/ef52305cf714b54c5123fb5f8ef3da45/transformed/jetified-lifecycle-service-2.7.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.7.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/bd70f9c8846ef88f8fd8e432d95b4449/transformed/jetified-lifecycle-runtime-ktx-2.7.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.7.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/cfce376f5b3a4de5075ecc9fe6f3572a/transformed/lifecycle-runtime-2.7.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/13cfacd5bf7a50e68290a4454df36c06/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.7.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/7e65aa10c84de134818c654f693ef417/transformed/lifecycle-livedata-2.7.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.7.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/74e234a5fd2e78d60e850c05d453e8ce/transformed/lifecycle-viewmodel-2.7.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/13728502db2aac5f6c418a458b124911/transformed/jetified-lifecycle-viewmodel-ktx-2.7.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.7.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/3bc88c8129e9bfa4022ae0fe5862a32c/transformed/jetified-lifecycle-viewmodel-savedstate-2.7.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core-ktx:1.12.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/b1aa0b41a0ed9004e099c2e01c7e1ae0/transformed/jetified-core-ktx-1.12.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.annotation:annotation-experimental:1.3.1] /home/hyeongyeon/.gradle/caches/8.12/transforms/a0d9f3e06d255c3ef45607ac54271cd4/transformed/jetified-annotation-experimental-1.3.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cardview:cardview:1.0.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/160e96111aeb5e8ef19ee6f85e368c18/transformed/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/ada3be86db6871504a52dacb05105957/transformed/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/677f6dd0ce443f9367aa07207563c72c/transformed/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.github.bumptech.glide:gifdecoder:4.16.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/586675b3bb01063187d0afbb074ae07e/transformed/jetified-gifdecoder-4.16.0/AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.exifinterface:exifinterface:1.3.6] /home/hyeongyeon/.gradle/caches/8.12/transforms/c950babb65ec2723c72e7ee6f2f71440/transformed/exifinterface-1.3.6/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/bce4e01e2aa2184233472356d3e4090d/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:17:1-55:12
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/hyeongyeon/.gradle/caches/8.12/transforms/8305bdbd076bdaa327a62ff47233e221/transformed/jetified-startup-runtime-1.1.1/AndroidManifest.xml:17:1-33:12
+MERGED from [androidx.tracing:tracing:1.0.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/d67bb72d04911bcf33021825d90fa8d7/transformed/jetified-tracing-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/hyeongyeon/.gradle/caches/8.12/transforms/44e10e864de79027a534b4c8ae266df1/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.arch.core:core-runtime:2.2.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/01686bf6e2160606cb5028b51520a72b/transformed/core-runtime-2.2.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/69cbac73170383143a0f481230c89bab/transformed/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/076be9bb4b1af368174f40bed7571ef8/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/e68c8e15b23766a8b3963e625e611cd8/transformed/print-1.0.0/AndroidManifest.xml:17:1-22:12
+	package
+		INJECTED from /home/hyeongyeon/android_project/ParkingApp/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /home/hyeongyeon/android_project/ParkingApp/app/src/main/AndroidManifest.xml
+	xmlns:tools
+		ADDED from /home/hyeongyeon/android_project/ParkingApp/app/src/main/AndroidManifest.xml:3:5-51
+	android:versionCode
+		INJECTED from /home/hyeongyeon/android_project/ParkingApp/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/hyeongyeon/android_project/ParkingApp/app/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /home/hyeongyeon/android_project/ParkingApp/app/src/main/AndroidManifest.xml:5:5-67
+	android:name
+		ADDED from /home/hyeongyeon/android_project/ParkingApp/app/src/main/AndroidManifest.xml:5:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /home/hyeongyeon/android_project/ParkingApp/app/src/main/AndroidManifest.xml:6:5-79
+	android:name
+		ADDED from /home/hyeongyeon/android_project/ParkingApp/app/src/main/AndroidManifest.xml:6:22-76
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from /home/hyeongyeon/android_project/ParkingApp/app/src/main/AndroidManifest.xml:7:5-79
+	android:name
+		ADDED from /home/hyeongyeon/android_project/ParkingApp/app/src/main/AndroidManifest.xml:7:22-76
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from /home/hyeongyeon/android_project/ParkingApp/app/src/main/AndroidManifest.xml:8:5-81
+	android:name
+		ADDED from /home/hyeongyeon/android_project/ParkingApp/app/src/main/AndroidManifest.xml:8:22-78
+uses-permission#android.permission.CAMERA
+ADDED from /home/hyeongyeon/android_project/ParkingApp/app/src/main/AndroidManifest.xml:9:5-65
+	android:name
+		ADDED from /home/hyeongyeon/android_project/ParkingApp/app/src/main/AndroidManifest.xml:9:22-62
+uses-feature#android.hardware.camera
+ADDED from /home/hyeongyeon/android_project/ParkingApp/app/src/main/AndroidManifest.xml:10:5-84
+	android:required
+		ADDED from /home/hyeongyeon/android_project/ParkingApp/app/src/main/AndroidManifest.xml:10:58-81
+	android:name
+		ADDED from /home/hyeongyeon/android_project/ParkingApp/app/src/main/AndroidManifest.xml:10:19-57
+application
+ADDED from /home/hyeongyeon/android_project/ParkingApp/app/src/main/AndroidManifest.xml:12:5-33:19
+INJECTED from /home/hyeongyeon/android_project/ParkingApp/app/src/main/AndroidManifest.xml:12:5-33:19
+MERGED from [com.google.android.material:material:1.11.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/87a8e99ea3951e8b4a0093c7466dc5c9/transformed/material-1.11.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.11.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/87a8e99ea3951e8b4a0093c7466dc5c9/transformed/material-1.11.0/AndroidManifest.xml:22:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /home/hyeongyeon/.gradle/caches/8.12/transforms/b3883f050f0959a5f443d56b95df20c7/transformed/constraintlayout-2.1.4/AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /home/hyeongyeon/.gradle/caches/8.12/transforms/b3883f050f0959a5f443d56b95df20c7/transformed/constraintlayout-2.1.4/AndroidManifest.xml:9:5-20
+MERGED from [androidx.camera:camera-camera2:1.3.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/323ff58bdb5c81167b1b9c1e51633359/transformed/jetified-camera-camera2-1.3.0/AndroidManifest.xml:23:5-34:19
+MERGED from [androidx.camera:camera-camera2:1.3.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/323ff58bdb5c81167b1b9c1e51633359/transformed/jetified-camera-camera2-1.3.0/AndroidManifest.xml:23:5-34:19
+MERGED from [androidx.camera:camera-core:1.3.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/864816993d98481251c5c31088d5059e/transformed/jetified-camera-core-1.3.0/AndroidManifest.xml:23:5-34:19
+MERGED from [androidx.camera:camera-core:1.3.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/864816993d98481251c5c31088d5059e/transformed/jetified-camera-core-1.3.0/AndroidManifest.xml:23:5-34:19
+MERGED from [androidx.emoji2:emoji2:1.2.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/02839ed9dea2bf40e49681fcbcee94d9/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.emoji2:emoji2:1.2.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/02839ed9dea2bf40e49681fcbcee94d9/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.window:window:1.0.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/88b582ca367910762d73f1b88fc44144/transformed/jetified-window-1.0.0/AndroidManifest.xml:24:5-31:19
+MERGED from [androidx.window:window:1.0.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/88b582ca367910762d73f1b88fc44144/transformed/jetified-window-1.0.0/AndroidManifest.xml:24:5-31:19
+MERGED from [androidx.core:core:1.12.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/2da142ca173a6f42519860e39d9ea4f9/transformed/core-1.12.0/AndroidManifest.xml:28:5-89
+MERGED from [androidx.core:core:1.12.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/2da142ca173a6f42519860e39d9ea4f9/transformed/core-1.12.0/AndroidManifest.xml:28:5-89
+MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/13cfacd5bf7a50e68290a4454df36c06/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/13cfacd5bf7a50e68290a4454df36c06/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/bce4e01e2aa2184233472356d3e4090d/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:23:5-53:19
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/bce4e01e2aa2184233472356d3e4090d/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:23:5-53:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/hyeongyeon/.gradle/caches/8.12/transforms/8305bdbd076bdaa327a62ff47233e221/transformed/jetified-startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/hyeongyeon/.gradle/caches/8.12/transforms/8305bdbd076bdaa327a62ff47233e221/transformed/jetified-startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/hyeongyeon/.gradle/caches/8.12/transforms/44e10e864de79027a534b4c8ae266df1/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/hyeongyeon/.gradle/caches/8.12/transforms/44e10e864de79027a534b4c8ae266df1/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+	android:extractNativeLibs
+		INJECTED from /home/hyeongyeon/android_project/ParkingApp/app/src/main/AndroidManifest.xml
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.12.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/2da142ca173a6f42519860e39d9ea4f9/transformed/core-1.12.0/AndroidManifest.xml:28:18-86
+	android:supportsRtl
+		ADDED from /home/hyeongyeon/android_project/ParkingApp/app/src/main/AndroidManifest.xml:19:9-35
+	android:label
+		ADDED from /home/hyeongyeon/android_project/ParkingApp/app/src/main/AndroidManifest.xml:17:9-41
+	android:fullBackupContent
+		ADDED from /home/hyeongyeon/android_project/ParkingApp/app/src/main/AndroidManifest.xml:15:9-54
+	android:roundIcon
+		ADDED from /home/hyeongyeon/android_project/ParkingApp/app/src/main/AndroidManifest.xml:18:9-54
+	tools:targetApi
+		ADDED from /home/hyeongyeon/android_project/ParkingApp/app/src/main/AndroidManifest.xml:22:9-29
+	android:icon
+		ADDED from /home/hyeongyeon/android_project/ParkingApp/app/src/main/AndroidManifest.xml:16:9-43
+	android:allowBackup
+		ADDED from /home/hyeongyeon/android_project/ParkingApp/app/src/main/AndroidManifest.xml:13:9-35
+	android:theme
+		ADDED from /home/hyeongyeon/android_project/ParkingApp/app/src/main/AndroidManifest.xml:20:9-40
+	android:dataExtractionRules
+		ADDED from /home/hyeongyeon/android_project/ParkingApp/app/src/main/AndroidManifest.xml:14:9-65
+	android:usesCleartextTraffic
+		ADDED from /home/hyeongyeon/android_project/ParkingApp/app/src/main/AndroidManifest.xml:21:9-44
+activity#com.rokey.parkingapp.MainActivity
+ADDED from /home/hyeongyeon/android_project/ParkingApp/app/src/main/AndroidManifest.xml:23:9-32:20
+	android:exported
+		ADDED from /home/hyeongyeon/android_project/ParkingApp/app/src/main/AndroidManifest.xml:25:13-36
+	android:theme
+		ADDED from /home/hyeongyeon/android_project/ParkingApp/app/src/main/AndroidManifest.xml:26:13-44
+	android:name
+		ADDED from /home/hyeongyeon/android_project/ParkingApp/app/src/main/AndroidManifest.xml:24:13-41
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /home/hyeongyeon/android_project/ParkingApp/app/src/main/AndroidManifest.xml:27:13-31:29
+action#android.intent.action.MAIN
+ADDED from /home/hyeongyeon/android_project/ParkingApp/app/src/main/AndroidManifest.xml:28:17-69
+	android:name
+		ADDED from /home/hyeongyeon/android_project/ParkingApp/app/src/main/AndroidManifest.xml:28:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /home/hyeongyeon/android_project/ParkingApp/app/src/main/AndroidManifest.xml:30:17-77
+	android:name
+		ADDED from /home/hyeongyeon/android_project/ParkingApp/app/src/main/AndroidManifest.xml:30:27-74
+uses-sdk
+INJECTED from /home/hyeongyeon/android_project/ParkingApp/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/hyeongyeon/android_project/ParkingApp/app/src/main/AndroidManifest.xml
+INJECTED from /home/hyeongyeon/android_project/ParkingApp/app/src/main/AndroidManifest.xml
+MERGED from [androidx.databinding:databinding-adapters:8.10.1] /home/hyeongyeon/.gradle/caches/8.12/transforms/74ce4b0f9f235351c2eb2245dfb3398e/transformed/databinding-adapters-8.10.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.databinding:databinding-adapters:8.10.1] /home/hyeongyeon/.gradle/caches/8.12/transforms/74ce4b0f9f235351c2eb2245dfb3398e/transformed/databinding-adapters-8.10.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.databinding:databinding-ktx:8.10.1] /home/hyeongyeon/.gradle/caches/8.12/transforms/fb926ce4eba412366d92de9e3faaf654/transformed/jetified-databinding-ktx-8.10.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.databinding:databinding-ktx:8.10.1] /home/hyeongyeon/.gradle/caches/8.12/transforms/fb926ce4eba412366d92de9e3faaf654/transformed/jetified-databinding-ktx-8.10.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.databinding:databinding-runtime:8.10.1] /home/hyeongyeon/.gradle/caches/8.12/transforms/95300e35559b33d535ebeee45be4d13c/transformed/databinding-runtime-8.10.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.databinding:databinding-runtime:8.10.1] /home/hyeongyeon/.gradle/caches/8.12/transforms/95300e35559b33d535ebeee45be4d13c/transformed/databinding-runtime-8.10.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.databinding:viewbinding:8.10.1] /home/hyeongyeon/.gradle/caches/8.12/transforms/36f118435ae00ad17b86f26e8898d255/transformed/jetified-viewbinding-8.10.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.databinding:viewbinding:8.10.1] /home/hyeongyeon/.gradle/caches/8.12/transforms/36f118435ae00ad17b86f26e8898d255/transformed/jetified-viewbinding-8.10.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-common:2.7.7] /home/hyeongyeon/.gradle/caches/8.12/transforms/0c4835d9e44803a47a2747b0c649b226/transformed/navigation-common-2.7.7/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-common:2.7.7] /home/hyeongyeon/.gradle/caches/8.12/transforms/0c4835d9e44803a47a2747b0c649b226/transformed/navigation-common-2.7.7/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-common-ktx:2.7.7] /home/hyeongyeon/.gradle/caches/8.12/transforms/11d74f5e1943fce21a2613eeb6961a41/transformed/navigation-common-ktx-2.7.7/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-common-ktx:2.7.7] /home/hyeongyeon/.gradle/caches/8.12/transforms/11d74f5e1943fce21a2613eeb6961a41/transformed/navigation-common-ktx-2.7.7/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-runtime:2.7.7] /home/hyeongyeon/.gradle/caches/8.12/transforms/6c5657b2fd2c3667e03ff1f8a72776a8/transformed/navigation-runtime-2.7.7/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-runtime:2.7.7] /home/hyeongyeon/.gradle/caches/8.12/transforms/6c5657b2fd2c3667e03ff1f8a72776a8/transformed/navigation-runtime-2.7.7/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.7.7] /home/hyeongyeon/.gradle/caches/8.12/transforms/27132f9916d8468c5c1cf3ededc71f32/transformed/navigation-runtime-ktx-2.7.7/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.7.7] /home/hyeongyeon/.gradle/caches/8.12/transforms/27132f9916d8468c5c1cf3ededc71f32/transformed/navigation-runtime-ktx-2.7.7/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-fragment:2.7.7] /home/hyeongyeon/.gradle/caches/8.12/transforms/c2fdcd9ccb5bca7e977297eab873b05b/transformed/navigation-fragment-2.7.7/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-fragment:2.7.7] /home/hyeongyeon/.gradle/caches/8.12/transforms/c2fdcd9ccb5bca7e977297eab873b05b/transformed/navigation-fragment-2.7.7/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-fragment-ktx:2.7.7] /home/hyeongyeon/.gradle/caches/8.12/transforms/36e242179fb8d273435e7088251b7af0/transformed/navigation-fragment-ktx-2.7.7/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-fragment-ktx:2.7.7] /home/hyeongyeon/.gradle/caches/8.12/transforms/36e242179fb8d273435e7088251b7af0/transformed/navigation-fragment-ktx-2.7.7/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-ui-ktx:2.7.7] /home/hyeongyeon/.gradle/caches/8.12/transforms/cf49005d27c9da8a1198f872144ed81a/transformed/navigation-ui-ktx-2.7.7/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-ui-ktx:2.7.7] /home/hyeongyeon/.gradle/caches/8.12/transforms/cf49005d27c9da8a1198f872144ed81a/transformed/navigation-ui-ktx-2.7.7/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-ui:2.7.7] /home/hyeongyeon/.gradle/caches/8.12/transforms/fb32dbbcb7da120e29c0c29878d350b6/transformed/navigation-ui-2.7.7/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-ui:2.7.7] /home/hyeongyeon/.gradle/caches/8.12/transforms/fb32dbbcb7da120e29c0c29878d350b6/transformed/navigation-ui-2.7.7/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.11.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/87a8e99ea3951e8b4a0093c7466dc5c9/transformed/material-1.11.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.11.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/87a8e99ea3951e8b4a0093c7466dc5c9/transformed/material-1.11.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /home/hyeongyeon/.gradle/caches/8.12/transforms/b3883f050f0959a5f443d56b95df20c7/transformed/constraintlayout-2.1.4/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /home/hyeongyeon/.gradle/caches/8.12/transforms/b3883f050f0959a5f443d56b95df20c7/transformed/constraintlayout-2.1.4/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.camera:camera-video:1.3.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/05336c8c649af9ddda092c8d2ce27ca0/transformed/jetified-camera-video-1.3.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.camera:camera-video:1.3.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/05336c8c649af9ddda092c8d2ce27ca0/transformed/jetified-camera-video-1.3.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.camera:camera-lifecycle:1.3.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/ddbe8eae05ed3d7b80468881110174ee/transformed/jetified-camera-lifecycle-1.3.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.camera:camera-lifecycle:1.3.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/ddbe8eae05ed3d7b80468881110174ee/transformed/jetified-camera-lifecycle-1.3.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.camera:camera-camera2:1.3.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/323ff58bdb5c81167b1b9c1e51633359/transformed/jetified-camera-camera2-1.3.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.camera:camera-camera2:1.3.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/323ff58bdb5c81167b1b9c1e51633359/transformed/jetified-camera-camera2-1.3.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.camera:camera-core:1.3.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/864816993d98481251c5c31088d5059e/transformed/jetified-camera-core-1.3.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.camera:camera-core:1.3.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/864816993d98481251c5c31088d5059e/transformed/jetified-camera-core-1.3.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.camera:camera-view:1.3.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/a4bf051344d7ff02abb8bfe6ab946d16/transformed/jetified-camera-view-1.3.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.camera:camera-view:1.3.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/a4bf051344d7ff02abb8bfe6ab946d16/transformed/jetified-camera-view-1.3.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /home/hyeongyeon/.gradle/caches/8.12/transforms/2586ad4f5ec6d3197dc5ad5e8efe9119/transformed/jetified-appcompat-resources-1.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /home/hyeongyeon/.gradle/caches/8.12/transforms/2586ad4f5ec6d3197dc5ad5e8efe9119/transformed/jetified-appcompat-resources-1.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.6.1] /home/hyeongyeon/.gradle/caches/8.12/transforms/9ad24c1c03aed5aa4333a6985de92934/transformed/appcompat-1.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.6.1] /home/hyeongyeon/.gradle/caches/8.12/transforms/9ad24c1c03aed5aa4333a6985de92934/transformed/appcompat-1.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.1.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/5fbdfb95d43e3fd332be4622897db138/transformed/swiperefreshlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.1.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/5fbdfb95d43e3fd332be4622897db138/transformed/swiperefreshlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.1.0-beta02] /home/hyeongyeon/.gradle/caches/8.12/transforms/eec6f76c646d4ecf730a75b8fdb89cda/transformed/jetified-viewpager2-1.1.0-beta02/AndroidManifest.xml:5:5-44
+MERGED from [androidx.viewpager2:viewpager2:1.1.0-beta02] /home/hyeongyeon/.gradle/caches/8.12/transforms/eec6f76c646d4ecf730a75b8fdb89cda/transformed/jetified-viewpager2-1.1.0-beta02/AndroidManifest.xml:5:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.3.2] /home/hyeongyeon/.gradle/caches/8.12/transforms/8208091959efa567733ef78957b504a1/transformed/recyclerview-1.3.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.3.2] /home/hyeongyeon/.gradle/caches/8.12/transforms/8208091959efa567733ef78957b504a1/transformed/recyclerview-1.3.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/5eba80db81f8e15edc342f54a3062ff4/transformed/jetified-emoji2-views-helper-1.2.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/5eba80db81f8e15edc342f54a3062ff4/transformed/jetified-emoji2-views-helper-1.2.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2:1.2.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/02839ed9dea2bf40e49681fcbcee94d9/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.emoji2:emoji2:1.2.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/02839ed9dea2bf40e49681fcbcee94d9/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:21:5-44
+MERGED from [com.github.bumptech.glide:glide:4.16.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/846551dae019559282f118f8733c2893/transformed/jetified-glide-4.16.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:glide:4.16.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/846551dae019559282f118f8733c2893/transformed/jetified-glide-4.16.0/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.fragment:fragment-ktx:1.6.2] /home/hyeongyeon/.gradle/caches/8.12/transforms/24871c5c03a7688fe8f6d5a4d479f1ce/transformed/jetified-fragment-ktx-1.6.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment-ktx:1.6.2] /home/hyeongyeon/.gradle/caches/8.12/transforms/24871c5c03a7688fe8f6d5a4d479f1ce/transformed/jetified-fragment-ktx-1.6.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.6.2] /home/hyeongyeon/.gradle/caches/8.12/transforms/de396d968cd354c769be409c90131ba9/transformed/fragment-1.6.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.6.2] /home/hyeongyeon/.gradle/caches/8.12/transforms/de396d968cd354c769be409c90131ba9/transformed/fragment-1.6.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity-ktx:1.8.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/f2cde9857187901e9c27d4848a0bbdb1/transformed/jetified-activity-ktx-1.8.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.activity:activity-ktx:1.8.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/f2cde9857187901e9c27d4848a0bbdb1/transformed/jetified-activity-ktx-1.8.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.activity:activity:1.8.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/55b1210fd6ab0f4ed4e58445229f234f/transformed/jetified-activity-1.8.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.8.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/55b1210fd6ab0f4ed4e58445229f234f/transformed/jetified-activity-1.8.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /home/hyeongyeon/.gradle/caches/8.12/transforms/6d6ab8b0bafe378f07b108e53c8d6b38/transformed/drawerlayout-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /home/hyeongyeon/.gradle/caches/8.12/transforms/6d6ab8b0bafe378f07b108e53c8d6b38/transformed/drawerlayout-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/8a3a6147e906dce86504cc67ad870b91/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/8a3a6147e906dce86504cc67ad870b91/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/c4c23e69c171b9836e439e1a71a0b89b/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/c4c23e69c171b9836e439e1a71a0b89b/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/14d8c6664482bc921d62d0c999ef32c4/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/14d8c6664482bc921d62d0c999ef32c4/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/9700b287d0ae7b6d3e5f1586a78df534/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/9700b287d0ae7b6d3e5f1586a78df534/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/3e3d91811d357dd8b066385650c736fc/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/3e3d91811d357dd8b066385650c736fc/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/ff96e7eaf05b02fc1cfbf4484044f7f6/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/ff96e7eaf05b02fc1cfbf4484044f7f6/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.2.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/20a21a3353b7a29cb540e26c640966ad/transformed/slidingpanelayout-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.2.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/20a21a3353b7a29cb540e26c640966ad/transformed/slidingpanelayout-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/7d408d7e926e7ee767bea51d62a481f0/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/7d408d7e926e7ee767bea51d62a481f0/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.1.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/c2d8985005a595ac70b9c7417da3ffee/transformed/customview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.1.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/c2d8985005a595ac70b9c7417da3ffee/transformed/customview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.4.1] /home/hyeongyeon/.gradle/caches/8.12/transforms/38fce3d8d5053a3c4e3be34deaec4c95/transformed/transition-1.4.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.4.1] /home/hyeongyeon/.gradle/caches/8.12/transforms/38fce3d8d5053a3c4e3be34deaec4c95/transformed/transition-1.4.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.window:window:1.0.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/88b582ca367910762d73f1b88fc44144/transformed/jetified-window-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.window:window:1.0.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/88b582ca367910762d73f1b88fc44144/transformed/jetified-window-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.12.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/2da142ca173a6f42519860e39d9ea4f9/transformed/core-1.12.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.12.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/2da142ca173a6f42519860e39d9ea4f9/transformed/core-1.12.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/8c2ff19877e2258b93c651a15add56cd/transformed/jetified-customview-poolingcontainer-1.0.0/AndroidManifest.xml:20:5-21:38
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/8c2ff19877e2258b93c651a15add56cd/transformed/jetified-customview-poolingcontainer-1.0.0/AndroidManifest.xml:20:5-21:38
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.7.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/8e09de8b6d5b9a427f1be8ac4f6cc397/transformed/jetified-lifecycle-livedata-core-ktx-2.7.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.7.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/8e09de8b6d5b9a427f1be8ac4f6cc397/transformed/jetified-lifecycle-livedata-core-ktx-2.7.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.7.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/072d3d9840510e19a4e56725de68da81/transformed/lifecycle-livedata-core-2.7.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.7.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/072d3d9840510e19a4e56725de68da81/transformed/lifecycle-livedata-core-2.7.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] /home/hyeongyeon/.gradle/caches/8.12/transforms/6cc52e36a22baddeb5aed777c3b71619/transformed/jetified-savedstate-ktx-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] /home/hyeongyeon/.gradle/caches/8.12/transforms/6cc52e36a22baddeb5aed777c3b71619/transformed/jetified-savedstate-ktx-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.2.1] /home/hyeongyeon/.gradle/caches/8.12/transforms/7d10e7ffd24ba2925917cab3ac64afcf/transformed/jetified-savedstate-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.2.1] /home/hyeongyeon/.gradle/caches/8.12/transforms/7d10e7ffd24ba2925917cab3ac64afcf/transformed/jetified-savedstate-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-service:2.7.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/ef52305cf714b54c5123fb5f8ef3da45/transformed/jetified-lifecycle-service-2.7.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-service:2.7.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/ef52305cf714b54c5123fb5f8ef3da45/transformed/jetified-lifecycle-service-2.7.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.7.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/bd70f9c8846ef88f8fd8e432d95b4449/transformed/jetified-lifecycle-runtime-ktx-2.7.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.7.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/bd70f9c8846ef88f8fd8e432d95b4449/transformed/jetified-lifecycle-runtime-ktx-2.7.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.7.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/cfce376f5b3a4de5075ecc9fe6f3572a/transformed/lifecycle-runtime-2.7.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.7.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/cfce376f5b3a4de5075ecc9fe6f3572a/transformed/lifecycle-runtime-2.7.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/13cfacd5bf7a50e68290a4454df36c06/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/13cfacd5bf7a50e68290a4454df36c06/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.7.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/7e65aa10c84de134818c654f693ef417/transformed/lifecycle-livedata-2.7.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.7.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/7e65aa10c84de134818c654f693ef417/transformed/lifecycle-livedata-2.7.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.7.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/74e234a5fd2e78d60e850c05d453e8ce/transformed/lifecycle-viewmodel-2.7.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.7.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/74e234a5fd2e78d60e850c05d453e8ce/transformed/lifecycle-viewmodel-2.7.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/13728502db2aac5f6c418a458b124911/transformed/jetified-lifecycle-viewmodel-ktx-2.7.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/13728502db2aac5f6c418a458b124911/transformed/jetified-lifecycle-viewmodel-ktx-2.7.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.7.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/3bc88c8129e9bfa4022ae0fe5862a32c/transformed/jetified-lifecycle-viewmodel-savedstate-2.7.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.7.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/3bc88c8129e9bfa4022ae0fe5862a32c/transformed/jetified-lifecycle-viewmodel-savedstate-2.7.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core-ktx:1.12.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/b1aa0b41a0ed9004e099c2e01c7e1ae0/transformed/jetified-core-ktx-1.12.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core-ktx:1.12.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/b1aa0b41a0ed9004e099c2e01c7e1ae0/transformed/jetified-core-ktx-1.12.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.3.1] /home/hyeongyeon/.gradle/caches/8.12/transforms/a0d9f3e06d255c3ef45607ac54271cd4/transformed/jetified-annotation-experimental-1.3.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.3.1] /home/hyeongyeon/.gradle/caches/8.12/transforms/a0d9f3e06d255c3ef45607ac54271cd4/transformed/jetified-annotation-experimental-1.3.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/160e96111aeb5e8ef19ee6f85e368c18/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/160e96111aeb5e8ef19ee6f85e368c18/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/ada3be86db6871504a52dacb05105957/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/ada3be86db6871504a52dacb05105957/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/677f6dd0ce443f9367aa07207563c72c/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/677f6dd0ce443f9367aa07207563c72c/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.github.bumptech.glide:gifdecoder:4.16.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/586675b3bb01063187d0afbb074ae07e/transformed/jetified-gifdecoder-4.16.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.16.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/586675b3bb01063187d0afbb074ae07e/transformed/jetified-gifdecoder-4.16.0/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.exifinterface:exifinterface:1.3.6] /home/hyeongyeon/.gradle/caches/8.12/transforms/c950babb65ec2723c72e7ee6f2f71440/transformed/exifinterface-1.3.6/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.exifinterface:exifinterface:1.3.6] /home/hyeongyeon/.gradle/caches/8.12/transforms/c950babb65ec2723c72e7ee6f2f71440/transformed/exifinterface-1.3.6/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/bce4e01e2aa2184233472356d3e4090d/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/bce4e01e2aa2184233472356d3e4090d/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/hyeongyeon/.gradle/caches/8.12/transforms/8305bdbd076bdaa327a62ff47233e221/transformed/jetified-startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/hyeongyeon/.gradle/caches/8.12/transforms/8305bdbd076bdaa327a62ff47233e221/transformed/jetified-startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.tracing:tracing:1.0.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/d67bb72d04911bcf33021825d90fa8d7/transformed/jetified-tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/d67bb72d04911bcf33021825d90fa8d7/transformed/jetified-tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/hyeongyeon/.gradle/caches/8.12/transforms/44e10e864de79027a534b4c8ae266df1/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/hyeongyeon/.gradle/caches/8.12/transforms/44e10e864de79027a534b4c8ae266df1/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.2.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/01686bf6e2160606cb5028b51520a72b/transformed/core-runtime-2.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.2.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/01686bf6e2160606cb5028b51520a72b/transformed/core-runtime-2.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/69cbac73170383143a0f481230c89bab/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/69cbac73170383143a0f481230c89bab/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/076be9bb4b1af368174f40bed7571ef8/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/076be9bb4b1af368174f40bed7571ef8/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/e68c8e15b23766a8b3963e625e611cd8/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/e68c8e15b23766a8b3963e625e611cd8/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
+	android:targetSdkVersion
+		INJECTED from /home/hyeongyeon/android_project/ParkingApp/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/hyeongyeon/android_project/ParkingApp/app/src/main/AndroidManifest.xml
+service#androidx.camera.core.impl.MetadataHolderService
+ADDED from [androidx.camera:camera-camera2:1.3.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/323ff58bdb5c81167b1b9c1e51633359/transformed/jetified-camera-camera2-1.3.0/AndroidManifest.xml:24:9-33:19
+MERGED from [androidx.camera:camera-core:1.3.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/864816993d98481251c5c31088d5059e/transformed/jetified-camera-core-1.3.0/AndroidManifest.xml:29:9-33:78
+MERGED from [androidx.camera:camera-core:1.3.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/864816993d98481251c5c31088d5059e/transformed/jetified-camera-core-1.3.0/AndroidManifest.xml:29:9-33:78
+	tools:node
+		ADDED from [androidx.camera:camera-camera2:1.3.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/323ff58bdb5c81167b1b9c1e51633359/transformed/jetified-camera-camera2-1.3.0/AndroidManifest.xml:29:13-31
+	android:enabled
+		ADDED from [androidx.camera:camera-camera2:1.3.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/323ff58bdb5c81167b1b9c1e51633359/transformed/jetified-camera-camera2-1.3.0/AndroidManifest.xml:26:13-36
+	android:exported
+		ADDED from [androidx.camera:camera-camera2:1.3.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/323ff58bdb5c81167b1b9c1e51633359/transformed/jetified-camera-camera2-1.3.0/AndroidManifest.xml:27:13-37
+	tools:ignore
+		ADDED from [androidx.camera:camera-camera2:1.3.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/323ff58bdb5c81167b1b9c1e51633359/transformed/jetified-camera-camera2-1.3.0/AndroidManifest.xml:28:13-75
+	android:name
+		ADDED from [androidx.camera:camera-camera2:1.3.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/323ff58bdb5c81167b1b9c1e51633359/transformed/jetified-camera-camera2-1.3.0/AndroidManifest.xml:25:13-75
+meta-data#androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER
+ADDED from [androidx.camera:camera-camera2:1.3.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/323ff58bdb5c81167b1b9c1e51633359/transformed/jetified-camera-camera2-1.3.0/AndroidManifest.xml:30:13-32:89
+	android:value
+		ADDED from [androidx.camera:camera-camera2:1.3.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/323ff58bdb5c81167b1b9c1e51633359/transformed/jetified-camera-camera2-1.3.0/AndroidManifest.xml:32:17-86
+	android:name
+		ADDED from [androidx.camera:camera-camera2:1.3.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/323ff58bdb5c81167b1b9c1e51633359/transformed/jetified-camera-camera2-1.3.0/AndroidManifest.xml:31:17-103
+provider#androidx.startup.InitializationProvider
+ADDED from [androidx.emoji2:emoji2:1.2.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/02839ed9dea2bf40e49681fcbcee94d9/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/13cfacd5bf7a50e68290a4454df36c06/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/13cfacd5bf7a50e68290a4454df36c06/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/bce4e01e2aa2184233472356d3e4090d/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/bce4e01e2aa2184233472356d3e4090d/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/hyeongyeon/.gradle/caches/8.12/transforms/8305bdbd076bdaa327a62ff47233e221/transformed/jetified-startup-runtime-1.1.1/AndroidManifest.xml:26:9-30:34
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/hyeongyeon/.gradle/caches/8.12/transforms/8305bdbd076bdaa327a62ff47233e221/transformed/jetified-startup-runtime-1.1.1/AndroidManifest.xml:26:9-30:34
+	tools:node
+		ADDED from [androidx.emoji2:emoji2:1.2.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/02839ed9dea2bf40e49681fcbcee94d9/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:28:13-31
+	android:authorities
+		ADDED from [androidx.emoji2:emoji2:1.2.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/02839ed9dea2bf40e49681fcbcee94d9/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:26:13-68
+	android:exported
+		ADDED from [androidx.emoji2:emoji2:1.2.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/02839ed9dea2bf40e49681fcbcee94d9/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:27:13-37
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.2.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/02839ed9dea2bf40e49681fcbcee94d9/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:25:13-67
+meta-data#androidx.emoji2.text.EmojiCompatInitializer
+ADDED from [androidx.emoji2:emoji2:1.2.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/02839ed9dea2bf40e49681fcbcee94d9/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.emoji2:emoji2:1.2.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/02839ed9dea2bf40e49681fcbcee94d9/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.2.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/02839ed9dea2bf40e49681fcbcee94d9/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:30:17-75
+uses-library#androidx.window.extensions
+ADDED from [androidx.window:window:1.0.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/88b582ca367910762d73f1b88fc44144/transformed/jetified-window-1.0.0/AndroidManifest.xml:25:9-27:40
+	android:required
+		ADDED from [androidx.window:window:1.0.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/88b582ca367910762d73f1b88fc44144/transformed/jetified-window-1.0.0/AndroidManifest.xml:27:13-37
+	android:name
+		ADDED from [androidx.window:window:1.0.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/88b582ca367910762d73f1b88fc44144/transformed/jetified-window-1.0.0/AndroidManifest.xml:26:13-54
+uses-library#androidx.window.sidecar
+ADDED from [androidx.window:window:1.0.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/88b582ca367910762d73f1b88fc44144/transformed/jetified-window-1.0.0/AndroidManifest.xml:28:9-30:40
+	android:required
+		ADDED from [androidx.window:window:1.0.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/88b582ca367910762d73f1b88fc44144/transformed/jetified-window-1.0.0/AndroidManifest.xml:30:13-37
+	android:name
+		ADDED from [androidx.window:window:1.0.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/88b582ca367910762d73f1b88fc44144/transformed/jetified-window-1.0.0/AndroidManifest.xml:29:13-51
+permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.12.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/2da142ca173a6f42519860e39d9ea4f9/transformed/core-1.12.0/AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.12.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/2da142ca173a6f42519860e39d9ea4f9/transformed/core-1.12.0/AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.12.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/2da142ca173a6f42519860e39d9ea4f9/transformed/core-1.12.0/AndroidManifest.xml:23:9-81
+permission#com.rokey.parkingapp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.12.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/2da142ca173a6f42519860e39d9ea4f9/transformed/core-1.12.0/AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.12.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/2da142ca173a6f42519860e39d9ea4f9/transformed/core-1.12.0/AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.12.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/2da142ca173a6f42519860e39d9ea4f9/transformed/core-1.12.0/AndroidManifest.xml:23:9-81
+uses-permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.12.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/2da142ca173a6f42519860e39d9ea4f9/transformed/core-1.12.0/AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.12.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/2da142ca173a6f42519860e39d9ea4f9/transformed/core-1.12.0/AndroidManifest.xml:26:22-94
+uses-permission#com.rokey.parkingapp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.12.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/2da142ca173a6f42519860e39d9ea4f9/transformed/core-1.12.0/AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.12.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/2da142ca173a6f42519860e39d9ea4f9/transformed/core-1.12.0/AndroidManifest.xml:26:22-94
+meta-data#androidx.lifecycle.ProcessLifecycleInitializer
+ADDED from [androidx.lifecycle:lifecycle-process:2.7.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/13cfacd5bf7a50e68290a4454df36c06/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.lifecycle:lifecycle-process:2.7.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/13cfacd5bf7a50e68290a4454df36c06/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.lifecycle:lifecycle-process:2.7.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/13cfacd5bf7a50e68290a4454df36c06/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:30:17-78
+meta-data#androidx.profileinstaller.ProfileInstallerInitializer
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/bce4e01e2aa2184233472356d3e4090d/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/bce4e01e2aa2184233472356d3e4090d/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/bce4e01e2aa2184233472356d3e4090d/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:30:17-85
+receiver#androidx.profileinstaller.ProfileInstallReceiver
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/bce4e01e2aa2184233472356d3e4090d/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:34:9-52:20
+	android:enabled
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/bce4e01e2aa2184233472356d3e4090d/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:37:13-35
+	android:exported
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/bce4e01e2aa2184233472356d3e4090d/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:38:13-36
+	android:permission
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/bce4e01e2aa2184233472356d3e4090d/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:39:13-57
+	android:directBootAware
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/bce4e01e2aa2184233472356d3e4090d/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:36:13-44
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/bce4e01e2aa2184233472356d3e4090d/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:35:13-76
+intent-filter#action:name:androidx.profileinstaller.action.INSTALL_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/bce4e01e2aa2184233472356d3e4090d/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:40:13-42:29
+action#androidx.profileinstaller.action.INSTALL_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/bce4e01e2aa2184233472356d3e4090d/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:41:17-91
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/bce4e01e2aa2184233472356d3e4090d/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:41:25-88
+intent-filter#action:name:androidx.profileinstaller.action.SKIP_FILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/bce4e01e2aa2184233472356d3e4090d/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:43:13-45:29
+action#androidx.profileinstaller.action.SKIP_FILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/bce4e01e2aa2184233472356d3e4090d/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:44:17-85
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/bce4e01e2aa2184233472356d3e4090d/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:44:25-82
+intent-filter#action:name:androidx.profileinstaller.action.SAVE_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/bce4e01e2aa2184233472356d3e4090d/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:46:13-48:29
+action#androidx.profileinstaller.action.SAVE_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/bce4e01e2aa2184233472356d3e4090d/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:47:17-88
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/bce4e01e2aa2184233472356d3e4090d/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:47:25-85
+intent-filter#action:name:androidx.profileinstaller.action.BENCHMARK_OPERATION
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/bce4e01e2aa2184233472356d3e4090d/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:49:13-51:29
+action#androidx.profileinstaller.action.BENCHMARK_OPERATION
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/bce4e01e2aa2184233472356d3e4090d/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:50:17-95
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/hyeongyeon/.gradle/caches/8.12/transforms/bce4e01e2aa2184233472356d3e4090d/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:50:25-92

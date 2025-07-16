@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <!-- ViewModel, 변수 등 선언 가능 -->
+    </data>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+        <TextView
+            android:id="@+id/tv_exit_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="출차 화면"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="24dp"/>
+
+        <EditText
+            android:id="@+id/editSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="차량번호 검색"
+            android:layout_marginBottom="8dp"/>
+        <Button
+            android:id="@+id/btnSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="검색"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:id="@+id/textSelectedLicensePlate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="선택된 차량번호: -"
+            android:layout_marginBottom="4dp"/>
+        <TextView
+            android:id="@+id/textSelectedCarType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="선택된 차량타입: -"
+            android:layout_marginBottom="4dp"/>
+        <TextView
+            android:id="@+id/textSelectedLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="선택된 위치: -"
+            android:layout_marginBottom="8dp"/>
+        <Button
+            android:id="@+id/btnExit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="출차 처리"
+            android:layout_marginBottom="16dp"/>
+        <TextView
+            android:id="@+id/textNoVehicles"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="주차된 차량이 없습니다."
+            android:visibility="gone"
+            android:gravity="center"
+            android:layout_marginBottom="8dp"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/listParkedVehicles"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:visibility="visible"/>
+    </LinearLayout>
+</layout> 

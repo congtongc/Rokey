@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/hyeongyeon/android_project/ParkingApp/app/.cxx/Debug/1c4s2c5w/x86_64",
+  "command": "/home/hyeongyeon/Android/Sdk/ndk/27.0.12077973/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=x86_64-none-linux-android24 --sysroot=/home/hyeongyeon/Android/Sdk/ndk/27.0.12077973/toolchains/llvm/prebuilt/linux-x86_64/sysroot -Dpenguin_EXPORTS -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -std=c++11 -fno-limit-debug-info  -fPIC -o CMakeFiles/penguin.dir/penguin/penguin.cpp.o -c /home/hyeongyeon/android_project/ParkingApp/app/src/main/cpp/penguin/penguin.cpp",
+  "file": "/home/hyeongyeon/android_project/ParkingApp/app/src/main/cpp/penguin/penguin.cpp"
+}
+]
