@@ -31,7 +31,8 @@
   - 서버 통신 인터페이스
 - **미구현 기능**:
   - 실제 카메라 연동
-  - 차량 감지 및 번호판 인식
+  - 차량 감지
+  - 단위 테스트 및 통합 테스트 미진행
 
 ### 3. 브릿지 서버
 
@@ -43,7 +44,7 @@
 - **미구현/테스트 대기**:
   - ROS2 노드 연동
   - Turtlebot4 제어
-  - Oak-D 카메라 연동
+  - Oak-D 카메라 연동 및 번호판 인식
 
 ## 시스템 아키텍처
 
@@ -69,7 +70,7 @@
 
 - **Measurement**: parking
 - **Tags**:
-  - license_plate: 차량 번호판
+  - license_plate: 차량 번호
   - car_type: 차량 타입 (normal/ev/disabled)
   - location: 주차 위치
 - **Fields**:
@@ -106,7 +107,7 @@ INFLUXDB_DATABASE=your_database
 3. 서버 실행:
 
 ```bash
-python bridge_server.py
+python3 bridge_server.py
 ```
 
 ### 안드로이드 앱 빌드
