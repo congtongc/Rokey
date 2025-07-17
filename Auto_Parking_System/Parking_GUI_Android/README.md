@@ -131,6 +131,9 @@ python bridge_server.py
    - 성능 최적화
    - 보안 강화
 
+## 앱 아이콘
+<img width="1024" height="1024" alt="Touch_Park" src="https://github.com/user-attachments/assets/cb91807f-0bf1-4e98-878e-b669a8768ca2" />
+
 ## 실행 영상
 
 #### Bridge Server
