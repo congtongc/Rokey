@@ -23,3 +23,9 @@
 3. 이후 지정된 출고 위치로 안전하게 이동시킨다.
 4. 다시 초기 위치로 이동하여 이후 작업을 진행 또는 대기한다.
 5. 위 사이클이 반복된다.
+
+## 설명 파일(pdf)
+[Hub_System.pdf](https://github.com/user-attachments/files/21282946/Hub_System.pdf)
+
+## 실행 영상
+https://github.com/user-attachments/assets/d73f213e-22ab-4af8-a664-39cbdd6ea24c
