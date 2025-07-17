@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- 주차장 상태 카드 -->
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="4dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <!-- 전체 주차면 -->
+                        <LinearLayout
+            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginBottom="8dp">
+
+                            <TextView
+                                android:id="@+id/tvTotalSpots"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:text="전체 주차면"
+                                android:textStyle="bold"/>
+
+                            <TextView
+                                android:id="@+id/tvTotalNormal"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="2면"
+                                android:gravity="center"/>
+
+                            <TextView
+                                android:id="@+id/tvTotalEv"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="2면"
+                                android:gravity="center"/>
+
+        <TextView
+                                android:id="@+id/tvTotalDisabled"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="2면"
+                                android:gravity="center"/>
+                        </LinearLayout>
+
+                        <!-- 사용 중인 주차면 -->
+                        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginBottom="8dp">
+
+                            <TextView
+                                android:id="@+id/tvOccupiedSpots"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:text="사용 중"
+                                android:textStyle="bold"/>
+
+                            <TextView
+                                android:id="@+id/tvOccupiedNormal"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="0면"
+                                android:gravity="center"/>
+
+                            <TextView
+                                android:id="@+id/tvOccupiedEv"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="0면"
+                                android:gravity="center"/>
+
+        <TextView
+                                android:id="@+id/tvOccupiedDisabled"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="0면"
+                                android:gravity="center"/>
+                        </LinearLayout>
+
+                        <!-- 사용 가능한 주차면 -->
+                        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginBottom="8dp">
+
+                            <TextView
+                                android:id="@+id/tvAvailableSpots"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:text="사용 가능"
+                                android:textStyle="bold"/>
+
+                            <TextView
+                                android:id="@+id/tvAvailableNormal"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="2면"
+                                android:gravity="center"/>
+
+                            <TextView
+                                android:id="@+id/tvAvailableEv"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="2면"
+                                android:gravity="center"/>
+
+        <TextView
+                                android:id="@+id/tvAvailableDisabled"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="2면"
+                                android:gravity="center"/>
+                        </LinearLayout>
+
+                        <!-- 차량 타입 레이블 -->
+                        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <Space
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"/>
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="일반"
+                                android:gravity="center"
+                                android:textStyle="bold"/>
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="전기"
+                                android:gravity="center"
+                                android:textStyle="bold"/>
+
+        <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="장애인"
+                                android:gravity="center"
+                                android:textStyle="bold"/>
+                        </LinearLayout>
+
+                        <!-- 프로그레스 바 -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginTop="16dp">
+
+                            <ProgressBar
+                                android:id="@+id/pbTotal"
+                                style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"/>
+
+                            <ProgressBar
+                                android:id="@+id/pbAvailable"
+                                style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"/>
+
+                            <ProgressBar
+                                android:id="@+id/pbOccupied"
+                                style="?android:attr/progressBarStyleHorizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+
+                            <!-- 퍼센트 텍스트 -->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="4dp">
+
+                                <TextView
+                                    android:id="@+id/tvTotalPercent"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="100%"
+                                    android:gravity="center"/>
+
+                                <TextView
+                                    android:id="@+id/tvAvailablePercent"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="100%"
+                                    android:gravity="center"/>
+
+                                <TextView
+                                    android:id="@+id/tvOccupiedPercent"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="0%"
+                                    android:gravity="center"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- OCR 결과 -->
+        <TextView
+                    android:id="@+id/tvOcrResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:text="번호판 인식 대기 중..."
+                    android:textAlignment="center"/>
+
+                <!-- 주차된 차량 목록 -->
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvParkedVehicles"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp" />
+
+                <!-- 에러 표시 -->
+                <LinearLayout
+                    android:id="@+id/errorView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+        <TextView
+                        android:id="@+id/tvError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:gravity="center"
+                        android:textColor="@android:color/holo_red_dark" />
+
+                    <Button
+                        android:id="@+id/btnRetry"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="8dp"
+                        android:text="재시도" />
+                </LinearLayout>
+
+                <!-- 로딩 프로그레스 바 -->
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:visibility="gone"/>
+    </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnPark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_add"
+        app:tint="@android:color/white" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout> 

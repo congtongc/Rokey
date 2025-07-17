@@ -1,0 +1,27 @@
+{
+  "buildFiles": [
+    "/home/hyeongyeon/rokey_project/Rokey/Auto_Parking_System/Parking_GUI_Android/ParkingApp/app/src/main/cpp/CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "/usr/bin/ninja",
+      "-C",
+      "/home/hyeongyeon/rokey_project/Rokey/Auto_Parking_System/Parking_GUI_Android/ParkingApp/app/.cxx/RelWithDebInfo/24hn5322/x86",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "/usr/bin/ninja",
+    "-C",
+    "/home/hyeongyeon/rokey_project/Rokey/Auto_Parking_System/Parking_GUI_Android/ParkingApp/app/.cxx/RelWithDebInfo/24hn5322/x86",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {
+    "penguin::@6890427a1f51a3e7e1df": {
+      "artifactName": "penguin",
+      "abi": "x86",
+      "output": "/home/hyeongyeon/rokey_project/Rokey/Auto_Parking_System/Parking_GUI_Android/ParkingApp/app/build/intermediates/cxx/RelWithDebInfo/24hn5322/obj/x86/libpenguin.so",
+      "runtimeFiles": []
+    }
+  }
+}

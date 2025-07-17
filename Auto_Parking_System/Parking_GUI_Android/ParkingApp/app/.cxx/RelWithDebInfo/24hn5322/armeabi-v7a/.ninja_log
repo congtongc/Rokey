@@ -1,0 +1,15 @@
+# ninja log v5
+0	1153	1752733620959254584	CMakeFiles/penguin.dir/penguin/penguin.cpp.o	4bceba9bfecb238f
+1159	1448	1752733621254259741	/home/hyeongyeon/rokey_project/Rokey/Auto_Parking_System/Parking_GUI_Android/ParkingApp/app/build/intermediates/cxx/RelWithDebInfo/24hn5322/obj/armeabi-v7a/libpenguin.so	ba7185824da32b80
+0	9	0	clean	a31eedcededa8236
+1	17	0	clean	a31eedcededa8236
+11	1287	1752735226674456516	CMakeFiles/penguin.dir/penguin/penguin.cpp.o	4bceba9bfecb238f
+1289	1578	1752735226965456548	/home/hyeongyeon/rokey_project/Rokey/Auto_Parking_System/Parking_GUI_Android/ParkingApp/app/build/intermediates/cxx/RelWithDebInfo/24hn5322/obj/armeabi-v7a/libpenguin.so	ba7185824da32b80
+0	28	0	clean	a31eedcededa8236
+3	816	1752735449059665913	CMakeFiles/penguin.dir/penguin/penguin.cpp.o	4bceba9bfecb238f
+817	917	1752735449162666085	/home/hyeongyeon/rokey_project/Rokey/Auto_Parking_System/Parking_GUI_Android/ParkingApp/app/build/intermediates/cxx/RelWithDebInfo/24hn5322/obj/armeabi-v7a/libpenguin.so	ba7185824da32b80
+1	26	0	clean	a31eedcededa8236
+0	16	0	clean	a31eedcededa8236
+4	710	1752735804095538457	CMakeFiles/penguin.dir/penguin/penguin.cpp.o	4bceba9bfecb238f
+710	792	1752735804181538723	/home/hyeongyeon/rokey_project/Rokey/Auto_Parking_System/Parking_GUI_Android/ParkingApp/app/build/intermediates/cxx/RelWithDebInfo/24hn5322/obj/armeabi-v7a/libpenguin.so	ba7185824da32b80
+0	3	0	clean	a31eedcededa8236
