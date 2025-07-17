@@ -258,6 +258,9 @@ pip install influxdb-client-3 pandas python-dotenv
 
 # 한글 폰트 설치 (OCR용)
 sudo apt install fonts-noto-cjk
+
+# InfluxDB 설치
+pip install influxdb3-python
 ```
 
 ### 3. 환경 변수 설정
