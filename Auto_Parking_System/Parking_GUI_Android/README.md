@@ -130,3 +130,11 @@ python bridge_server.py
    - 에러 처리 강화
    - 성능 최적화
    - 보안 강화
+
+## 실행 영상
+
+#### Bridge Server
+https://github.com/user-attachments/assets/643d061c-0cae-4a43-85e1-6bc0246f93ed
+
+#### Parking App
+https://github.com/user-attachments/assets/5c02c93a-cd36-40d3-b18b-0f76ffae7506
