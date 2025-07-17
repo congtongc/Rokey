@@ -114,7 +114,7 @@ $ ros2 run pick_and_place_voice detect_wound
 - "카메라" → wound 인식 및 특수 작업
 
 ## 모델 학습 과정 및 세부 설명(pdf)
-- [Surgery_assisted_cooperative_robot.pdf](https://github.com/user-attachments/files/20694265/Surgery_assisted_cooperative_robot.pdf)
+[Surgery_assisted_cooperative_robot.pdf](https://github.com/user-attachments/files/20694265/Surgery_assisted_cooperative_robot.pdf)
 
 ## 전반적인 로봇의 동작 흐름(영상)
-- https://github.com/user-attachments/assets/f4b465a0-58d0-449a-920e-7077362054ea
+https://github.com/user-attachments/assets/f4b465a0-58d0-449a-920e-7077362054ea
