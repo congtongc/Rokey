@@ -123,15 +123,15 @@ ros2 run aruco_yolo pick_and_place      # 아루코 마커 인식 기반 메니�
 본 프로젝트는 모듈화된 구조로 설계되어 있으며, 각 기능은 독립적인 ROS 노드로 구현되어 있습니다. 노드 간 통신은 ROS 토픽과 서비스를 통해 이루어집니다.
 
 ## 프로젝트 설명 파일(pdf)
-### 실제 환경에서의 자율 주행 개발 전 Gazebo 환경에서 개발 테스트
-- [Traffic_sign_detect_auto_driving(Gazebo).pdf](https://github.com/user-attachments/files/20853122/Traffic_sign_detect_auto_driving.Gazebo.pdf)
+#### Gazebo 환경 개발 테스트
+[Traffic_sign_detect_auto_driving(Gazebo).pdf](https://github.com/user-attachments/files/20853122/Traffic_sign_detect_auto_driving.Gazebo.pdf)
 
-### 실제 환경에서의 자율 주행 개발(Waffle with manifulator)
-- [Lane_tracking_auto_driving.pdf](https://github.com/user-attachments/files/20853125/Lane_tracking_auto_driving.pdf)
+#### 실제 환경 자율 주행 개발(Waffle with Manifulator)
+[Lane_tracking_auto_driving.pdf](https://github.com/user-attachments/files/20853125/Lane_tracking_auto_driving.pdf)
 
 ## 자율 주행 영상
-### Gazebo 시뮬레이션 테스트 영상
-- https://github.com/user-attachments/assets/6378f33f-8f00-4a66-a2dc-0da84ff88955
+#### Gazebo 시뮬레이션 테스트 영상
+https://github.com/user-attachments/assets/6378f33f-8f00-4a66-a2dc-0da84ff88955
 
-### 실제 환경에서의 자율 주행 영상(Waffle with manifulator)
-- https://github.com/user-attachments/assets/4f77d3ca-bcff-42cb-8871-0b32b93b8788
+#### 실제 환경에서의 자율 주행 영상(Waffle with manifulator)
+https://github.com/user-attachments/assets/4f77d3ca-bcff-42cb-8871-0b32b93b8788
