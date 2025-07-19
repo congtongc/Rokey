@@ -2,7 +2,9 @@
 
 ## 프로젝트 소개
 
-본 프로젝트는 ROS2 기반의 자율주행 로봇을 활용한 실내 주차 관리 시스템입니다. 두 대의 Turtlebot4와 OAK-D 카메라를 이용하여 주차 공간 인식, 차량 번호판 인식, 자율주행을 구현했습니다. 주차와 출차를 각각 독립된 로봇(robot2: 주차, robot3: 출차)이 담당하여 효율적인 주차장 운영이 가능합니다.
+- ROS2 기반의 자율주행 로봇을 활용한 실내 주차 관리 시스템 
+- 두 대의 Turtlebot4와 OAK-D 카메라를 이용하여 주차 공간 인식, 차량 번호판 인식, 자율주행을 구현
+- 주차와 출차를 각각 독립된 로봇(robot2: 주차, robot3: 출차)이 담당하여 효율적인 주차장 운영 가능
 
 ## 시스템 아키텍처
 
@@ -451,7 +453,7 @@ Auto_Parking_System/
 
 - [강의 자료](https://rainy-cream-352.notion.site/_-1fb450ef7c598037ba7fe0880210baa2)
 - [Roboflow 데이터셋](https://app.roboflow.com/rokeyproject-4)
-- [ROS2 Nav2 문서](https://navigation.ros.org/)
+- [ROS2 Nav2 문서](https://docs.nav2.org/)
 - [Turtlebot4 매뉴얼](https://turtlebot.github.io/turtlebot4-user-manual/)
 - [InfluxDB 문서](https://docs.influxdata.com/)
 
