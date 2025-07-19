@@ -118,6 +118,10 @@ python3 bridge_server.py
 2. Gradle 동기화 실행
 3. 앱 빌드 및 실행
 
+## 필수 설정 사항
+- **Cloud Network**를 사용하지 않아 **GUI 어플**과 **Bridge Server**의 통신을 위해 필수적으로 **동일 네트워크(Wi-Fi)** 연결 필수
+
+
 ## 향후 개발 계획
 
 1. **DetectionApp 개발**:
