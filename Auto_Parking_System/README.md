@@ -28,11 +28,11 @@
 /robot2/oakd/rgb/image_raw/compressed  # 압축 RGB 이미지
 /robot2/oakd/stereo/image_raw          # 깊이 이미지
 /robot2/oakd/stereo/camera_info        # 카메라 캘리브레이션
-/robot2/detect/yolo_distance_image     # YOLO 인식 결과 이미지
-/robot2/detect/object_info             # 인식된 객체 정보
-/robot2/danger_state                   # 위험 상태 알림
-/robot2/parking/location               # 주차 위치 정보
-/robot2/carplate/ocr_result            # 번호판 인식 결과
+/detect/yolo_distance_image            # YOLO 인식 결과 이미지
+/detect/object_info                    # 인식된 객체 정보
+/danger_state                          # 위험 상태 알림
+/parking/location                      # 주차 위치 정보
+/carplate/ocr_result                   # 번호판 인식 결과
 /robot2/cmd_vel                        # 로봇 속도 제어
 /robot2/cmd_audio                      # 오디오 피드백
 
@@ -40,11 +40,11 @@
 /robot3/oakd/rgb/image_raw/compressed  # 압축 RGB 이미지
 /robot3/oakd/stereo/image_raw          # 깊이 이미지
 /robot3/oakd/stereo/camera_info        # 카메라 캘리브레이션
-/robot3/detect/yolo_distance_image     # YOLO 인식 결과 이미지
-/robot3/detect/object_info             # 인식된 객체 정보
-/robot3/danger_state                   # 위험 상태 알림
-/robot3/parking/location               # 주차 위치 정보
-/robot3/carplate/ocr_result            # 번호판 인식 결과
+/detect/yolo_distance_image            # YOLO 인식 결과 이미지
+/detect/object_info                    # 인식된 객체 정보
+/danger_state                          # 위험 상태 알림
+/parking/location                      # 주차 위치 정보
+/carplate/ocr_result                   # 번호판 인식 결과
 /robot3/cmd_vel                        # 로봇 속도 제어
 /robot3/cmd_audio                      # 오디오 피드백
 ```
@@ -55,7 +55,7 @@
 
 - **주차 공간 인식 (`yolo_detect.py`)**
 
-  - YOLOv8 커스텀 모델 사용 (학습 데이터: Roboflow)
+  - YOLOv8 모델 사용 (학습 데이터: Roboflow)
   - OAK-D 스테레오 카메라의 깊이 정보 활용
   - 실시간 장애물 감지 및 위험 상황 알림 (`/danger_state` 토픽)
   - 10Hz 주기로 이미지 처리 및 결과 발행
