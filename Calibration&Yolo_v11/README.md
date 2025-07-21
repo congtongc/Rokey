@@ -1,4 +1,4 @@
-# Calibration과 Yolo V11을 사용한 6축 협동 로봇 객체 인식 학습
+# Calibration과 Yolo v11을 사용한 6축 협동 로봇 객체 인식 학습
 
 eye-in-hand 구조로 로봇 팔에 연결된 RGB-D 카메라를 사용하여 카메라에 보이는 객체를 인식하도록 학습을 진행했다.
 
