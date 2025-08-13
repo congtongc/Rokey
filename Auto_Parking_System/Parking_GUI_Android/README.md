@@ -66,7 +66,7 @@
   - WebSocket 서버
   - ROS2 브릿지 (준비 중)
 
-## 데이터베이스 구조
+## 데이터베이스
 
 ### InfluxDB
 
@@ -78,11 +78,19 @@
 - **Fields**:
   - status: 주차 상태 (parked/exit)
 
-## 주차 위치 체계
+### 주차 위치 체계
 
 - **일반 차량**: A-1, A-2
 - **전기 차량**: B-1, B-2
 - **장애인 차량**: C-1, C-2
+
+### 테이블
+
+<img width="840" height="232" alt="image" src="https://github.com/user-attachments/assets/809bcccb-6eb8-416d-ab51-215d228317df" />
+<img width="829" height="226" alt="image" src="https://github.com/user-attachments/assets/c6515e89-7546-47e1-aa5f-59d46e9214fb" />
+<img width="828" height="225" alt="image" src="https://github.com/user-attachments/assets/d51ae624-06f9-46d5-b2c5-a3886e07b9ab" />
+<img width="827" height="225" alt="image" src="https://github.com/user-attachments/assets/c6b557ac-614a-4ad8-97d9-8424283b716a" />
+
 
 ## 설치 및 실행 방법
 
